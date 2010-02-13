@@ -1,0 +1,46 @@
+.form_notice
+{
+color: red;
+margin: 5px auto;
+border: 2px solid red;
+padding: 10px;
+background-color: #E48484;
+color: white;
+width: 80%;
+text-align: left !important;
+}
+
+.form_error ul, .form_notice ul
+{
+list-style-type: square;
+background: none;
+margin: 5px 20px !important;
+padding: 0px !important;
+padding-left: 4em !important;
+}
+
+
+.form_error ul li, .form_notice ul li
+{
+margin: 0; padding: 0;
+padding-left: 5px;
+margin-left: 5px;
+background: none;
+}
+
+input.form_error, textarea.form_error, select.form_error, .form_wrap
+{
+border: 2px solid red !important;
+background-color: #F1DBDB;
+}
+
+.form_wrap
+{
+padding: 2px;
+background-color: transparent;
+}
+
+.form_captcha
+{
+padding: 3px;
+}
