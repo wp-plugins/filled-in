@@ -26,6 +26,9 @@ Redirection is available in:
 
 * English
 * Danish, thanks to Georg S. Adamsen
+* Polish, thanks to Kasia
+* Italian, thanks to Simone Righini
+* French, thanks to Zesty
 
 == Installation ==
 
@@ -121,3 +124,6 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 
 = 1.7.4 =
 * Move into WP extend
+
+= 1.7.5 =
+* Add Polish translation

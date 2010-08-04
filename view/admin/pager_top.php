@@ -3,9 +3,9 @@
 		<input type="hidden" name="page" value="filled_in.php"/>
 		<input type="hidden" name="curpage" value="<?php echo $pager->current_page () ?>"/>
 		<?php if (isset ($_GET['total'])) : ?>
-		<input type="hidden" name="total" value="<?php echo $_GET['total'] ?>"/>
+		<input type="hidden" name="total" value="<?php echo esc_attr( $_GET['total'] ) ?>"/>
 		<?php else : ?>
-		<input type="hidden" name="errors" value="<?php echo $_GET['errors'] ?>"/>
+		<input type="hidden" name="errors" value="<?php echo esc_attr( $_GET['errors'] ) ?>"/>
 		<?php endif; ?>
 
 
