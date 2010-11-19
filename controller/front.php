@@ -18,7 +18,7 @@ class Filled_In extends Filled_In_Plugin
 		FI_Extension_Factory::get ();
 		
 		$this->register_plugin ('filled-in', dirname (__FILE__));
-
+		
 		// Decide what to do depending if this a GET or POST
 		if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset ($_POST['filled_in_form']))
 		{
@@ -26,7 +26,7 @@ class Filled_In extends Filled_In_Plugin
 			if (isset ($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
 				$this->add_action ('template_redirect', 'handle_ajax');
 		}
-
+		
 		// Standard filters & actions
 		$this->add_action ('template_redirect', 'pre_load', 2);      // Determines if this page has any forms so we know if we need CSS
 		$this->add_filter ('the_content');                           // Munges any forms in post content
@@ -51,11 +51,11 @@ class Filled_In extends Filled_In_Plugin
 		global $posts;
 
 		// A workaround for the aggressive wpautop
-		foreach (array ('the_content', 'the_excerpt') AS $filter)
-		{
-			if (remove_filter ($filter, 'wpautop') === true)
-				$this->add_action ($filter, 'wpautop', 11);
-		}
+		// foreach (array ('the_content', 'the_excerpt') AS $filter)
+		// {
+		// 	if (remove_filter ($filter, 'wpautop') === true)
+		// 		$this->add_action ($filter, 'wpautop', 11);
+		// }
 		
 		// Preload the forms so we know if any CSS/AJAX is needed
 		if (count ($posts) > 0)
