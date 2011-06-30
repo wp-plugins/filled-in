@@ -10,7 +10,7 @@ Generic form processor allowing forms to be painlessly processed and aggregated,
 
 == Description ==
 
-Filled In is a generic form processing plugin that will validate and store data submitted through forms. You can use it for any kind of data input, from simple contact forms on a blog to full-blown questionnaires on a business site.
+Filled In is  a generic form processing plugin that will validate and store data submitted through forms. You can use it for any kind of data input, from simple contact forms on a blog to full-blown questionnaires on a business site.
 
 Features include:
 
