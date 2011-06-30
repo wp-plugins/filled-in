@@ -4,7 +4,7 @@ Donate link: http://urbangiraffe.com/about/
 Tags: form, contact, validate
 Requires at least: 2.7
 Tested up to: 2.9.1
-Stable tag: trunk
+Stable tag: 1.7.5 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
 
