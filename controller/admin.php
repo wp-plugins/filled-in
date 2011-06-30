@@ -15,6 +15,11 @@ class Filled_In_Admin extends Filled_In_Plugin
 		
 		$this->register_plugin ('filled-in', dirname (__FILE__));
 		
+		/// Addition  1.7.6 - additional API
+		$this->readme_URL = 'http://plugins.trac.wordpress.org/browser/filled-in/trunk/readme.txt?format=txt';    
+	  add_action( 'in_plugin_update_message-filled-in/filled_in.php', array( &$this, 'plugin_update_message' ) );
+	  /// End of addition
+		
 		$this->add_action ('activate_filled-in/filled_in.php', 'activate');
 		if (current_user_can ('edit_posts') && is_admin ())
 		{
@@ -245,6 +250,15 @@ class Filled_In_Admin extends Filled_In_Plugin
 		if (($sql = @file_get_contents (dirname (__FILE__).'/create.sql')) !== false)
 		{
 			global $wpdb;
+			
+			/// Addition  1.7.6 - create tables with the same charset as WPDB
+			if ( ! empty($wpdb->charset) )
+      	$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
+      if ( ! empty($wpdb->collate) )
+      	$charset_collate .= " COLLATE $wpdb->collate";
+			if ( ! empty($charset_collate) ) 
+			  $sql = str_replace ( 'CHARSET = latin1', $charset_collate, $sql );
+			/// End of Addition  
 			
 			$sql = str_replace ('filled_in', $wpdb->prefix.'filled_in', $sql);
 			if (preg_match_all ('/CREATE(.*?);/s', $sql, $matches) > 0)

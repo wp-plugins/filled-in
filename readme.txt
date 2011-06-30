@@ -127,3 +127,8 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 
 = 1.7.5 =
 * Add Polish translation
+
+= 1.7.6 =
+* Form submission log - delete function bugfix
+* Form submission log - improved SQL (much faster with large number of submissions)
+* Installation bugfix - tables are now created with the same charset as other present Wordpress tables

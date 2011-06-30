@@ -12,7 +12,7 @@
 // Lesser General Public License for more details.
 // ======================================================================================
 // @author     John Godley(http://urbangiraffe.com)
-// @version    0.2.4
+// @version    0.2.5
 // @copyright  Copyright &copy; 2009 John Godley, All Rights Reserved
 // ======================================================================================
 // 0.1.6  - Corrected WP locale functions
@@ -45,6 +45,7 @@
 // 0.2.2  - Plugin settings, base function
 // 0.2.3  - More HTTPS
 // 0.2.4  - Ajax helper, more compatability functions
+// 0.2.5  - extends another API - Filled_In_Foliopress_Plugin 
 // ======================================================================================
 
 
@@ -103,7 +104,10 @@
  * @copyright Copyright(C) John Godley
  **/
 
-class Filled_In_Plugin {
+/// Modification  1.7.6 - additional API
+//class Filled_In_Plugin {
+class Filled_In_Plugin extends Filled_In_Foliopress_Plugin {
+/// End of Modification  
 	/**
 	 * Plugin name
 	 * @var string

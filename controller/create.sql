@@ -1,3 +1,5 @@
+# Modification 1.7.6 - CHARSET = latin1 added to each SQL statement
+
 # Dump of table filled_in_data
 # ------------------------------------------------------------
 
@@ -12,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `filled_in_data` (
   `upload` text,
   `time_to_complete` int(11) unsigned NOT NULL default '0',
   PRIMARY KEY  (`id`)
-);
+) CHARSET = latin1;
 
 
 
@@ -26,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `filled_in_errors` (
   `type` enum('pre','post','filter','result') NOT NULL default 'pre',
   `message` text NOT NULL,
   PRIMARY KEY  (`id`)
-);
+) CHARSET = latin1;
 
 
 
@@ -43,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `filled_in_extensions` (
   `position` int(10) unsigned NOT NULL default '0',
   `status` enum('on','off') NOT NULL default 'on',
   PRIMARY KEY  (`id`)
-);
+) CHARSET = latin1;
 
 
 
@@ -58,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `filled_in_forms` (
   `type` enum('form','report') default 'form',
   PRIMARY KEY  (`id`),
   KEY `name` (`name`)
-);
+) CHARSET = latin1;
 
 
 
@@ -70,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `filled_in_useragents` (
   `agent` varchar(100) NOT NULL default '',
   PRIMARY KEY  (`id`),
   KEY `agent` (`agent`)
-);
+) CHARSET = latin1;
 
 
 

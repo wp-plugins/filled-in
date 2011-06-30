@@ -110,7 +110,10 @@
 		jQuery('#doaction2').click (function ()
 		{
 			if (jQuery('#action2_select').attr ('value') == 'delete')
-				deleteItems ('delete_stats','<?php echo wp_create_nonce ('filledin-delete_items'); ?>');
+			  /* ///  Modification  1.7.6 - bugfix */
+				/* //deleteItems ('delete_stats','<?php echo wp_create_nonce ('filledin-delete_items'); ?>'); */
+				deleteItems ('delete_stats','<?php echo wp_create_nonce ('filledin-delete_stats'); ?>');
+				/* /// End of modification */
 			return false;
 		});
 		
