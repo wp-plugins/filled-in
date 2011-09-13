@@ -1,0 +1,1743 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Filled-In - Udfyld Formular\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-11 19:55+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Georg S. Adamsen <g.s.adamsen@gmail.com>\n"
+"Language-Team:  <g.s.adamsen@blogos.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n != 1;\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;__ngettext_noop:1,2;_c\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\filled-in\n"
+"X-Poedit-SearchPath-0: d:\\wordpress\\plugins\\filled-in\n"
+
+#: d:\wordpress\plugins\filled-in/plugin.php:636
+msgid "How many widgets would you like?"
+msgstr "Hvor mange widgets ønsker du?"
+
+#: d:\wordpress\plugins\filled-in/plugin.php:643
+msgid "Save"
+msgstr "Gem"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:62
+msgid "Filled In Help"
+msgstr "Hjælp for Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:63
+msgid "Filled In Documentation"
+msgstr "Dokumentation for Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:64
+msgid "Filled In Support Forum"
+msgstr "Supportforum for Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:65
+msgid "Filled In Bug Tracker"
+msgstr "Bugdatabase for Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:66
+msgid "Filled In FAQ"
+msgstr "OSS for Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:67
+msgid "Please read the documentation and FAQ, and check the bug tracker, before asking a question."
+msgstr "Læs venligst dokumentationen og OSS'en, og tjek bugdatabasen, inden du stiller et spørgsmål."
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:104
+msgid "Filled In"
+msgstr "Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:294
+msgid "Your report has been updated"
+msgstr "Din rapport er blevet opdateret"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:310
+msgid "Your batch has been created"
+msgstr "Din kurv er blevet oprettet"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/controller/admin.php:348
+#, php-format
+msgid "Your batch has finished.  %d entries were processed, %d failed"
+msgstr "Din kurv er udført. %d jobs blev udført. %d mislykkedes"
+
+# Note to developer: The order of month, day and year is different in many languages, but the display does not allow to change that without changing the source code
+#: d:\wordpress\plugins\filled-in/controller/admin.php:366
+msgid "January"
+msgstr "januar"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:367
+msgid "February"
+msgstr "februar"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:368
+msgid "March"
+msgstr "marts"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:369
+msgid "April"
+msgstr "april"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:370
+msgid "May"
+msgstr "maj"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:371
+msgid "June"
+msgstr "juni"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:372
+msgid "July"
+msgstr "juli"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:373
+msgid "August"
+msgstr "august"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:374
+msgid "September"
+msgstr "september"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:375
+msgid "October"
+msgstr "oktober"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:376
+msgid "November"
+msgstr "november"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:377
+msgid "December"
+msgstr "december"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:390
+msgid "That template already exists"
+msgstr "Dette skabelon eksisterer allerede"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:395
+msgid "Email template created"
+msgstr "E-mail-skabelon oprettet"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:419
+msgid "Options updated"
+msgstr "Indstillinger opdateret"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:424
+msgid "All Filled In data has been removed and the plugin de-activated"
+msgstr "Alle data fra Udfyld Formular er blevet fjernet og pluginnet deaktiveret"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:438
+msgid "Your form has been created"
+msgstr "Din formular er oprettet"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:463
+#: d:\wordpress\plugins\filled-in/controller/admin.php:468
+msgid "Form details updated successfully"
+msgstr "Formulardetaljer er opdateret"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:481
+msgid "Invalid form id"
+msgstr "Ugyldigt id for formular"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:512
+msgid "Failed results"
+msgstr "Ikke-gennemført"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:512
+msgid "Successful results"
+msgstr "Gennemført"
+
+#: d:\wordpress\plugins\filled-in/controller/admin.php:516
+msgid "Invalid id"
+msgstr "Ugyldigt id"
+
+#: d:\wordpress\plugins\filled-in/controller/attachment.php:63
+msgid "Name"
+msgstr "Navn"
+
+#: d:\wordpress\plugins\filled-in/controller/attachment.php:67
+msgid "File"
+msgstr "Fil"
+
+#: d:\wordpress\plugins\filled-in/controller/attachment.php:73
+msgid "Upload"
+msgstr "Upload"
+
+#: d:\wordpress\plugins\filled-in/controller/download.php:41
+msgid "<p>That file does not exists</p>"
+msgstr "<p>Denne fil eksisterer ikke</p>"
+
+#: d:\wordpress\plugins\filled-in/controller/front.php:222
+#, php-format
+msgid "Form '%s' could not be found"
+msgstr "Formularen '%s' blev ikke fundet"
+
+#: d:\wordpress\plugins\filled-in/controller/front.php:239
+msgid "Thank you for your submission.  Unfortunately your data was not accepted for the following reasons:"
+msgstr "Tak for det indtastede. Desværre kunne dine data ikke accepteres på grund af følgende:"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:38
+msgid "Incorrect CAPTCHA result"
+msgstr "Forkert CAPTCHA-resultat"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:43
+msgid "Is CAPTCHA"
+msgstr "CAPTCHA-kontrol"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:62
+msgid "Too many attempts, consider glasses"
+msgstr "For mange forsøg! Overvej briller"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:77
+msgid "Max attempts"
+msgstr "Max. forsøg"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:81
+msgid "Number of attempts before being blocked"
+msgstr "Antal forsøg før blokering"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:85
+msgid "Blocked message"
+msgstr "Besked ifm. blokering"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:88
+msgid "What to display when blocked"
+msgstr "Hvad skal der vises ifm. blokering"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:92
+msgid "Warning"
+msgstr "Advarsel"
+
+# Eller: Advarsel om overlejring???
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:93
+msgid "Overlaid warning"
+msgstr "Overlejret advarsel"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:101
+msgid "Word generation"
+msgstr "Generering af ord"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:108
+msgid "Length"
+msgstr "Længde"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:112
+msgid "Image type"
+msgstr "Billedtype"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:122
+msgid "Background"
+msgstr "Baggrund"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:131
+msgid "Blurred"
+msgstr "Sløret"
+
+# kan betyde 100 ting
+#: d:\wordpress\plugins\filled-in/extensions/filters/captcha.php:141
+msgid "is a <strong>CAPTCHA</strong>"
+msgstr "er en <strong>CAPTCHA</strong>-kontrol"
+
+# Note to developer: Some languages, Danish included, do not have a super-concept as 'item(s)', but prefer to specify whether it is, say, characters, letters or numbers. Is it possible to include in the source code what type(s) of entries 'entries' refers to?
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:30
+#, php-format
+msgid "between %d and %d items are required"
+msgstr "der kræves mellem %d og %d enheder"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:38
+#, php-format
+msgid "at least %d item(s) are required"
+msgstr "der kræves mindst %d enhed(er)"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:47
+#, php-format
+msgid "no more than %d item(s) are required"
+msgstr "der kræves højst %d enhed(er)"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:51
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:56
+msgid "no"
+msgstr "nej"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:54
+msgid "yes"
+msgstr "ja"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:62
+msgid "Checkbox/Radio"
+msgstr "Afkrydsfelt/radioknapper"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:77
+msgid "Smallest"
+msgstr "Mindst"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:78
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:82
+msgid "items required, leave empty for no smallest"
+msgstr "enheder krævet; hvis den er tom, anvendes ingen mindste værdi"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:81
+msgid "Largest"
+msgstr "Største"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:90
+msgid "is a <strong>Checkbox/Radio</strong>"
+msgstr "er <strong>et afkrydsningsfelt/radioknapper</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:92
+#, php-format
+msgid " with between %d and %d items"
+msgstr "med mellem %d og %d enheder"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:94
+#, php-format
+msgid " with at least %d item(s)"
+msgstr " med mindst %d enhed(er)"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/extensions/filters/checkbox.php:96
+#, php-format
+msgid " with less than %d item(s)"
+msgstr " med mindre end %d enhed(er)"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:25
+#, php-format
+msgid "you need to upload at least %d file(s)"
+msgstr "du skal uploade mindst %d fil(er)"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:28
+#, php-format
+msgid "the maximum number of uploads is %d"
+msgstr "max. antal uploads er %d"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:42
+#, php-format
+msgid "the uploaded file is %dKB, which is larger than the maximum allowed of %dKB"
+msgstr "filen til upload er %dKB, men det er større end de maksimalt tilladte %dKB"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:53
+msgid "the file is of an invalid type"
+msgstr "filtypen er ugyldig"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:73
+msgid "File Upload"
+msgstr "Filupload"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:93
+msgid "Max file size"
+msgstr "Max. filstørrelse"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:97
+msgid "Min files"
+msgstr "Min. filer"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:98
+msgid "0 for no minimum"
+msgstr "0 for intet minimum"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:101
+msgid "Max files"
+msgstr "Max. filer"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:102
+msgid "0 for no maximum"
+msgstr "0 for ingen maksimum"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:105
+msgid "File types"
+msgstr "Filtyper"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:108
+msgid "Separate file types with a comma.  No period is required"
+msgstr "Adskilt filtyper med kommaer; sæt ikke punktum foran filtype"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:109
+msgid "Note: Restriction is only on filename and does not prevent a user uploading a renamed file"
+msgstr "Bemærk: Begrænsningen gælder kun filnavnet og forhindrer ikke en bruger i at uploade en omdøbt fil"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:118
+msgid "with <strong>File Upload</strong> "
+msgstr "med <strong>filupload</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:121
+#, php-format
+msgid "maximum filesize of %dKB"
+msgstr "max. filstørrelse på %dKB"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:123
+#, php-format
+msgid "restrict to files of type: %s"
+msgstr "begræns filtyper til: %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:125
+#, fuzzy, php-format
+msgid "minimum of %d %s"
+msgstr "min. %d %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:125
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:127
+msgid "file"
+msgstr "fil"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:125
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:127
+msgid "files"
+msgstr "filer"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/file_upload.php:127
+#, php-format
+msgid "maximum of %d %s"
+msgstr "max. %d %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_email.php:22
+msgid "invalid email address"
+msgstr "ugyldig e-mail-adresse"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_email.php:27
+msgid "Email"
+msgstr "E-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_email.php:33
+msgid "is an <strong>Email Address</strong>"
+msgstr "er en <strong>e-mail-adresse</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:43
+#, php-format
+msgid "must not equal '%s'"
+msgstr "må ikke være '%s'"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:47
+#, php-format
+msgid "must equal '%s'"
+msgstr "skal være '%s'"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:49
+#, php-format
+msgid "must equal one of: %s"
+msgstr "skal være en af: %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:58
+msgid "Is Equal"
+msgstr "Er lig med"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:71
+msgid "Not equal"
+msgstr "Ikke lig med"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:77
+msgid "Values"
+msgstr "Værdier"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:78
+msgid "Each value on a separate line."
+msgstr "Hver enkelt værdi på en linje for sig selv."
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:85
+msgid "Regex"
+msgstr "Regex"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:92
+msgid "Remember that you can use other fields (i.e. this field is less than <code>$otherfield$</code>)"
+msgstr "Husk, du kan bruge andre felter (dvs. dette felt er mindre end <code>$otherfield$</code>)"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:101
+msgid "is <strong>Not Equal To</strong>: "
+msgstr "er <strong>Ikke lig med</strong>: "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:103
+msgid "is <strong>Equal To</strong>: "
+msgstr "er <strong>Lig med</strong>: "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_equal_to.php:106
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:70
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:71
+msgid "<em>&lt;not configured&gt;</em>"
+msgstr "<em>&lt;ikke konfigureret&gt;</em>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:26
+#, php-format
+msgid "value must be greater or equal to %d"
+msgstr "værdi skal være større end eller lig med %d"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:28
+#, php-format
+msgid "value must be greater than %d"
+msgstr "værdi skal være større end %d"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:33
+msgid "Is Greater"
+msgstr "Er større"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:50
+msgid "Greater than"
+msgstr "Større end"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:53
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:54
+msgid "or equal:"
+msgstr "eller lig med:"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:55
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:56
+msgid "Remember that you can use other fields (i.e. this field is less than $otherfield$)"
+msgstr "Husk, du kan bruge andre felter (dvs. dette felt er mindre end <code>$otherfield$</code>)"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:65
+msgid "is <strong>Greater Than Or Equal To</strong> "
+msgstr "er <strong>Større end eller lig med</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_greater.php:67
+msgid "is <strong>Greater Than</strong> "
+msgstr "er <strong>Større end</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:27
+#, php-format
+msgid "value must be less than or equal to %d"
+msgstr "værdi skal være mindre end eller lig med %d"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:29
+#, php-format
+msgid "value must be less than %d"
+msgstr "værdi skal være mindre end %d"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:34
+msgid "Is Less"
+msgstr "Er mindre"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:51
+msgid "Less than"
+msgstr "Mindre end"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:66
+msgid "is <strong>Less Than Or Equal To</strong> "
+msgstr "er <strong>Mindre end eller lig med</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_less.php:68
+msgid "is <strong>Less Than</strong> "
+msgstr "er <strong>Mindre end</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:34
+msgid "must be a number"
+msgstr "skal være et tal"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:42
+msgid "Is Numeric"
+msgstr "er numerisk"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:60
+msgid "European"
+msgstr "Europæisk"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:61
+msgid "European-style decimal and thousands"
+msgstr "med europæisk decimal og adskillelse i store tal"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:69
+msgid "is <strong>Numeric</strong>"
+msgstr "er <strong>numerisk</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_numeric.php:71
+msgid " (European style)"
+msgstr " (europæisk format)"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_password.php:30
+msgid "Is Password"
+msgstr "Er et kodeord"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_password.php:36
+msgid "is <strong>Password</strong>"
+msgstr "er <strong>Et kodeord</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_email.php:27
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_username.php:27
+msgid "please enter a valid username"
+msgstr "indtast venligst et gyldigt brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_email.php:29
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_username.php:29
+msgid "already exists, please choose another"
+msgstr "eksisterer allerede; vælg venligst en anden"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_email.php:31
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_username.php:31
+msgid "please enter a valid username."
+msgstr "indtast venligst et gyldigt brugernavn."
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_email.php:38
+msgid "WP Email"
+msgstr "WP-e-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_email.php:44
+msgid "is not a registered <strong>WordPress Email</strong>"
+msgstr "er ikke en registreret <strong>WordPress-e-mail</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_username.php:38
+msgid "WP Username"
+msgstr "WP-brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_registered_username.php:44
+msgid "is not a <strong>WordPress Username</strong>"
+msgstr "er ikke et <strong>WordPress-brugernavn</strong>"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified ?
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:30
+#, php-format
+msgid "at least %d items are required"
+msgstr "mindst %d enheder kræves"
+
+# Note to developer: Easier and nicer if it was __ngettext'ified ?
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:36
+#, php-format
+msgid "no more than %d items are required"
+msgstr "højst %d enheder kræves"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:40
+msgid "a value is required"
+msgstr "en værdi kræves"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:45
+msgid "Is Required"
+msgstr "Kræves"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:65
+msgid "items required, leave empty for no largest"
+msgstr "enheder kræves; står feltet tomt, anvendes ingen max. værdi"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:73
+msgid "is <strong>Required</strong>"
+msgstr "<strong>kræves</strong>"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:77
+#, php-format
+msgid " with at least %d items"
+msgstr " med mindst %d enheder"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/is_required.php:79
+#, php-format
+msgid " with less than %d items"
+msgstr " med mindre end %d enheder"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:27
+#, php-format
+msgid "value must be between %d and %d characters long"
+msgstr "værdien skal være mellem %d og %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:33
+#, php-format
+msgid "value must be %d characters long"
+msgstr "værdien skal være %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:39
+#, php-format
+msgid "value must be less than %d characters long"
+msgstr "værdien skal være mindre end %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:47
+msgid "String Length"
+msgstr "Længde på streng"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:62
+msgid "Shortest"
+msgstr "Kortest"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:63
+msgid "characters, leave empty for no shortest"
+msgstr "tegn; står feltet tomt, anvendes ingen værdi for kortest"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:66
+msgid "Longest"
+msgstr "Længste"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:67
+msgid "characters, leave empty for no longest"
+msgstr "tegn; står feltet tomt, anvendes ingen værdi for længste"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:75
+msgid "with <strong>String Length</strong> "
+msgstr "med <strong>længde på strengen</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:77
+#, php-format
+msgid "between %d and %d characters long"
+msgstr "mellem %d og %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:79
+#, php-format
+msgid "at least %d characters long"
+msgstr "mindst %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/string_length.php:81
+#, php-format
+msgid "less than %d characters long"
+msgstr "mindre end %d tegn lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:24
+#, php-format
+msgid "value must be between %d and %d words long"
+msgstr "værdi skal være mellem %d og %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:30
+#, php-format
+msgid "value must be %d words long"
+msgstr "værdi skal være %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:36
+#, php-format
+msgid "value must be less than %d words long"
+msgstr "værdi skal være mindre end %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:44
+msgid "Word Count"
+msgstr "Ordoptælling"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:61
+msgid "words, leave empty for no shortest"
+msgstr "ord; står feltet tomt, anvendes ingen værdi for kortest"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:65
+msgid "words, leave empty for no longest"
+msgstr "ord; står feltet tomt, anvendes ingen værdi for længste"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:73
+msgid "with <strong>Word Count</strong> "
+msgstr "med <strong>Ordoptælling</strong> "
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:75
+#, php-format
+msgid "between %d and %d words long"
+msgstr "mellem %d og %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:77
+#, php-format
+msgid "at least %d words long"
+msgstr "mindst %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/filters/word_count.php:79
+#, php-format
+msgid "less than %d words long"
+msgstr "mindre end %d ord lang"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:137
+msgid "An error occurred while sending an email"
+msgstr "Fejl under forsøg på at sende e-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:289
+msgid "Send as email"
+msgstr "Send som e-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:298
+msgid "To"
+msgstr "Til"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:302
+msgid "Template"
+msgstr "Skabelon"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:305
+msgid "Default"
+msgstr "Standard"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/email.php:328
+#, php-format
+msgid " to <strong>%s</strong>, with template '%s'"
+msgstr " til <strong>%s</strong>, med skabelonen '%s'"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:69
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:64
+msgid "poMMo is incorrectly configured (no email)"
+msgstr "poMMo er ikke konfigureret korrekt (ingen e-mail)"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:73
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:68
+msgid "poMMo is incorrectly configured (bad data)"
+msgstr "poMMo er ikke konfigureret korrekt (dårlige data)"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:78
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:75
+msgid "poMMo failed to register"
+msgstr "registrering af poMMo mislykkedes"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:84
+msgid "poMMo failed to send confirmation message"
+msgstr "Det mislykkedes for poMMo at sende meddelelse med krav om bekræftelse"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:92
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:81
+msgid "poMMo could not be found"
+msgstr "poMMo blev ikke fundet"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:97
+msgid "Add to poMMo mailing list"
+msgstr "Tilføj til poMMo's mailingliste"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:104
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:93
+msgid "poMMo directory"
+msgstr "poMMo's mappe"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:107
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:96
+msgid "Full directory to the poMMo installation"
+msgstr "Fuld angivelse af mappe til poMMo-installationen"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:111
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:107
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:72
+msgid "Email field"
+msgstr "E-mail-felt"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:114
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:110
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:75
+msgid "Name of the Filled In field you want to use as the email address"
+msgstr "Navn på Udfyld Formular-felt, som du ønsker at bruge som e-mail-adresse"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:119
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:115
+msgid "Data fields"
+msgstr "Datafelter"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:120
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:116
+msgid "One field per line as FIELD=[poMMo field ID] (i.e. name=1)"
+msgstr "Et felt pr. linje à la FIELD=[poMMo field ID] (dvs. navn=1)"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo.php:127
+msgid "Confirmation required"
+msgstr "Anmodning om bekræftelse "
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:86
+msgid "Add to poMMo newsletter"
+msgstr "Tilføj til poMMo-nyhedsmail"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:100
+msgid "Newsletter field"
+msgstr "Nyhedsmail-felt"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/pommo_newsletter.php:103
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:68
+msgid "Name of the Filled In field you want to use as the newsletter field"
+msgstr "Navn på Udfyld Formular-felt, som du ønsker at bruge som Nyhedsmail-felt"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:52
+msgid "Add to Redmine user database"
+msgstr "Tilføj til Redmine-brugerdatabase"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:59
+msgid "Redmine DB prefix"
+msgstr "Redmine-DB-præfix"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:65
+msgid "Username field"
+msgstr "Brugernavn-felt"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/redmine.php:79
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:189
+msgid "Field for full name"
+msgstr "Felt til fuldt navn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_csv.php:83
+msgid "Unable to save CSV data"
+msgstr "Kunne ikke gemme kommasepareret data"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_csv.php:107
+msgid "Save to CSV file"
+msgstr "Gem til fil med kommasepareret data"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_csv.php:114
+msgid "CSV Filename"
+msgstr "Filnavn for kommasepareret data-fil"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_csv.php:118
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_xml.php:82
+msgid "Overwrite"
+msgstr "Overskriv"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_csv.php:133
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_xml.php:97
+msgid "(file is overwritten)"
+msgstr "(fil er overskrevet)"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_xml.php:66
+msgid "Unable to save XML data"
+msgstr "Kunne ikke gemme XML-data"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_xml.php:71
+msgid "Save to XML file"
+msgstr "Gem til XML-fil"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_to_xml.php:78
+msgid "XML Filename"
+msgstr "XML-filnavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:38
+msgid "Failed to move upload"
+msgstr "Flytning af upload mislykkedes"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:47
+msgid "Save Uploaded File"
+msgstr "Gem uploadet fil"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:54
+msgid "Field name"
+msgstr "Feltnavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:58
+msgid "Directory"
+msgstr "Mappe"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:62
+msgid "Force lowercase"
+msgstr "Gennemtving små bogstaver"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/save_upload.php:79
+#, php-format
+msgid " from field '<strong>%s</strong>' into '<strong>%s</strong>'"
+msgstr " fra feltet '<strong>%s</strong>' til feltet '<strong>%s</strong>'"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:53
+msgid "Incorrect credentials during login"
+msgstr "Ukorrekte oplysninger under login"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:58
+msgid "WordPress Login"
+msgstr "WordPress-login"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:65
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:74
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:173
+msgid "Field for username"
+msgstr "Felt for brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:69
+msgid "Field for password"
+msgstr "Felt for adgangskode"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:73
+msgid "Field for 'remember me'"
+msgstr "Felt for 'husk mig'"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_login.php:91
+#, php-format
+msgid " with field '<strong>%s</strong>' for password, and '<strong>%s</strong>' for username"
+msgstr " med feltet '<strong>%s</strong>' for adgangskode, og feltet  '<strong>%s</strong>' for brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:38
+msgid "invalid username / e-mail combination."
+msgstr "ugyldig kombination af brugernavn og e-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:51
+msgid "Someone has asked to reset the password for the following site and username."
+msgstr "Der er en, der har anmodet om at få nulstillet adgangskoden for det følgende websted og brugernavn."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:53
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:143
+#, php-format
+msgid "Username: %s"
+msgstr "Brugernavn: %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:54
+msgid "To reset your password visit the following address, otherwise just ignore this email and nothing will happen."
+msgstr "Besøg den følgende adresse for at nulstille din adgangskode; ellers kan du bare ignorere denne e-mail; så sker der intet."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:57
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Nulstilling af adgangskode"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:58
+msgid "the e-mail could not be sent."
+msgstr "e-mailen kunne ikke sendes."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:62
+msgid "incorrect credentials during login"
+msgstr "ukorrekte oplysninger under login"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:67
+msgid "WordPress Lost Password"
+msgstr "Mistet WordPress-kodeord"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:78
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:177
+msgid "Field for email"
+msgstr "Felt for e-mail"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_lost_password.php:96
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:232
+#, php-format
+msgid " with field '<strong>%s</strong>' for email, and '<strong>%s</strong>' for username"
+msgstr " med feltet '<strong>%s</strong>' for e-mail, og feltet '<strong>%s</strong>' for brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:86
+msgid "Add to WordPress profile"
+msgstr "Tilføj til WordPress-profil"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:93
+msgid "Data key"
+msgstr "Datanøgle"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:93
+msgid "Name of the profile data"
+msgstr "Navn på profildata"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:97
+msgid "Fields"
+msgstr "Felter"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:97
+msgid "Comma-separated list of fields to add to profile"
+msgstr "Kommasepareret liste med felter, der skal føjes til profil"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:101
+msgid "Add method"
+msgstr "Metode for tilføj"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:101
+msgid "How to add the data"
+msgstr "Hvordan data skal tilføjes"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:112
+msgid "Append key"
+msgstr "Tilføj nøgle"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:112
+msgid "Key for append/merge method"
+msgstr "Nøgle for tilføj-/flet-metode"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:116
+msgid "Logic field"
+msgstr "Logisk felt"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:116
+msgid "Only add if this field is present"
+msgstr "TIlføj kun, hvis dette felt findes"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_profile.php:134
+#, php-format
+msgid " with key '<strong>%s</strong>', and fields '<strong>%s</strong>'"
+msgstr " med nøglen '<strong>%s</strong>' og felterne '<strong>%s</strong>'"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:23
+msgid "Registration is disabled"
+msgstr "Brugerregistrering er deaktiveret"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:42
+msgid "Please enter a username."
+msgstr "Indtast venligst brugernavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:46
+msgid "Please type your e-mail address."
+msgstr "Indtast venligst din e-mail-adresse"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:49
+msgid "The email address isn&#8217;t correct."
+msgstr "Din e-mail-adresse er ikke korrekt."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:55
+msgid "This username is invalid.  Please enter a valid username."
+msgstr "Dette brugernavn er ugyldigt. Indtast venligst et gyldigt brugernavn."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:61
+msgid "This username is already registered, please choose another one."
+msgstr "Dette brugernavn er allerede registreret; vælg venligst en anden."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:71
+msgid "This email address is already registered, please supply another."
+msgstr "Denne e-mail-adresse er allerede registreret; brug en anden."
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:127
+#, php-format
+msgid "Couldn&#8217;t register you... please contact the <a href=\"mailto:%s\">webmaster</a> !"
+msgstr "Kunne ikke registrere dig ... Kontakt venligst <a href=\"mailto:%s\">webmaster</a>!"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:142
+#, php-format
+msgid "New user registration on your blog %s:"
+msgstr "Ny brugerregistrering på din blog %s:"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:144
+#, php-format
+msgid "E-mail: %s"
+msgstr "E-mail: %s"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:146
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Ny brugerregistrering"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:165
+msgid "WordPress Registration"
+msgstr "WordPress-registrering"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:181
+msgid "Field for first name"
+msgstr "Felt til fornavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:185
+msgid "Field for last name"
+msgstr "Felt til efternavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:193
+msgid "Field for nickname"
+msgstr "Felt til kaldenavn"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:197
+msgid "Field for URL"
+msgstr "Felt til URL"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:201
+msgid "Ignore duplicates"
+msgstr "Ignorér dubletter"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:205
+msgid "User email notification"
+msgstr "E-mail med påmindelse til bruger"
+
+#: d:\wordpress\plugins\filled-in/extensions/post/wp_registration.php:208
+msgid "WordPress Default"
+msgstr "WordPress-standard"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/exclude_fields.php:37
+msgid "Exclude these fields"
+msgstr "Udelad disse felter"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/exclude_fields.php:47
+#: d:\wordpress\plugins\filled-in/extensions/pre/include_fields.php:49
+msgid "separate fields with comma"
+msgstr "adskil felter med kommaer"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/exclude_fields.php:59
+#: d:\wordpress\plugins\filled-in/extensions/pre/include_fields.php:61
+msgid " <em>&lt;not configured&gt;</em>"
+msgstr " <em>&lt;ikke konfigureret&gt;</em>"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/include_fields.php:39
+msgid "Include these fields"
+msgstr "Medtag disse felter"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/logged_in.php:22
+msgid "You must be logged in"
+msgstr "Du skal være logget på"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/logged_in.php:27
+msgid "Must be logged in"
+msgstr "Skal være logget på"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/logged_out.php:21
+msgid "You must not be logged in"
+msgstr "Du må ikke være logget på"
+
+#: d:\wordpress\plugins\filled-in/extensions/pre/logged_out.php:27
+msgid "Must not be logged in"
+msgstr "Må ikke være logget på"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/display_message.php:38
+msgid "Display a 'thank-you' message"
+msgstr "Vis en takke-meddelelse"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/display_message.php:50
+msgid "Auto Formatting"
+msgstr "Automatisk formattering"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/display_message.php:54
+msgid "Replace entire page"
+msgstr "Erstat hele siden"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/display_message.php:68
+#, php-format
+msgid " with '%s'"
+msgstr " med '%s'"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redirect_to_post.php:43
+msgid "Redirect to post"
+msgstr "Redirigér til indlæg"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redirect_to_post.php:50
+msgid "Post ID"
+msgstr "Indlægs-id"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redirect_to_url.php:42
+msgid "Redirect to URL"
+msgstr "Redirigér til URL"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redirect_to_url.php:49
+msgid "URL"
+msgstr "URL"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redisplay_form.php:34
+msgid "Display input form"
+msgstr "Vis indtastsformular"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redisplay_form.php:41
+msgid "Pre-fill form"
+msgstr "Fortrykt formular"
+
+#: d:\wordpress\plugins\filled-in/extensions/result/redisplay_form.php:53
+msgid " (pre-filled)"
+msgstr "(fortrykt)"
+
+#: d:\wordpress\plugins\filled-in/models/email_attachment.php:75
+msgid "<p>I'm sorry, but that file does not exist</p>"
+msgstr "<p>Beklager, men denne fil findes ikke</p>"
+
+#: d:\wordpress\plugins\filled-in/models/errors.php:75
+msgid "1 error"
+msgstr "1 fejl"
+
+#: d:\wordpress\plugins\filled-in/models/errors.php:77
+#, php-format
+msgid "%d errors"
+msgstr "%d fejl"
+
+#: d:\wordpress\plugins\filled-in/models/extensions.php:117
+msgid "Failed to add extension to form"
+msgstr "Det mislykkedes at føje udvidelse til formular"
+
+#: d:\wordpress\plugins\filled-in/models/extensions.php:119
+msgid "Extensions type is invalid"
+msgstr "Typen på udvidelsen er ugyldig"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:100
+msgid "A form of that name already exists"
+msgstr "En formular med dette navn eksisterer allerede"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:102
+msgid "A report of that name already exists"
+msgstr "En rapport med dette navn eksisterer allerede"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:106
+msgid "Invalid form name"
+msgstr "Ugyldigt navn på formular"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:108
+msgid "Invalid report name"
+msgstr "Ugyldigt navn på rapport"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:117
+msgid "Failed to delete form"
+msgstr "Det mislykkedes at slette formularen"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:159
+#, php-format
+msgid "Failed to update %s %s"
+msgstr "Det mislykkedes at opdatere %s %s"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:162
+#, php-format
+msgid "A %s of that name already exists"
+msgstr "En %s med dette navn eksisterer allerede"
+
+#: d:\wordpress\plugins\filled-in/models/form.php:165
+#, php-format
+msgid "Invalid %s name"
+msgstr "Ugyldigt %s-navn"
+
+#: d:\wordpress\plugins\filled-in/models/pager.php:402
+msgid "Previous"
+msgstr "Forrige"
+
+#: d:\wordpress\plugins\filled-in/models/pager.php:403
+msgid "Next"
+msgstr "Næste"
+
+#: d:\wordpress\plugins\filled-in/models/pager.php:461
+#, php-format
+msgid "%d per-page"
+msgstr "%d pr. side"
+
+#: d:\wordpress\plugins\filled-in/models/pager.php:470
+#, php-format
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "Viser %s&#8211;%s af %s"
+
+#: d:\wordpress\plugins\filled-in/models/extensions/filter.php:75
+#, php-format
+msgid "Field '<strong>%s</strong>' "
+msgstr "Feltet '<strong>%s</strong>' "
+
+#: d:\wordpress\plugins\filled-in/models/extensions/filter.php:83
+msgid "Field"
+msgstr "Felt"
+
+#: d:\wordpress\plugins\filled-in/models/extensions/filter.php:89
+msgid "Error message"
+msgstr "Fejlmeddelelse"
+
+#: d:\wordpress\plugins\filled-in/view/admin/head.php:4
+msgid "Are you sure you want to delete that extension?"
+msgstr "Er du sikker på, du ønsker at slette denne udvidelse?"
+
+# Note to developer: The second you must be erroneous, or the question mark is misplaced?
+#: d:\wordpress\plugins\filled-in/view/admin/head.php:5
+msgid "Are you sure you?"
+msgstr "Er du sikker?"
+
+#: d:\wordpress\plugins\filled-in/view/admin/head.php:6
+msgid "Are you sure you want to delete these entries?"
+msgstr "Er du sikker på, du vil slette disse værdier?"
+
+#: d:\wordpress\plugins\filled-in/view/admin/head.php:7
+msgid "Are you sure you want to delete that file?"
+msgstr "Er du sikker på, du vil slette denne fil?"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:3
+msgid "Options"
+msgstr "Indstillinger"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:6
+msgid "NOTE: All save directories <strong>must</strong> be writable by the web server"
+msgstr "Bemærk: Serveren <strong>skal</strong> kunne skrive til alle de mapper, hvori der skal gemmes data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:13
+msgid "Default error CSS"
+msgstr "Standard fejl-CSS"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:20
+msgid "Track cookies"
+msgstr "Cookies til sporing"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:20
+msgid "Store these cookies in collected data<br/>Each cookie on a separate line"
+msgstr "Gem disse cookies i indsamlet data<br/>Brug ny linje for hver cookie"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:27
+msgid "Attachment directory"
+msgstr "Mappe til vedhæftede filer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:28
+msgid "Where email attachments are saved"
+msgstr "Hvor filer, der er vedhæftet e-mails, skal gemmes"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:36
+msgid "Saved upload directory"
+msgstr "Gemte navn på upload-mappe"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:37
+msgid "Where uploads are saved before being moved by processors"
+msgstr "Hvor uploads gemmes, før de flyttes af processerne"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:46
+msgid "SMTP host"
+msgstr "SMTP-vært"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:46
+msgid "Leave blank to use default settings"
+msgstr "Står feltet blankt, bruges standardindstillingerne"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:50
+msgid "Port"
+msgstr "Port"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:52
+msgid "Unencrypted"
+msgstr "Ikke-krypteret"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:61
+msgid "SMTP username"
+msgstr "SMTP-brugernavn"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:62
+msgid "Leave blank for default"
+msgstr "Lad stå tom for standard"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:66
+msgid "Password"
+msgstr "Adgangskode"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:72
+msgid "Update"
+msgstr "Opdatér"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:80
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:86
+msgid "Remove Filled In"
+msgstr "Fjern Udfyld Formular"
+
+#: d:\wordpress\plugins\filled-in/view/admin/options.php:81
+msgid "This will remove all Filled In configuration and database tables.  Doing this will destroy <strong>all</strong> your Filled In data and does not have an undo - please be sure this is what you want to do!"
+msgstr "Dette vil fjerne alle Udfyld Formular's tabeller med konfiguration og database. Gør du det, vil du fjerne <strong>alle</strong> data, der hører sammen med Udfyld Formular. Du kan ikke fortryde. Vær venligst sikker på, at det er det, du ønsker at gøre."
+
+#: d:\wordpress\plugins\filled-in/view/admin/pager_forms.php:1
+#: d:\wordpress\plugins\filled-in/view/admin/pager_top.php:15
+msgid "Results per page"
+msgstr "Resultater pr. side"
+
+#: d:\wordpress\plugins\filled-in/view/admin/pager_forms.php:12
+#: d:\wordpress\plugins\filled-in/view/admin/pager_top.php:22
+msgid "go"
+msgstr "Udfør"
+
+#: d:\wordpress\plugins\filled-in/view/admin/pager_top.php:12
+msgid "Search"
+msgstr "Søg"
+
+#: d:\wordpress\plugins\filled-in/view/admin/submenu.php:3
+msgid "Forms"
+msgstr "Formularer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/submenu.php:4
+msgid "Email Templates"
+msgstr "E-mail-skabeloner"
+
+#: d:\wordpress\plugins\filled-in/view/admin/submenu.php:7
+msgid "Batch Processing"
+msgstr "Behandling af kurv"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/attachments.php:5
+msgid "Download file"
+msgstr "Download fil"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:4
+#, php-format
+msgid "Editing template '%s'"
+msgstr "Redigering af skabelonen '%s'"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:5
+msgid "You can insert form data into the template by entering it as $fieldname$ in any of 'from', 'subject', 'to', and the content.  Cookies can be inserted with %cookie%."
+msgstr "Du kan indsætte formulardata i skabelonen ved at indtaste det som $fieldname$ i 'Fra', 'Emne', 'Til' eller i selve indholdet. Du kan indsætte cookies med %cookie%."
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:9
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:30
+msgid "From"
+msgstr "Fra"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:10
+msgid "Leave blank for admin email address"
+msgstr "Ved blankt felt sendes e-mail til admin"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:13
+msgid "Subject"
+msgstr "Emne"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:18
+msgid "HTML content"
+msgstr "HTML-indhold"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:25
+msgid "Text content"
+msgstr "Tekst-indhold"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:30
+msgid "Attachments"
+msgstr "Vedhæftede filer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/edit_template.php:41
+msgid "Cancel"
+msgstr "Annullér"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:2
+msgid "Email templates"
+msgstr "E-mail-skabeloner"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:4
+msgid "Filled In can email the contents of a form to you when it is successfully completed.  You can edit that email here."
+msgstr "Udfyld Formular kan maile indholdet af en form til dig, når bruger er færdig med udfyldningen. Du kan redigere denne e-mail her."
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:12
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:14
+msgid "Bulk Actions"
+msgstr "Massehandlinger"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:13
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:15
+msgid "Delete"
+msgstr "Slet"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:16
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:18
+msgid "Apply"
+msgstr "Anvend"
+
+#: d:\wordpress\plugins\filled-in/view/admin/email/templates.php:51
+msgid "Create Template"
+msgstr "Opret skabelon"
+
+#: d:\wordpress\plugins\filled-in/view/admin/extension/current.php:15
+msgid "Add new"
+msgstr "Tilføj ny"
+
+#: d:\wordpress\plugins\filled-in/view/admin/extension/show.php:3
+msgid "Enable"
+msgstr "Aktivér"
+
+#: d:\wordpress\plugins\filled-in/view/admin/extension/show.php:7
+msgid "Disable"
+msgstr "Deaktivér"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:2
+msgid "Form Edit"
+msgstr "Redigering af formular"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:7
+msgid "Identifies the form"
+msgstr "Identificerer formularen"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:15
+msgid "Quick view"
+msgstr "Oversigtsfelter"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:16
+msgid "Fields/cookies to display in the results list"
+msgstr "Felter/cookies, som skal vises i resultatlisten"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:18
+msgid "separate with comma"
+msgstr "adskil med kommaer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:21
+msgid "Special Options"
+msgstr "Specielle indstillinger"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:24
+msgid "None"
+msgstr "Ingen"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:42
+msgid "Extensions"
+msgstr "Udvidelser"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:44
+msgid "Pre Processors"
+msgstr "Præ-processorer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:44
+msgid "what we do before we begin"
+msgstr "hvad vi gør, før vi begynder"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:47
+msgid "Filters"
+msgstr "Filtre"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:47
+msgid "ensure the data is correct"
+msgstr "sikrer, at data er korrekte"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:50
+msgid "Post Processors"
+msgstr "Post-processorer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:50
+msgid "what to do with the data when accepted"
+msgstr "hvad der skal gøres ved data, når de er accepteret"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:53
+msgid "Result Processor"
+msgstr "Resultat-processor"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:53
+msgid "what to show the user after correct submission"
+msgstr "hvad brugeren skal vises efter korrekt indsendelse af formularen"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:58
+msgid "Custom Options"
+msgstr "Brugerindstillinger"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:63
+msgid "Submit to top of page"
+msgstr "Til øverst på siden efter indsendelse"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:63
+msgid "When a form is submitted the user is taken to the top of the page, not the top of the form"
+msgstr "Når en formular indsendes, sendes brugeren op øverst på siden, ikke til begyndelsen af formularen"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:69
+msgid "Custom submit code"
+msgstr "Brugertilpasset indsendelseskode"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:69
+msgid "Override the default AJAX loading notice"
+msgstr "Tilsidesæt den besked, AJAX som standard giver under indlæsning"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:75
+msgid "Default submit code"
+msgstr "Standard-indsendelseskode"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/edit.php:79
+#: d:\wordpress\plugins\filled-in/view/admin/form/form_observe.php:5
+msgid "Please wait..."
+msgstr "Vent venligst ..."
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:3
+msgid "Form List"
+msgstr "Formularliste"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:22
+msgid "Filter"
+msgstr "Filtrér"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:39
+msgid "Form name"
+msgstr "Formularnavn"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:40
+msgid "Succeeded"
+msgstr "Gennemført"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:41
+msgid "Failed"
+msgstr "Ikke-gennemført"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:42
+msgid "Last Completed"
+msgstr "Sidst gennemført"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:60
+msgid "You currently have no forms to display."
+msgstr "Du har i øjeblikket ingen formularer"
+
+#: d:\wordpress\plugins\filled-in/view/admin/form/list.php:64
+msgid "Create new form"
+msgstr "Opret ny formular"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/edit.php:3
+msgid "Edit Batch"
+msgstr "Redigér kurv"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/edit.php:8
+msgid "Update Report Name"
+msgstr "Opdatér navn på rapport"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/edit.php:11
+msgid "Processing steps"
+msgstr "Trin i procesudførelsen"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/item.php:3
+msgid "delete"
+msgstr "Slet"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:6
+msgid "While your original form data will remain untouched, please be aware that replaying data could cause unwanted side effects"
+msgstr "Dine originale formulardata røres ikke. Men vær opmærksom på, at fornyet behandling af data kan medføre uønskede sideeffekter"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:11
+msgid "Run form"
+msgstr "Behandl formular"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:22
+msgid "through"
+msgstr "med"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:33
+msgid "Start date"
+msgstr "Startdato"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:34
+msgid "Start date for data"
+msgstr "Startdato for data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:38
+msgid "First entry"
+msgstr "Første dato"
+
+# Note to developer: In, e.g., Danish, the entry-boxes for custom dates are displayed in the wrong order. As months are written in letters, the users will not be confused, however. Nevertheless, it is still a bit odd.
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:39
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:55
+msgid "Custom date"
+msgstr "Vælg dato"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:49
+msgid "End date"
+msgstr "Slutdato"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:50
+msgid "End date for data"
+msgstr "Slutdato for data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:54
+msgid "Last entry"
+msgstr "Sidste dato"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:67
+msgid "Run"
+msgstr "Behandl"
+
+# Note to developer: As far as I can see, this menu-option leads to a display without the usual header with menus that let the user choose the other sections of Options.
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:78
+msgid "Batches"
+msgstr "Kurve"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:88
+msgid "You have no reports"
+msgstr "Du har ingen rapporter"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:91
+msgid "Create new batch"
+msgstr "Opret ny kurv"
+
+#: d:\wordpress\plugins\filled-in/view/admin/report/report.php:95
+msgid "Create"
+msgstr "Opret"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/head.php:6
+msgid "Date"
+msgstr "Dato"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/statistics.php:83
+msgid "There are no entries"
+msgstr "Der er ingen statistiske data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/statistics.php:88
+#: d:\wordpress\plugins\filled-in/view/admin/stat/statistics.php:92
+msgid "Delete all entries"
+msgstr "Slet alle data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/statistics.php:89
+msgid "Once deleted, your data will be permanently gone.  Please be sure this is what you really want to do."
+msgstr "Når data er slettet, er de helt og holdent slettet. Vær sikker på, at det virkelig er, hvad du ønsker at gøre."
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:6
+msgid "Collected"
+msgstr "Indsamlede data"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:7
+#, php-format
+msgid "%s from %s"
+msgstr "%s fra %s"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:10
+msgid "Browser"
+msgstr "Webbrowser"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:14
+msgid "Time"
+msgstr "Tid"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:20
+msgid "Pre-Processor failure"
+msgstr "Præ-processor-fejl"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:25
+msgid "Post-Processor failure"
+msgstr "Post-processor-fejl"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:36
+msgid "&lt;no data&gt;"
+msgstr "&lt;ingen data&gt;"
+
+#: d:\wordpress\plugins\filled-in/view/admin/stat/stat_details.php:59
+msgid "deleted"
+msgstr "slettet"
+
+#: d:\wordpress\plugins\filled-in/view/filled-in/error_filters.php:6
+#, php-format
+msgid "Your form contains %s.  Please correct the highlighted fields and send again"
+msgstr "Din formular indeholder %s. Ret venligst de fremhævede felter og indsend igen"
+
+#: d:\wordpress\plugins\filled-in/view/filled-in/saved_uploads.php:4
+msgid "Your file has been saved and is awaiting completion of this form"
+msgstr "Din fil er gemt og venter på, at du færdiggør denne formular"
+
+#: d:\wordpress\plugins\filled-in/view/filled-in/saved_uploads.php:6
+msgid "Your files have been saved and are awaiting completion of this form"
+msgstr "Dine filer er gemt og venter på, at du færdiggør denne formular"
+

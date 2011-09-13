@@ -1,0 +1,1720 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Filled-in\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-19 13:39+0100\n"
+"PO-Revision-Date: 2010-04-22 18:35+0100\n"
+"Last-Translator: Mark Biernat <markbiernat@op.pl>\n"
+"Language-Team: Kasia Biernat <kasiabiernat@op.pl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Kasia\\Mark\\translations\\filled-in\n"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:50
+msgid "Forms"
+msgstr "Formularze"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:68
+msgid "Filled In Help"
+msgstr "Filled-In Pomoc "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:69
+msgid "Filled In Documentation"
+msgstr "Filled-In Dokumentacja"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:70
+msgid "Filled In Support Forum"
+msgstr "Filled-In Forum Pomocnicze"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:71
+msgid "Filled In Bug Tracker"
+msgstr "Filled-In Wyszukiwacz robaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:72
+msgid "Filled In FAQ"
+msgstr "Filled-In Najczęściej zadawane pytania"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:73
+msgid "Please read the documentation and FAQ, and check the bug tracker, before asking a question."
+msgstr "Przed zadaniem pytania proszę zapoznać się z dokumentacją, najczęściej zadawanymi pytaniami oraz z wyszukiwaczem robaków."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:147
+msgid "Filled In"
+msgstr "Filled-In"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:333
+msgid "Your report has been updated"
+msgstr "Raport został zaktualizowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:349
+msgid "Your batch has been created"
+msgstr "Zadanie zostało wykonane"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:387
+#, php-format
+msgid "Your batch has finished.  %d entries were processed, %d failed"
+msgstr "Zadanie zostało zakończone. %d wpisów przetworzonych pomyślnie,%d wpisów nie zostało przetworzonych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:405
+msgid "January"
+msgstr "Styczeń"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:406
+msgid "February"
+msgstr "Luty"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:407
+msgid "March"
+msgstr "Marzec"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:408
+msgid "April"
+msgstr "Kwiecień"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:409
+msgid "May"
+msgstr "Maj"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:410
+msgid "June"
+msgstr "Czerwiec"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:411
+msgid "July"
+msgstr "Lipiec"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:412
+msgid "August"
+msgstr "Sierpień"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:413
+msgid "September"
+msgstr "Wrzesień"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:414
+msgid "October"
+msgstr "Październik"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:415
+msgid "November"
+msgstr "Listopad"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:416
+msgid "December"
+msgstr "Grudzień"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:429
+msgid "That template already exists"
+msgstr "Ten szablon już istnieje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:434
+msgid "Email template created"
+msgstr "Szablon e-mail stworzony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:458
+msgid "Options updated"
+msgstr "Opcje zaktualizowane"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:463
+msgid "All Filled In data has been removed and the plugin de-activated"
+msgstr "Wszystkie dane Fill-In zostały usunięte, a plugin dezaktywowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:477
+msgid "Your form has been created"
+msgstr "Formularz został utworzony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:502
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:507
+msgid "Form details updated successfully"
+msgstr "Formularz został zaktualizowany pomyślnie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:520
+msgid "Invalid form id"
+msgstr "Nieprawidłowy identyfikator formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:551
+msgid "Failed results"
+msgstr "Wyniki nieprawidłowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:551
+msgid "Successful results"
+msgstr "Wyniki pomyślne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/admin.php:555
+msgid "Invalid id"
+msgstr "Nieprawidłowy identyfikator"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/attachment.php:63
+msgid "Name"
+msgstr "Nazwa"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/attachment.php:67
+msgid "File"
+msgstr "Plik"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/attachment.php:73
+msgid "Upload"
+msgstr "Przesyłanie danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/download.php:41
+msgid "<p>That file does not exists</p>"
+msgstr "<p> Ten plik nie istnieje </ p>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/front.php:222
+#, php-format
+msgid "Form '%s' could not be found"
+msgstr "Formularz '%s' nie został znaleziony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/controller/front.php:239
+msgid "Thank you for your submission.  Unfortunately your data was not accepted for the following reasons:"
+msgstr "Dziękujemy za zgłoszenie. Niestety dane nie zostały przyjęte, z następujących powodów:"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:38
+msgid "Incorrect CAPTCHA result"
+msgstr "Nieprawidłowy wynik CAPTCHA"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:43
+msgid "Is CAPTCHA"
+msgstr "Jest CAPTCHA"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:62
+msgid "Too many attempts, consider glasses"
+msgstr "Zbyt wiele prób, proszę rozważyć badanie wzroku"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:77
+msgid "Max attempts"
+msgstr "Maksymalna ilość prób"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:81
+msgid "Number of attempts before being blocked"
+msgstr "Liczba prób przed zablokowaniem"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:85
+msgid "Blocked message"
+msgstr "Wiadomość zablokowana"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:88
+msgid "What to display when blocked"
+msgstr "Co ma się wyświetlić po zablokowaniu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:92
+msgid "Warning"
+msgstr "Ostrzeżenie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:93
+msgid "Overlaid warning"
+msgstr "Ostrzeżenie przeładowania"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:101
+msgid "Word generation"
+msgstr "Generacja słów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:108
+msgid "Length"
+msgstr "Długość"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:112
+msgid "Image type"
+msgstr "Rodzaj obrazu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:122
+msgid "Background"
+msgstr "Tło"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:131
+msgid "Blurred"
+msgstr "Zamazany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/captcha.php:141
+msgid "is a <strong>CAPTCHA</strong>"
+msgstr " jest <strong> CAPTCHA</ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:30
+#, php-format
+msgid "between %d and %d items are required"
+msgstr "od%d do%d pozycje są obowiązkowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:38
+#, php-format
+msgid "at least %d item(s) are required"
+msgstr "co najmniej% d pozycji jest wymaganych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:47
+#, php-format
+msgid "no more than %d item(s) are required"
+msgstr "nie więcej niż % d pozycji jest wymaganych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:51
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:56
+msgid "no"
+msgstr "nie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:54
+msgid "yes"
+msgstr "tak"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:62
+msgid "Checkbox/Radio"
+msgstr "Pole sprawdź/ Radio"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:77
+msgid "Smallest"
+msgstr "Najmniejsze"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:78
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:82
+msgid "items required, leave empty for no smallest"
+msgstr "pozycje wymagane, zostaw puste dla nie najmniejszych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:81
+msgid "Largest"
+msgstr "Największy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:90
+msgid "is a <strong>Checkbox/Radio</strong>"
+msgstr "jest <strong>Pole sprawdź/ Radio </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:92
+#, php-format
+msgid " with between %d and %d items"
+msgstr "z od%d do%d pozycji"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:94
+#, php-format
+msgid " with at least %d item(s)"
+msgstr "z co najmniej %d pozycji "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/checkbox.php:96
+#, php-format
+msgid " with less than %d item(s)"
+msgstr "z mniej niż %d pozycji "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:25
+#, php-format
+msgid "you need to upload at least %d file(s)"
+msgstr "należy przesłać co najmniej% d plików "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:28
+#, php-format
+msgid "the maximum number of uploads is %d"
+msgstr "Maksymalna liczba przesyłania danych wynosi % d"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:42
+#, php-format
+msgid "the uploaded file is %dKB, which is larger than the maximum allowed of %dKB"
+msgstr "przesyłany plik to % dKB i jest większy niż maksymalnie dozwolony z % dKB"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:53
+msgid "the file is of an invalid type"
+msgstr "plik jest nieprawidłowy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:73
+msgid "File Upload"
+msgstr "Przesyłanie pliku"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:93
+msgid "Max file size"
+msgstr "Maksymalna wielkość pliku"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:97
+msgid "Min files"
+msgstr "Minimum plików"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:98
+msgid "0 for no minimum"
+msgstr "0 dla braku minimum"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:101
+msgid "Max files"
+msgstr "Maksymalna ilość plików"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:102
+msgid "0 for no maximum"
+msgstr " 0 dla braku maksimum"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:105
+msgid "File types"
+msgstr "Typy plików"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:108
+msgid "Separate file types with a comma.  No period is required"
+msgstr "Oddziel typy plików przecinkami. Kropka nie jest wymagana"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:109
+msgid "Note: Restriction is only on filename and does not prevent a user uploading a renamed file"
+msgstr "Uwaga: Ograniczenie tylko dla nazwy pliku, użytkownik może przesłać plik ze zmienioną nazwą"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:118
+msgid "with <strong>File Upload</strong> "
+msgstr "z <strong> Wysyłanie pliku </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:121
+#, php-format
+msgid "maximum filesize of %dKB"
+msgstr "Maksymalny rozmiar pliku %dKB"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:123
+#, php-format
+msgid "restrict to files of type: %s"
+msgstr "ograniczyć do plików typu:%s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:125
+#, php-format
+msgid "minimum of %d %s"
+msgstr "minimum% d% s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:125
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:127
+msgid "file"
+msgstr "plik"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:125
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:127
+msgid "files"
+msgstr "pliki"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/file_upload.php:127
+#, php-format
+msgid "maximum of %d %s"
+msgstr "maksimum % d% s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_email.php:22
+msgid "invalid email address"
+msgstr "nieprawidłowy adres e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_email.php:27
+msgid "Email"
+msgstr "E-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_email.php:33
+msgid "is an <strong>Email Address</strong>"
+msgstr "jest <strong> Adres e-mail </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:43
+#, php-format
+msgid "must not equal '%s'"
+msgstr "nie może równać się '% s'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:47
+#, php-format
+msgid "must equal '%s'"
+msgstr "musi równa się '% s'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:49
+#, php-format
+msgid "must equal one of: %s"
+msgstr "musi równać się jeden z:% s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:58
+msgid "Is Equal"
+msgstr "Jest równe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:71
+msgid "Not equal"
+msgstr "Nie równa się"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:77
+msgid "Values"
+msgstr "Wartości"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:78
+msgid "Each value on a separate line."
+msgstr "Każda wartość w osobnej linii."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:85
+msgid "Regex"
+msgstr "Regex"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:92
+msgid "Remember that you can use other fields (i.e. this field is less than <code>$otherfield$</code>)"
+msgstr "Pamiętaj, że możesz użyć innych pól (np. to pole jest mniejsze niż <code> $ otherfield $ </ code>)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:101
+msgid "is <strong>Not Equal To</strong>: "
+msgstr "jest <strong>Nie Równe </ strong>:"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:103
+msgid "is <strong>Equal To</strong>: "
+msgstr " jest <strong> Równe</ strong>:"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_equal_to.php:106
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:70
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:71
+msgid "<em>&lt;not configured&gt;</em>"
+msgstr "<em> &It;nie skonfigurowane&gt; </ em>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:26
+#, php-format
+msgid "value must be greater or equal to %d"
+msgstr "wartość musi być większa lub równa%d"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:28
+#, php-format
+msgid "value must be greater than %d"
+msgstr "wartość musi być większa niż%d"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:33
+msgid "Is Greater"
+msgstr "Jest Większe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:50
+msgid "Greater than"
+msgstr "Większe niż"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:53
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:54
+msgid "or equal:"
+msgstr "lub równe:"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:55
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:56
+msgid "Remember that you can use other fields (i.e. this field is less than $otherfield$)"
+msgstr "Pamiętaj, że możesz użyć innych pól (np. to pole jest mniejsze niż $otherfield$)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:65
+msgid "is <strong>Greater Than Or Equal To</strong> "
+msgstr "jest <strong> Większe Od Lub Równe </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_greater.php:67
+msgid "is <strong>Greater Than</strong> "
+msgstr "jest <strong> Większe Niż </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:27
+#, php-format
+msgid "value must be less than or equal to %d"
+msgstr "wartość musi być mniejsza niż lub równa%d"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:29
+#, php-format
+msgid "value must be less than %d"
+msgstr "wartość musi być mniejsza niż%d"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:34
+msgid "Is Less"
+msgstr "Jest Mniejsze"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:51
+msgid "Less than"
+msgstr "Mniejsze niż"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:66
+msgid "is <strong>Less Than Or Equal To</strong> "
+msgstr "jest<strong> Mniejsze Niż Lub Równe </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_less.php:68
+msgid "is <strong>Less Than</strong> "
+msgstr "jest <strong> Mniejsze niż </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:34
+msgid "must be a number"
+msgstr "musi być liczbą"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:42
+msgid "Is Numeric"
+msgstr "Jest numeryczne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:60
+msgid "European"
+msgstr "Europejski"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:61
+msgid "European-style decimal and thousands"
+msgstr "Ułamek i tysiące w stylu europejskim"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:69
+msgid "is <strong>Numeric</strong>"
+msgstr "jest <strong> Numeryczny </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_numeric.php:71
+msgid " (European style)"
+msgstr "(Styl europejski)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_password.php:30
+msgid "Is Password"
+msgstr "Jest Hasło"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_password.php:36
+msgid "is <strong>Password</strong>"
+msgstr "jest <strong> Hasło </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_email.php:27
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_username.php:27
+msgid "please enter a valid username"
+msgstr "proszę podać nazwę użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_email.php:29
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_username.php:29
+msgid "already exists, please choose another"
+msgstr "już istnieje, wybierz inny"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_email.php:31
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_username.php:31
+msgid "please enter a valid username."
+msgstr "proszę podać nazwę użytkownika."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_email.php:38
+msgid "WP Email"
+msgstr "WP Email "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_email.php:44
+msgid "is not a registered <strong>WordPress Email</strong>"
+msgstr "nie jest zarejestrowany <strong> WordPress Email </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_username.php:38
+msgid "WP Username"
+msgstr "WP Nazwa Użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_registered_username.php:44
+msgid "is not a <strong>WordPress Username</strong>"
+msgstr "nie jest <strong> WordPress Nazwa Użytkownika </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:30
+#, php-format
+msgid "at least %d items are required"
+msgstr "co najmniej %d pozycje są obowiązkowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:36
+#, php-format
+msgid "no more than %d items are required"
+msgstr "nie więcej niż %d pozycje są obowiązkowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:40
+msgid "a value is required"
+msgstr "wartość jest wymagana"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:45
+msgid "Is Required"
+msgstr "Jest Wymagane"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:65
+msgid "items required, leave empty for no largest"
+msgstr "pozycje wymagane, zostaw puste dla nienajwiększych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:73
+msgid "is <strong>Required</strong>"
+msgstr " jest <strong>Wymagane </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:77
+#, php-format
+msgid " with at least %d items"
+msgstr "z co najmniej %d pozycji"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/is_required.php:79
+#, php-format
+msgid " with less than %d items"
+msgstr "nie więcej niż %d pozycje są obowiązkowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:27
+#, php-format
+msgid "value must be between %d and %d characters long"
+msgstr "wartość musi być od %d do%d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:33
+#, php-format
+msgid "value must be %d characters long"
+msgstr "wartość musi być %d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:39
+#, php-format
+msgid "value must be less than %d characters long"
+msgstr "wartość musi być mniejsza niż %d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:47
+msgid "String Length"
+msgstr "Długość Znaków "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:62
+msgid "Shortest"
+msgstr "Najkrótszy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:63
+msgid "characters, leave empty for no shortest"
+msgstr "znaki, zostaw puste dla nienajkrótszych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:66
+msgid "Longest"
+msgstr "Najdłuższy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:67
+msgid "characters, leave empty for no longest"
+msgstr "znaki,zostaw puste dla nienajdłuższych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:75
+msgid "with <strong>String Length</strong> "
+msgstr "z <strong> String </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:77
+#, php-format
+msgid "between %d and %d characters long"
+msgstr "od% d do% d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:79
+#, php-format
+msgid "at least %d characters long"
+msgstr "co najmniej% d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/string_length.php:81
+#, php-format
+msgid "less than %d characters long"
+msgstr "mniej niż %d długości znaków"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:24
+#, php-format
+msgid "value must be between %d and %d words long"
+msgstr "wartość musi być między %d a %d długości słów,"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:30
+#, php-format
+msgid "value must be %d words long"
+msgstr "wartość musi być %d długości słów,"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:36
+#, php-format
+msgid "value must be less than %d words long"
+msgstr "wartość musi być mniejsza niż %d długości słów,"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:44
+msgid "Word Count"
+msgstr "Ilość Słów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:61
+msgid "words, leave empty for no shortest"
+msgstr "słowa, zostaw puste dla nienajkrótszych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:65
+msgid "words, leave empty for no longest"
+msgstr "słowa, zostaw puste dla nienajdłuższych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:73
+msgid "with <strong>Word Count</strong> "
+msgstr "z <strong> Ilość Słów </ strong>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:75
+#, php-format
+msgid "between %d and %d words long"
+msgstr "między% d a% d długości słów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:77
+#, php-format
+msgid "at least %d words long"
+msgstr "co najmniej% d długości słów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/filters/word_count.php:79
+#, php-format
+msgid "less than %d words long"
+msgstr "mniej niż% d długości słów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:137
+msgid "An error occurred while sending an email"
+msgstr "Podczas wysyłania wiadomości wystąpił błąd"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:290
+msgid "Send as email"
+msgstr "Wyślij jako e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:299
+msgid "To"
+msgstr "Do"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:303
+msgid "Template"
+msgstr "Szablon"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:306
+msgid "Default"
+msgstr "Domyślny"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/email.php:329
+#, php-format
+msgid " to <strong>%s</strong>, with template '%s'"
+msgstr "do <strong>% s </ strong>, z szablonem '% s'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:69
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:64
+msgid "poMMo is incorrectly configured (no email)"
+msgstr "poMMo jest niepoprawnie skonfigurowany (brak e-mail)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:73
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:68
+msgid "poMMo is incorrectly configured (bad data)"
+msgstr "poMMo jest niepoprawnie skonfigurowane (złe dane)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:78
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:75
+msgid "poMMo failed to register"
+msgstr "poMMo rejestracja nie powiodła się"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:84
+msgid "poMMo failed to send confirmation message"
+msgstr "poMMo nie udało się wysłać wiadomości potwierdzającej"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:92
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:81
+msgid "poMMo could not be found"
+msgstr "poMMo nie znaleziono"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:97
+msgid "Add to poMMo mailing list"
+msgstr "Dodaj do listy mailowej poMMo"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:104
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:93
+msgid "poMMo directory"
+msgstr "poMMo katalog"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:107
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:96
+msgid "Full directory to the poMMo installation"
+msgstr "Pełny katalog do instalacji poMMo"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:111
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:107
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:72
+msgid "Email field"
+msgstr "Pole e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:114
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:110
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:75
+msgid "Name of the Filled In field you want to use as the email address"
+msgstr "Nazwa wypełnionego pola, które chcesz użyć jako adres e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:119
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:115
+msgid "Data fields"
+msgstr "Pola danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:120
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:116
+msgid "One field per line as FIELD=[poMMo field ID] (i.e. name=1)"
+msgstr "Jedno pole w każdym wierszu jako FIELD=[poMMo field ID] np. nazwa= 1)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo.php:127
+msgid "Confirmation required"
+msgstr "Wymagane potwierdzenie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:86
+msgid "Add to poMMo newsletter"
+msgstr "Dodaj do poMMo biuletyn"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:100
+msgid "Newsletter field"
+msgstr "Pole biuletyn"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/pommo_newsletter.php:103
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:68
+msgid "Name of the Filled In field you want to use as the newsletter field"
+msgstr "Nazwa Wypełnionego pola, które chcesz użyć jako pola biuletyn"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:52
+msgid "Add to Redmine user database"
+msgstr "Dodaj do bazy danych Redmine"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:59
+msgid "Redmine DB prefix"
+msgstr "Redmine DB prefiks"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:65
+msgid "Username field"
+msgstr "pole nazwa użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/redmine.php:79
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:189
+msgid "Field for full name"
+msgstr "Pola imię i nazwisko"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_csv.php:83
+msgid "Unable to save CSV data"
+msgstr "Nie można zapisać danych CSV"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_csv.php:107
+msgid "Save to CSV file"
+msgstr "Zapisać do pliku CSV"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_csv.php:114
+msgid "CSV Filename"
+msgstr "Nazwa pliku CSV"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_csv.php:118
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_xml.php:82
+msgid "Overwrite"
+msgstr "Zastąpić"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_csv.php:133
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_xml.php:97
+msgid "(file is overwritten)"
+msgstr "(Plik zostanie nadpisany)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_xml.php:66
+msgid "Unable to save XML data"
+msgstr "Nie można zapisać danych XML"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_xml.php:71
+msgid "Save to XML file"
+msgstr "Zapisz w pliku XML"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_to_xml.php:78
+msgid "XML Filename"
+msgstr "Nazwa pliku XML"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:38
+msgid "Failed to move upload"
+msgstr "Nie można przenieść przesłanych danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:47
+msgid "Save Uploaded File"
+msgstr "Zapisz plik Przesłanych Danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:54
+msgid "Field name"
+msgstr "Nazwa pola"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:58
+msgid "Directory"
+msgstr "Katalog"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:62
+msgid "Force lowercase"
+msgstr "Konieczne małe litery"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/save_upload.php:79
+#, php-format
+msgid " from field '<strong>%s</strong>' into '<strong>%s</strong>'"
+msgstr "z pola ' <strong>%s </ strong> 'do' <strong>%s< strong>'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:53
+msgid "Incorrect credentials during login"
+msgstr "Nieprawidłowe dane logowania"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:58
+msgid "WordPress Login"
+msgstr "WordPress Login"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:65
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:74
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:173
+msgid "Field for username"
+msgstr "Pole dla nazwy użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:69
+msgid "Field for password"
+msgstr "Pola hasła"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:73
+msgid "Field for 'remember me'"
+msgstr "Pole dla 'pamiętaj mnie'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_login.php:91
+#, php-format
+msgid " with field '<strong>%s</strong>' for password, and '<strong>%s</strong>' for username"
+msgstr "z pola '<strong>%s </ strong>' dla hasła, a '<strong>%s </ strong>' dla nazwy użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:38
+msgid "invalid username / e-mail combination."
+msgstr "nieprawidłowa nazwa użytkownika/ kombinacja e-mail."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:51
+msgid "Someone has asked to reset the password for the following site and username."
+msgstr "Ktoś poprosił, aby zresetować hasło dla następujących stron i nazwy użytkownika."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:53
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:143
+#, php-format
+msgid "Username: %s"
+msgstr "Nazwa użytkownika:%s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:54
+msgid "To reset your password visit the following address, otherwise just ignore this email and nothing will happen."
+msgstr "Aby zresetować hasło przejdź do następującego adresu, w przeciwnym razie zignoruj ten e-mail bez konsekwencji."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:57
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Resetowanie hasła"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:58
+msgid "the e-mail could not be sent."
+msgstr "e-mail nie mogł być wysłany."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:62
+msgid "incorrect credentials during login"
+msgstr "nieprawidłowe dane logowania"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:67
+msgid "WordPress Lost Password"
+msgstr "WordPress Zgubione Hasło"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:78
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:177
+msgid "Field for email"
+msgstr "Pola e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_lost_password.php:96
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:232
+#, php-format
+msgid " with field '<strong>%s</strong>' for email, and '<strong>%s</strong>' for username"
+msgstr "z pola '<strong>% s </ strong>' na e-mail, a '<strong>% s </ strong> 'dla nazwy użytkownika "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:86
+msgid "Add to WordPress profile"
+msgstr "Dodaj do profilu WordPress l"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:93
+msgid "Data key"
+msgstr "Klucz danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:93
+msgid "Name of the profile data"
+msgstr "Nazwa profilu danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:97
+msgid "Fields"
+msgstr "Pola"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:97
+msgid "Comma-separated list of fields to add to profile"
+msgstr "Oddzielone przecinkami listy pól, aby dodać do profilu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:101
+msgid "Add method"
+msgstr "Dodaj sposób"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:101
+msgid "How to add the data"
+msgstr "Jak dodać dane"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:112
+msgid "Append key"
+msgstr "Dołącz klucz"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:112
+msgid "Key for append/merge method"
+msgstr "Klucz do append/ merge metody"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:116
+msgid "Logic field"
+msgstr "pole Logic"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:116
+msgid "Only add if this field is present"
+msgstr "Dodaj tylko jeśli to pole jest obecne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_profile.php:134
+#, php-format
+msgid " with key '<strong>%s</strong>', and fields '<strong>%s</strong>'"
+msgstr "z kluczem '<strong>% s </ strong>', i pola<strong>% s </ strong>'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:23
+msgid "Registration is disabled"
+msgstr "Rejestracja jest wyłączona"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:42
+msgid "Please enter a username."
+msgstr "Wprowadź nazwę użytkownika."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:46
+msgid "Please type your e-mail address."
+msgstr "Wpisz swój adres e-mail."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:49
+msgid "The email address isn&#8217;t correct."
+msgstr "Adres e-mail nie jest prawidłowy."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:55
+msgid "This username is invalid.  Please enter a valid username."
+msgstr "Ta nazwa użytkownika jest nieprawidłowa. Proszę podać poprawną nazwę użytkownika."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:61
+msgid "This username is already registered, please choose another one."
+msgstr "Ta nazwa użytkownika jest już zarejestrowana, należy wybrać inną."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:71
+msgid "This email address is already registered, please supply another."
+msgstr "Ten adres email jest już zarejestrowany, proszę podać inny."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:127
+#, php-format
+msgid "Couldn&#8217;t register you... please contact the <a href=\"mailto:%s\">webmaster</a> !"
+msgstr "Nie można zarejestrować ... prosimy o kontakt z< a href=\"mailto:%s\"> webmaster </ a>!"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:142
+#, php-format
+msgid "New user registration on your blog %s:"
+msgstr "Rejestracja nowego użytkownika na twoim blogu%s:"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:144
+#, php-format
+msgid "E-mail: %s"
+msgstr "E-mail:%s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:146
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Rejestracja nowego użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:165
+msgid "WordPress Registration"
+msgstr "Rejestracja WordPress"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:181
+msgid "Field for first name"
+msgstr "Pole imienia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:185
+msgid "Field for last name"
+msgstr "Pole nazwiska"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:193
+msgid "Field for nickname"
+msgstr "Pole nick"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:197
+msgid "Field for URL"
+msgstr "Pole URL"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:201
+msgid "Ignore duplicates"
+msgstr "Ignoruj duplikaty"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:205
+msgid "User email notification"
+msgstr "Powiadomienie użytkownika"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/post/wp_registration.php:208
+msgid "WordPress Default"
+msgstr "WordPress Domyślny"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/exclude_fields.php:37
+msgid "Exclude these fields"
+msgstr "Wyłączenie tych pól"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/exclude_fields.php:47
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/include_fields.php:49
+msgid "separate fields with comma"
+msgstr "oddziel pola przecinkiem"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/exclude_fields.php:59
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/include_fields.php:61
+msgid " <em>&lt;not configured&gt;</em>"
+msgstr "<em> <nie skonfigurowane> </ em>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/include_fields.php:39
+msgid "Include these fields"
+msgstr "Dołącz te pola"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/logged_in.php:22
+msgid "You must be logged in"
+msgstr "Musisz być zalogowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/logged_in.php:27
+msgid "Must be logged in"
+msgstr "Musi być zalogowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/logged_out.php:21
+msgid "You must not be logged in"
+msgstr "Nie możesz być zalogowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/pre/logged_out.php:27
+msgid "Must not be logged in"
+msgstr "Nie może być zalogowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/display_message.php:38
+msgid "Display a 'thank-you' message"
+msgstr "Widok wiadomości 'dziękuję' "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/display_message.php:50
+msgid "Auto Formatting"
+msgstr "Auto formatowanie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/display_message.php:54
+msgid "Replace entire page"
+msgstr "Zastąp całą stronę"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/display_message.php:68
+#, php-format
+msgid " with '%s'"
+msgstr "z '%s'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redirect_to_post.php:43
+msgid "Redirect to post"
+msgstr "Przekierować na post"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redirect_to_post.php:50
+msgid "Post ID"
+msgstr "ID postu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redirect_to_url.php:42
+msgid "Redirect to URL"
+msgstr "Przekierować na adres URL"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redirect_to_url.php:49
+msgid "URL"
+msgstr "URL"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redisplay_form.php:34
+msgid "Display input form"
+msgstr "Wyświetl formularz wkładu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redisplay_form.php:41
+msgid "Pre-fill form"
+msgstr "Formularz wstępnie wypełniony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/extensions/result/redisplay_form.php:53
+msgid " (pre-filled)"
+msgstr "(Wstępnie wypełniony)"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/email_attachment.php:75
+msgid "<p>I'm sorry, but that file does not exist</p>"
+msgstr "<p> Niestety ten plik nie istnieje </ p>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/errors.php:75
+msgid "1 error"
+msgstr "1 błąd"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/errors.php:77
+#, php-format
+msgid "%d errors"
+msgstr "%d błędów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/extensions.php:117
+msgid "Failed to add extension to form"
+msgstr "Nie można dodać rozszerzenia do formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/extensions.php:119
+msgid "Extensions type is invalid"
+msgstr "Typ rozszerzenia jest nieprawidłowy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:100
+msgid "A form of that name already exists"
+msgstr "Formularz o tej nazwie już istnieje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:102
+msgid "A report of that name already exists"
+msgstr "Raport o tej nazwie już istnieje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:106
+msgid "Invalid form name"
+msgstr "Nieprawidłowa nazwa formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:108
+msgid "Invalid report name"
+msgstr "Nieprawidłowa nazwa raportu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:117
+msgid "Failed to delete form"
+msgstr "Nie udało się usunąć formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:159
+#, php-format
+msgid "Failed to update %s %s"
+msgstr "Nie udało się zaktualizować%s %s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:162
+#, php-format
+msgid "A %s of that name already exists"
+msgstr "%s o tej nazwie już istnieje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/form.php:165
+#, php-format
+msgid "Invalid %s name"
+msgstr "Nieprawidłowa %s nazwa"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/pager.php:407
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/pager.php:408
+msgid "Next"
+msgstr "Następny"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/pager.php:466
+#, php-format
+msgid "%d per-page"
+msgstr "%d na stronę"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/pager.php:475
+#, php-format
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "Wyświetlanie% s,% s% s"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/extensions/filter.php:75
+#, php-format
+msgid "Field '<strong>%s</strong>' "
+msgstr "Pole'<strong>% s </ strong>'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/extensions/filter.php:83
+msgid "Field"
+msgstr "Pole"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/models/extensions/filter.php:89
+msgid "Error message"
+msgstr "Komunikat o błędzie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/head.php:4
+msgid "Are you sure you want to delete that extension?"
+msgstr "Czy na pewno chcesz usunąć to rozszerzenie?"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/head.php:5
+msgid "Are you sure you?"
+msgstr "Czy na pewno?"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/head.php:6
+msgid "Are you sure you want to delete these entries?"
+msgstr "Czy na pewno chcesz usunąć te wpisy?"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/head.php:7
+msgid "Are you sure you want to delete that file?"
+msgstr "Czy na pewno chcesz usunąć ten plik?"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:6
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/submenu.php:8
+msgid "Options"
+msgstr "Opcje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:9
+msgid "NOTE: All save directories <strong>must</strong> be writable by the web server"
+msgstr "UWAGA: Wszystkie zapisane katalogi <strong> muszą </ strong> być możliwe do zapisania przez serwer sieci"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:16
+msgid "Default error CSS"
+msgstr "Domyślny CSS błąd"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:23
+msgid "Track cookies"
+msgstr "Trop cookies "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:23
+msgid "Store these cookies in collected data<br/>Each cookie on a separate line"
+msgstr "Przechowaj cookie w zebranych danych <br/> Każdy cookie w osobnym wierszui"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:30
+msgid "Attachment directory"
+msgstr "Załącznik katalogu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:31
+msgid "Where email attachments are saved"
+msgstr "Gdzie są zapisane załączniki wiadomości e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:39
+msgid "Saved upload directory"
+msgstr "Zapisz katalog przesłanych danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:40
+msgid "Where uploads are saved before being moved by processors"
+msgstr "Gdzie są zapisane dane przed przeniesieniem przez procesory"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:49
+msgid "SMTP host"
+msgstr "SMTO host"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:49
+msgid "Leave blank to use default settings"
+msgstr "Zostaw puste aby użyć ustawień domyślnych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:53
+msgid "Port"
+msgstr "Port"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:55
+msgid "Unencrypted"
+msgstr "Niezaszyfrowane"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:64
+msgid "SMTP username"
+msgstr "Nazwa użytkownika SMTP"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:65
+msgid "Leave blank for default"
+msgstr "Zostaw puste dla domyślnych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:69
+msgid "Password"
+msgstr "Hasło"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:75
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:40
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:33
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:87
+msgid "Update"
+msgstr "Aktualizacja"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:83
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:89
+msgid "Remove Filled In"
+msgstr "Usuń Wypełniony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/options.php:84
+msgid "This will remove all Filled In configuration and database tables.  Doing this will destroy <strong>all</strong> your Filled In data and does not have an undo - please be sure this is what you want to do!"
+msgstr "To spowoduje usunięcie wszystkich konfiguracji Wypełnionych i tabel bazy danych. Ten ruch bezpowrotnie zniszczy <strong> wszystko </ strong> oraz dane  Wypełnione - upewnij się, że chcesz to zrobić!"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/pager_forms.php:1
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/pager_top.php:15
+msgid "Results per page"
+msgstr "Wyniki na stronie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/pager_forms.php:12
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/pager_top.php:22
+msgid "go"
+msgstr "idź"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/pager_top.php:12
+msgid "Search"
+msgstr "Szukaj"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/submenu.php:4
+msgid "Email Templates"
+msgstr "Szablony e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/submenu.php:7
+msgid "Batch Processing"
+msgstr "Przetwarzanie całej partii"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/attachments.php:5
+msgid "Download file"
+msgstr "Pobierz plik"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:4
+#, php-format
+msgid "Editing template '%s'"
+msgstr "Edytowanie szablonu '%s'"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:5
+msgid "You can insert form data into the template by entering it as $fieldname$ in any of 'from', 'subject', 'to', and the content.  Cookies can be inserted with %cookie%."
+msgstr "Można wstawić formularz danych do szablonu, wprowadzając go jako $nazwa pola$ w jakimkolwiek 'z', 'temat', 'do' i treści. Cookies mogą być wprowadzane z %% cookie%."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:9
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:34
+msgid "From"
+msgstr "Z"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:10
+msgid "Leave blank for admin email address"
+msgstr "Zostaw puste dla adres e-mail admina"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:13
+msgid "Subject"
+msgstr "Temat"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:18
+msgid "HTML content"
+msgstr "Zawartość HTML"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:25
+msgid "Text content"
+msgstr "Treść tekstu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:30
+msgid "Attachments"
+msgstr "Załączniki"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/edit_template.php:41
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:6
+msgid "Email templates"
+msgstr "Szablony e-mail"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:8
+msgid "Filled In can email the contents of a form to you when it is successfully completed.  You can edit that email here."
+msgstr "Wypełniony może wysłać maila z treścią formularza, po pomyślnym zakończeniu. Tu możesz edytować email."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:16
+msgid "Bulk Actions"
+msgstr "Działania masowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:17
+msgid "Delete"
+msgstr "Usuń"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:20
+msgid "Apply"
+msgstr "Zastosuj"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/email/templates.php:55
+msgid "Create Template"
+msgstr "Utwórz szablon"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/extension/current.php:15
+msgid "Add new"
+msgstr "Dodaj nowe"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/extension/show.php:3
+msgid "Enable"
+msgstr "Umożliwij"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/extension/show.php:7
+msgid "Disable"
+msgstr "Blokuj"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:2
+msgid "Form Edit"
+msgstr "Edycja formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:7
+msgid "Identifies the form"
+msgstr "Określa formularz"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:15
+msgid "Quick view"
+msgstr "Szybki podgląd"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:16
+msgid "Fields/cookies to display in the results list"
+msgstr "Pola/cookies do wyświetlenia na liście wyników"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:18
+msgid "separate with comma"
+msgstr "oddziel przecinkiem"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:21
+msgid "Special Options"
+msgstr "Opcje Specjalne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:24
+msgid "None"
+msgstr "Żaden"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:42
+msgid "Extensions"
+msgstr "Rozszerzenia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:44
+msgid "Pre Processors"
+msgstr "Pre Procesory"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:44
+msgid "what we do before we begin"
+msgstr "co robimy przed rozpoczęciem"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:47
+msgid "Filters"
+msgstr "Filtry"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:47
+msgid "ensure the data is correct"
+msgstr "upewnij się, że dane są poprawne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:50
+msgid "Post Processors"
+msgstr "Procesory Post"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:50
+msgid "what to do with the data when accepted"
+msgstr "co zrobić z danymi, jeżeli zostały zatwierdzone"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:53
+msgid "Result Processor"
+msgstr "Procesor wyniku"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:53
+msgid "what to show the user after correct submission"
+msgstr "co pokazać użytkownikowi po prawidłowym zgłoszeniu"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:58
+msgid "Custom Options"
+msgstr "Niestandardowe opcje"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:63
+msgid "Submit to top of page"
+msgstr "Przedłóż na górę strony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:63
+msgid "When a form is submitted the user is taken to the top of the page, not the top of the form"
+msgstr "Po zgłoszeniu formularza użytkownik jest umieszczony na górze strony, nie na górnej części formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:69
+msgid "Custom submit code"
+msgstr "Kod niestandardowego zgłoszenia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:69
+msgid "Override the default AJAX loading notice"
+msgstr "Zmienień domyślną informację ładowania AJAX "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:75
+msgid "Default submit code"
+msgstr "Domyślny kod zgłoszenia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/edit.php:79
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/form_observe.php:5
+msgid "Please wait..."
+msgstr "Proszę czekać ..."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:6
+msgid "Form List"
+msgstr "Lista Formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:25
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/statistics.php:38
+msgid "Filter"
+msgstr "Filtr"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:42
+msgid "Form name"
+msgstr "Nazwa formularza"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:43
+msgid "Succeeded"
+msgstr "Wykonane pomyślnie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:44
+msgid "Failed"
+msgstr "Nie powiodło się"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:45
+msgid "Last Completed"
+msgstr "Ostatni Zakończony"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:63
+msgid "You currently have no forms to display."
+msgstr "Aktualnie brak formy do wyświetlenia."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/form/list.php:67
+msgid "Create new form"
+msgstr "Utwórz nowy formularz"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/edit.php:3
+msgid "Edit Batch"
+msgstr "Edycja grupowa"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/edit.php:8
+msgid "Update Report Name"
+msgstr "Aktualizuj Nazwę Raportu "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/edit.php:11
+msgid "Processing steps"
+msgstr "Kroki przetwarzania"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/item.php:3
+msgid "delete"
+msgstr "usuń"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:11
+msgid "While your original form data will remain untouched, please be aware that replaying data could cause unwanted side effects"
+msgstr "Podczas gdy oryginalne dane formularza pozostaną nienaruszone, należy pamiętać, że odtwarzanie danych może spowodować niepożądane skutki uboczne"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:16
+msgid "Run form"
+msgstr "Uruchom formularz"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:27
+msgid "through"
+msgstr "przez"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:38
+msgid "Start date"
+msgstr "Data rozpoczęcia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:39
+msgid "Start date for data"
+msgstr "Data rozpoczęcia dla danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:43
+msgid "First entry"
+msgstr "Pierwszy wpis"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:44
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:60
+msgid "Custom date"
+msgstr "Data niestandardowa"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:54
+msgid "End date"
+msgstr "Data zakończenia"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:55
+msgid "End date for data"
+msgstr "Data zakończenia dla danych"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:59
+msgid "Last entry"
+msgstr "Ostatni wpis"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:72
+msgid "Run"
+msgstr "Rozpocznij"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:88
+msgid "Batches"
+msgstr "Grupy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:102
+msgid "You have no reports"
+msgstr "Nie masz żadnych raportów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:105
+msgid "Create new batch"
+msgstr "Utwórz nowe grupyi"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/report/report.php:109
+msgid "Create"
+msgstr "Utwórz"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/head.php:6
+msgid "Date"
+msgstr "Data"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/statistics.php:83
+msgid "There are no entries"
+msgstr "Nie ma żadnych wpisów"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/statistics.php:88
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/statistics.php:92
+msgid "Delete all entries"
+msgstr "Usuń wszystkie wpisy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/statistics.php:89
+msgid "Once deleted, your data will be permanently gone.  Please be sure this is what you really want to do."
+msgstr "Po usunięciu, dane zostaną trwale wykasowane. Upewnij się, że naprawdę chcesz to zrobić."
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:6
+msgid "Collected"
+msgstr "Zgromadzone"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:7
+#, php-format
+msgid "%s from <a href=\"http://urbangiraffe.com/map/?ip=%s&amp;from=filledin\">%s</a>"
+msgstr "%s z <a href=\"http://urbangiraffe.com/map/?ip=%s&from=filledin/\">% s </ a>"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:10
+msgid "Browser"
+msgstr "Przeglądarka"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:14
+msgid "Time"
+msgstr "Czas"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:20
+msgid "Pre-Processor failure"
+msgstr "Błąd Sprzed-Procesora"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:25
+msgid "Post-Processor failure"
+msgstr "Błąd Po-Procesora "
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:36
+msgid "&lt;no data&gt;"
+msgstr "&To;brak danych&gt;"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/admin/stat/stat_details.php:59
+msgid "deleted"
+msgstr "wykasowany"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/filled-in/error_filters.php:6
+#, php-format
+msgid "Your form contains %s.  Please correct the highlighted fields and send again"
+msgstr "Formularz zawiera%s. Popraw zaznaczone pola i wyślij ponownie"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/filled-in/saved_uploads.php:4
+msgid "Your file has been saved and is awaiting completion of this form"
+msgstr "Plik został zapisany i czeka na uzupełnienie tej formy"
+
+#: C:\Users\Kasia\Mark\translations\filled-in/view/filled-in/saved_uploads.php:6
+msgid "Your files have been saved and are awaiting completion of this form"
+msgstr "Pliki zostały zapisane i czekają na uzupełnienie tej formy"
+

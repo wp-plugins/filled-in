@@ -3,7 +3,7 @@ Contributors: johnny5
 Donate link: http://urbangiraffe.com/about/
 Tags: form, contact, validate
 Requires at least: 2.7
-Tested up to: 3.2.1
+Tested up to: 2.9.1
 Stable tag: trunk 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
@@ -22,7 +22,7 @@ Features include:
 * Built-in poMMo mailing list support
 * Built-in file upload support
 
-Filled In is available in:
+Redirection is available in:
 
 * English
 * Danish, thanks to Georg S. Adamsen

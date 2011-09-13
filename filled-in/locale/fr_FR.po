@@ -1,0 +1,1478 @@
+# Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
+# Copyright (C) 2007 John Godley
+# This file is distributed under the same license as the Filled In package.
+# John Godley, http://www.urbangiraffe.com/, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Filled In 1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-02-17 11:42+0800\n"
+"PO-Revision-Date: 2008-01-05 13:57+0100\n"
+"Last-Translator: eXtra777 <info@extra777.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extensions/filters/is_numeric.php:71
+msgid " (European style)"
+msgstr "(Style Européen)"
+
+#: extensions/result/redisplay_form.php:55
+msgid " (pre-filled)"
+msgstr "(pré-rempli)"
+
+#: extensions/pre/exclude_fields.php:59
+#: extensions/pre/include_fields.php:61
+msgid " <em>&lt;not configured&gt;</em>"
+msgstr " <em>&lt;pas configuré&gt;</em>"
+
+#: extensions/post/save_upload.php:79
+#, php-format
+msgid " from field '<strong>%s</strong>' into '<strong>%s</strong>'"
+msgstr " du champs '<strong>%s</strong>' dans '<strong>%s</strong>'"
+
+#: extensions/post/email.php:305
+#, php-format
+msgid " to <strong>%s</strong>, with template '%s'"
+msgstr " à <strong>%s</strong>, avec le modèle '%s'"
+
+#: extensions/post/intellicontact/intellicontact.php:157
+#, php-format
+msgid " to list %s, with fields %s"
+msgstr " <em>&lt;not configured&gt;</em>"
+
+#: extensions/result/display_message.php:61
+#, php-format
+msgid " with '%s'"
+msgstr " avec '%s'"
+
+#: extensions/filters/checkbox.php:94
+#, php-format
+msgid " with at least %d item(s)"
+msgstr " avec un minimim de %d objet(s)"
+
+#: extensions/filters/is_required.php:77
+#, php-format
+msgid " with at least %d items"
+msgstr " avec un minimim de %d objets"
+
+#: extensions/filters/checkbox.php:92
+#: extensions/filters/is_required.php:75
+#, php-format
+msgid " with between %d and %d items"
+msgstr " avec entre %d et %d objet"
+
+#: extensions/post/wp_registration.php:114
+#, php-format
+msgid " with field '<strong>%s</strong>' for email, and '<strong>%s</strong>' for username"
+msgstr " avec le champs '<strong>%s</strong>' pour email, et '<strong>%s</strong>' pour le nom d'utilisateur"
+
+#: extensions/post/wp_login.php:82
+#, php-format
+msgid " with field '<strong>%s</strong>' for password, and '<strong>%s</strong>' for username"
+msgstr " avec le champs '<strong>%s</strong>' pour mot de passe, et '<strong>%s</strong>' pour le nom d'utilisateur"
+
+#: extensions/filters/checkbox.php:96
+#, php-format
+msgid " with less than %d item(s)"
+msgstr " avec moins de %d objet(s)"
+
+#: extensions/filters/is_required.php:79
+#, php-format
+msgid " with less than %d items"
+msgstr " avec moins de %d objets"
+
+#: models/errors.php:77
+#, php-format
+msgid "%d errors"
+msgstr "%d erreurs"
+
+#: view/admin/stat/stat_details.php:7
+#, php-format
+msgid "%s from %s"
+msgstr "%s de %s"
+
+#: view/admin/stat/stat_details.php:36
+msgid "&lt;no data&gt;"
+msgstr "&lt;pas de données&gt;"
+
+#: extensions/post/save_to_csv.php:119
+#: extensions/post/save_to_xml.php:97
+msgid "(file is overwritten)"
+msgstr "(fichier modifié)"
+
+#: view/admin/email/edit_template.php:4
+msgid ", "
+msgstr ","
+
+#: view/admin/email/edit_template.php:4
+msgid ", and the content.  Cookies can be inserted with $cookie_COOKIE$."
+msgstr ", et le contenu. Les cookies peutvent être insérés avec $cookie_COOKIE$."
+
+#: extensions/filters/file_upload.php:99
+msgid "0 for no maximum"
+msgstr "0 pour pas de maximum"
+
+#: extensions/filters/file_upload.php:95
+msgid "0 for no minimum"
+msgstr "0 pour pas de minimum"
+
+#: models/errors.php:75
+msgid "1 error"
+msgstr "1 erreur"
+
+#: extensions/filters/is_equal_to.php:107
+#: extensions/filters/is_greater.php:70
+#: extensions/filters/is_less.php:71
+#: extensions/filters/string_length.php:83
+#: extensions/filters/word_count.php:81
+#: extensions/post/email.php:300
+#: extensions/post/email.php:303
+#: extensions/post/intellicontact/intellicontact.php:149
+#: extensions/post/intellicontact/intellicontact.php:155
+#: extensions/post/pommo.php:142
+#: extensions/post/save_to_csv.php:116
+#: extensions/post/save_to_xml.php:94
+#: extensions/post/save_upload.php:75
+#: extensions/post/save_upload.php:77
+#: extensions/post/wp_login.php:77
+#: extensions/post/wp_login.php:80
+#: extensions/post/wp_registration.php:109
+#: extensions/post/wp_registration.php:112
+#: extensions/result/display_message.php:59
+#: extensions/result/redirect_to_post.php:70
+#: extensions/result/redirect_to_url.php:63
+msgid "<em>&lt;not configured&gt;</em>"
+msgstr "<em>&lt;pas configuré&gt;</em>"
+
+#: models/email_attachment.php:75
+msgid "<p>I'm sorry, but that file does not exist</p>"
+msgstr "<p>Désolé, mais ce fichier n'existe pas</p>"
+
+#: controller/download.php:37
+msgid "<p>That file does not exists</p>"
+msgstr "<p>Ce fichier n'existe pas</p>"
+
+#: models/form.php:157
+#, php-format
+msgid "A %s of that name already exists"
+msgstr "Un(e) %s portant ce nom existe déjà"
+
+#: models/form.php:98
+msgid "A form of that name already exists"
+msgstr "Un formulaire portant ce nom existe déjà"
+
+#: models/form.php:100
+msgid "A report of that name already exists"
+msgstr "Un rapport portant ce nom existe déjà"
+
+#: view/admin/extension/current.php:14
+msgid "Add new"
+msgstr "Ajouter un nouveau"
+
+#: extensions/post/pommo.php:98
+msgid "Add to poMMo mailing list"
+msgstr "Ajouté à la mailing list poMMo"
+
+#: controller/admin.php:317
+msgid "All Filled In data has been removed and the plugin de-activated"
+msgstr "Tout le contenu saisi dans les champs a été supprimé et le plugin désactivé"
+
+#: extensions/post/intellicontact/intellicontact.php:128
+msgid "All fields to forward to Intellicontact.  One field per line"
+msgstr "Tous champs pour transférer à Intellicontact. Un champs par ligne"
+
+#: extensions/post/email.php:119
+msgid "An error occurred while sending an email"
+msgstr "Une erreur est survenue lors de l'envoi de l'email"
+
+#: extensions/post/intellicontact/intellicontact.php:88
+msgid "An error occurred while submitting your data"
+msgstr "Une erreur est survenue pendant l'envoi des données"
+
+#: view/admin/head.php:8
+msgid "Are you sure you want to delete that extension?"
+msgstr "Etes-vous sûr de vouloir supprimer cette extension ?"
+
+#: view/admin/head.php:11
+msgid "Are you sure you want to delete that file?"
+msgstr "Etes-vous sûr de vouloir supprimer ce fichier ?"
+
+#: view/admin/head.php:9
+msgid "Are you sure you want to delete that?"
+msgstr "Etes-vous vous sur de vouloir supprimer ça ?"
+
+#: view/admin/head.php:10
+msgid "Are you sure you want to delete these entries?"
+msgstr "Etes-vous sûr de voloir supprimer ces saisies ?"
+
+#: view/admin/options.php:22
+msgid "Attachment directory"
+msgstr "Répertoire des fichiers joints"
+
+#: view/admin/email/edit_template.php:31
+msgid "Attachments"
+msgstr "Fichiers joints"
+
+#: extensions/filters/captcha.php:122
+msgid "Background"
+msgstr "Arrière-plan"
+
+#: extensions/filters/captcha.php:85
+msgid "Blocked message"
+msgstr "Message bloqué"
+
+#: extensions/filters/captcha.php:131
+msgid "Blurred"
+msgstr "Brouillé"
+
+#: view/admin/stat/stat_details.php:10
+msgid "Browser"
+msgstr "Navigateur"
+
+#: extensions/post/save_to_csv.php:100
+msgid "CSV Filename"
+msgstr "Nom de fichier CSV"
+
+#: view/admin/email/edit_template.php:44
+msgid "Cancel"
+msgstr "Annuler"
+
+#: extensions/filters/checkbox.php:62
+msgid "Checkbox"
+msgstr "Case à cocher"
+
+#: extensions/post/intellicontact/intellicontact.php:101
+msgid "Client ID"
+msgstr "ID client"
+
+#: view/admin/stat/stat_details.php:6
+msgid "Collected"
+msgstr "Collecté"
+
+#: extensions/post/pommo.php:128
+msgid "Confirmation required"
+msgstr "Confirmation requise"
+
+#: extensions/post/wp_registration.php:72
+#, php-format
+msgid "Couldn&#8217;t register you... please contact the <a href=\"mailto:%s\">webmaster</a> !"
+msgstr "Impossible de vous enregistrer... merci de contacter le <a href=\"mailto:%s\">webmaster</a> !"
+
+#: view/admin/report/report.php:94
+msgid "Create"
+msgstr "Créer"
+
+#: view/admin/form/list.php:37
+msgid "Create new form"
+msgstr "Créer un nouveau formulaire"
+
+#: view/admin/report/report.php:90
+msgid "Create new report"
+msgstr "Créer un nouveau rapport"
+
+#: view/admin/form/edit.php:58
+msgid "Custom Options"
+msgstr "Options personnalisées"
+
+#: view/admin/report/report.php:37
+#: view/admin/report/report.php:53
+msgid "Custom date"
+msgstr "Date personnalisée"
+
+#: view/admin/form/edit.php:63
+msgid "Custom submit code"
+msgstr "Code de soumission personnalisé"
+
+#: extensions/post/pommo.php:120
+msgid "Data fields"
+msgstr "Champs de données"
+
+#: view/admin/stat/head.php:2
+msgid "Date"
+msgstr "Date"
+
+#: extensions/post/email.php:283
+msgid "Default"
+msgstr "Par défaut"
+
+#: view/admin/options.php:8
+msgid "Default error CSS"
+msgstr "Erreur CSS par défaut"
+
+#: view/admin/form/edit.php:69
+msgid "Default submit code"
+msgstr "Code de soumission par défaut"
+
+#: view/admin/stat/statistics.php:54
+#: view/admin/stat/statistics.php:58
+msgid "Delete all entries"
+msgstr "Effacer toutes les saisies"
+
+#: extensions/post/save_upload.php:58
+msgid "Directory"
+msgstr "Répertoire"
+
+#: view/admin/extension/show.php:7
+msgid "Disable"
+msgstr "Désactiver"
+
+#: extensions/result/display_message.php:35
+msgid "Display a 'thank-you' message"
+msgstr "Afficher un message de remerciement"
+
+#: extensions/result/redisplay_form.php:36
+msgid "Display input form"
+msgstr "Afficher le formulaire de saisie"
+
+#: extensions/post/intellicontact/intellicontact.php:136
+msgid "Double Opt-in"
+msgstr "Double Opt-in"
+
+#: view/admin/email/attachments.php:5
+msgid "Download file"
+msgstr "Télécharger le fichier"
+
+#: extensions/filters/is_equal_to.php:79
+msgid "Each value on a separate line."
+msgstr "Chaque valeur sur une ligne distincte"
+
+#: view/admin/report/edit.php:2
+msgid "Edit Report"
+msgstr "Modifier le rapport"
+
+#: view/admin/email/edit_template.php:3
+#, php-format
+msgid "Editing template '%s'"
+msgstr "Modifier le modèle '%s'"
+
+#: extensions/filters/is_email.php:27
+msgid "Email"
+msgstr "Email"
+
+#: view/admin/submenu.php:3
+msgid "Email Templates"
+msgstr "Modèle email"
+
+#: extensions/post/pommo.php:112
+msgid "Email field"
+msgstr "Champs email"
+
+#: controller/admin.php:290
+msgid "Email template created"
+msgstr "Modèle d'email créé"
+
+#: view/admin/email/templates.php:2
+msgid "Email templates"
+msgstr "Modèles d'email"
+
+#: view/admin/extension/show.php:3
+msgid "Enable"
+msgstr "Activer"
+
+#: view/admin/report/report.php:47
+msgid "End date"
+msgstr "Date de fin"
+
+#: view/admin/report/report.php:48
+msgid "End date for data"
+msgstr "Date de fin pour les données"
+
+#: models/extensions/filter.php:99
+msgid "Error message"
+msgstr "Message d'erreur"
+
+#: extensions/filters/is_numeric.php:60
+msgid "European"
+msgstr "Européen"
+
+#: extensions/filters/is_numeric.php:61
+msgid "European-style decimal and thousands"
+msgstr "Style européen des décimales et centaines"
+
+#: extensions/pre/exclude_fields.php:37
+msgid "Exclude these fields"
+msgstr "Exclure ces champs"
+
+#: view/admin/form/edit.php:42
+msgid "Extensions"
+msgstr "Extensions"
+
+#: models/extensions.php:119
+msgid "Extensions type is invalid"
+msgstr "Type d'extension invalide"
+
+#: view/admin/form/list.php:11
+msgid "Failed"
+msgstr "Echec"
+
+#: controller/admin.php:400
+msgid "Failed results"
+msgstr "Echec"
+
+#: models/extensions.php:117
+msgid "Failed to add extension to form"
+msgstr "Impossible d'ajouter l'extension au formulaire"
+
+#: models/form.php:115
+msgid "Failed to delete form"
+msgstr "Impossible de supprimer le formulaire"
+
+#: extensions/post/save_upload.php:38
+msgid "Failed to move upload"
+msgstr "Impossible de déplacer l'upload"
+
+#: models/form.php:154
+#, php-format
+msgid "Failed to update %s %s"
+msgstr "Impossible de mettre à jour %s %s"
+
+#: models/extensions/filter.php:93
+msgid "Field"
+msgstr "Champs"
+
+#: models/extensions/filter.php:86
+#, php-format
+msgid "Field '<strong>%s</strong>' "
+msgstr "Champs '<strong>%s</strong>' "
+
+#: extensions/post/wp_registration.php:96
+msgid "Field for email"
+msgstr "Champs pour email"
+
+#: extensions/post/wp_login.php:64
+msgid "Field for password"
+msgstr "Champs pour mot de passe"
+
+#: extensions/post/wp_login.php:60
+#: extensions/post/wp_registration.php:92
+msgid "Field for username"
+msgstr "Champs pour nom d'utilisateur"
+
+#: extensions/post/save_upload.php:54
+msgid "Field name"
+msgstr "Nom du champs"
+
+#: extensions/pre/exclude_fields.php:44
+#: extensions/pre/include_fields.php:46
+msgid "Fields"
+msgstr "Champs"
+
+#: extensions/post/intellicontact/intellicontact.php:127
+msgid "Fields to forward"
+msgstr "Champs à transférer"
+
+#: view/admin/form/edit.php:16
+msgid "Fields/cookies to display in the results list"
+msgstr "Champs/cookies à afficher dans la liste des résultats"
+
+#: controller/attachment.php:67
+msgid "File"
+msgstr "Fichier"
+
+#: extensions/filters/file_upload.php:70
+msgid "File Upload"
+msgstr "Upload de fichier"
+
+#: extensions/filters/file_upload.php:102
+msgid "File types"
+msgstr "Types de fichiers"
+
+#: controller/admin.php:44
+msgid "Filled In"
+msgstr "Rempli"
+
+#: view/admin/email/templates.php:3
+msgid "Filled In can email the contents of a form to you when it is successfully completed.  You can edit that email here."
+msgstr "Filled In peut vous envoyer par email le contenu d'un formulaire lorsqu'il est complété. Vous pouvez renseigner l'adresse email ici."
+
+#: view/admin/form/edit.php:79
+msgid "Filled In tags"
+msgstr "Rempli dans les tags"
+
+#: view/admin/form/edit.php:47
+msgid "Filters"
+msgstr "Filtres"
+
+#: view/admin/report/report.php:36
+msgid "First entry"
+msgstr "Première entrée"
+
+#: extensions/post/save_upload.php:62
+msgid "Force lowercase"
+msgstr "Force les caractères en minuscule"
+
+#: controller/front.php:149
+#, php-format
+msgid "Form '%s' could not be found"
+msgstr "Le formulaire '%s' n'a pas été trouvé"
+
+#: view/admin/form/edit.php:2
+msgid "Form Edit"
+msgstr "Editer le formulaire"
+
+#: view/admin/form/list.php:2
+msgid "Form List"
+msgstr "Liste des formulaires"
+
+#: controller/admin.php:351
+#: controller/admin.php:356
+msgid "Form details updated successfully"
+msgstr "Détails du formulaire mis à jour avec succès."
+
+#: view/admin/form/list.php:9
+msgid "Form name"
+msgstr "Nom du formulaire"
+
+#: view/admin/submenu.php:2
+msgid "Forms"
+msgstr "Formulaires"
+
+#: extensions/post/intellicontact/intellicontact.php:104
+msgid "Found on a Sign-Up form as 'clientid'"
+msgstr "Trouver dans le formulaire d'inscription (Sign-Up) comme 'clientid'"
+
+#: extensions/post/intellicontact/intellicontact.php:112
+msgid "Found on a Sign-Up form as 'listid'"
+msgstr "Trouver dans le formulaire d'inscription (Sign-Up) comme 'listid'"
+
+#: extensions/post/intellicontact/intellicontact.php:120
+msgid "Found on a Sign-Up form as 'specialid'"
+msgstr "Trouver dans le formulaire d'inscription (Sign-Up) comme 'specialid'"
+
+#: view/admin/email/edit_template.php:8
+msgid "From"
+msgstr "De"
+
+#: extensions/post/pommo.php:108
+msgid "Full directory to the poMMo installation"
+msgstr "Répertoire pour l'installationde poMMo"
+
+#: extensions/filters/is_greater.php:50
+msgid "Greater than"
+msgstr "Supérieur à"
+
+#: view/admin/email/edit_template.php:17
+msgid "HTML content"
+msgstr "contenu HTML"
+
+#: view/admin/form/edit.php:7
+msgid "Identifies the form"
+msgstr "Identifie le formulaire"
+
+#: extensions/filters/captcha.php:112
+msgid "Image type"
+msgstr "Type d'image"
+
+#: extensions/pre/include_fields.php:39
+msgid "Include these fields"
+msgstr "Inclure ces champs"
+
+#: extensions/filters/captcha.php:38
+msgid "Incorrect CAPTCHA result"
+msgstr "Résultat CAPTCHA incorrect"
+
+#: extensions/post/intellicontact/intellicontact.php:31
+msgid "Incorrect IntelliContact configuration"
+msgstr "Configuration IntelliContact incorrecte"
+
+#: extensions/post/wp_login.php:48
+msgid "Incorrect credentials while logging in"
+msgstr "Données saisies incorrectes lors de l'authentification"
+
+#: extensions/post/intellicontact/intellicontact.php:94
+msgid "IntelliContact"
+msgstr "IntelliContact"
+
+#: models/form.php:160
+#, php-format
+msgid "Invalid %s name"
+msgstr "Nom %s invalide"
+
+#: extensions/post/intellicontact/intellicontact.php:54
+msgid "Invalid form configuration for IntelliContact"
+msgstr "Configuration du formulaire invalide pour IntelliContact"
+
+#: controller/admin.php:369
+msgid "Invalid form id"
+msgstr "Id du formulaire invalide"
+
+#: models/form.php:104
+msgid "Invalid form name"
+msgstr "Nom du formulaire invalide"
+
+#: controller/admin.php:404
+msgid "Invalid id"
+msgstr "Id invalide"
+
+#: models/form.php:106
+msgid "Invalid report name"
+msgstr "Nom du rapport invalide"
+
+#: extensions/filters/captcha.php:43
+msgid "Is CAPTCHA"
+msgstr "est CAPTCHA"
+
+#: extensions/filters/is_equal_to.php:59
+msgid "Is Equal"
+msgstr "est Egal"
+
+#: extensions/filters/is_greater.php:33
+msgid "Is Greater"
+msgstr "Es supérieur"
+
+#: extensions/filters/is_less.php:34
+msgid "Is Less"
+msgstr "Est Inférieur"
+
+#: extensions/filters/is_numeric.php:42
+msgid "Is Numeric"
+msgstr "Est numérique"
+
+#: extensions/filters/is_required.php:45
+msgid "Is Required"
+msgstr "Est Requis"
+
+#: extensions/filters/checkbox.php:81
+#: extensions/filters/is_required.php:64
+#: extensions/filters/word_count.php:64
+msgid "Largest"
+msgstr "Le plus large"
+
+#: view/admin/form/list.php:12
+msgid "Last Completed"
+msgstr "Dernier renseigné"
+
+#: view/admin/report/report.php:52
+msgid "Last entry"
+msgstr "Dernière entrée"
+
+#: view/admin/email/edit_template.php:9
+msgid "Leave blank for admin email address"
+msgstr "Laisser vide pour l'adresse email de l'admin"
+
+#: view/admin/options.php:41
+msgid "Leave blank to use default settings"
+msgstr "Laisser vide pour utiiser les paramètres par défaut"
+
+#: extensions/filters/captcha.php:108
+msgid "Length"
+msgstr "Longueur"
+
+#: extensions/filters/is_less.php:51
+msgid "Less than"
+msgstr "moins que"
+
+#: extensions/post/intellicontact/intellicontact.php:109
+msgid "List ID"
+msgstr "Liste ID"
+
+#: extensions/filters/string_length.php:66
+msgid "Longest"
+msgstr "Le plus long"
+
+#: extensions/filters/captcha.php:77
+msgid "Max attempts"
+msgstr "Tentatives maximales"
+
+#: extensions/filters/file_upload.php:90
+msgid "Max file size"
+msgstr "Taille maximale de fichier"
+
+#: extensions/filters/file_upload.php:98
+msgid "Max files"
+msgstr "Nombre maximum de fichiers"
+
+#: extensions/filters/file_upload.php:94
+msgid "Min files"
+msgstr "Nombre minimum de fichiers"
+
+#: extensions/pre/logged_in.php:27
+msgid "Must be logged in"
+msgstr "Vous devez être connecté"
+
+#: extensions/pre/logged_out.php:27
+msgid "Must not be logged in"
+msgstr "Vous ne devez pas être connecté"
+
+#: view/admin/options.php:3
+msgid "NOTE: All save directories <strong>must</strong> be writable by the web server"
+msgstr "NOTE : Tous les répertoires de sauvegarde  <strong>doivent</strong> autoriser l'écriture par le serveur web."
+
+#: controller/attachment.php:63
+#: view/admin/form/edit.php:7
+#: view/admin/form/list.php:40
+#: view/admin/report/edit.php:5
+#: view/admin/report/report.php:93
+msgid "Name"
+msgstr "Nom"
+
+#: extensions/post/pommo.php:115
+msgid "Name of the Filled In field you want to use as the email address"
+msgstr "Nom du champs Filled In que vous souhaitez utiliser comme adresse email"
+
+#: models/pager.php:118
+msgid "Next"
+msgstr "Suivant"
+
+#: view/admin/form/edit.php:24
+msgid "None"
+msgstr "Aucun"
+
+#: extensions/filters/is_equal_to.php:72
+msgid "Not equal"
+msgstr "Différent"
+
+#: extensions/filters/file_upload.php:106
+msgid "Note: Restriction is only on filename and does not prevent a user uploading a renamed file"
+msgstr "Note : la restriction porte seulement sur le nom du fichier et n'empêche pas l'utilisateur d'uploader un fichier renommé."
+
+#: extensions/filters/captcha.php:81
+msgid "Number of attempts before being blocked"
+msgstr "Nombre de tentatives avant blocage"
+
+#: view/admin/form/edit.php:83
+msgid "OR"
+msgstr "OU"
+
+#: view/admin/stat/statistics.php:55
+msgid "Once deleted, your data will be permanently gone.  Please be sure this is what you really want to do."
+msgstr "Une fois effacée, vos données seront défintivement perdues. Soyez bien sur de ce que vous allez faire."
+
+#: extensions/post/pommo.php:121
+msgid "One field per line as FIELD=[poMMo field ID] (i.e. name=1)"
+msgstr "Un champs par ligne en tant que FIELD=[poMMo field ID] (i.e. name=1)"
+
+#: view/admin/options.php:2
+#: view/admin/submenu.php:7
+msgid "Options"
+msgstr "Options"
+
+#: controller/admin.php:312
+msgid "Options updated"
+msgstr "Options mises à jour"
+
+#: extensions/filters/captcha.php:93
+msgid "Overlayed warning"
+msgstr "Avertissement superposé"
+
+#: view/admin/form/edit.php:63
+msgid "Override the default AJAX loading notice"
+msgstr "Ecrase l'information de chargement AJAX par défaut"
+
+#: extensions/post/save_to_csv.php:104
+#: extensions/post/save_to_xml.php:82
+msgid "Overwrite"
+msgstr "Ecraser"
+
+#: extensions/post/wp_registration.php:40
+msgid "Please enter a username."
+msgstr "Merci de saisir un nom d'utilisateur"
+
+#: extensions/post/wp_registration.php:44
+msgid "Please type your e-mail address."
+msgstr "Merci de saisir votre adresse email."
+
+#: view/admin/form/edit.php:73
+#: view/admin/form/form_observe.php:4
+msgid "Please wait..."
+msgstr "Merci de patienter..."
+
+#: view/admin/options.php:45
+msgid "Port"
+msgstr "Port"
+
+#: extensions/result/redirect_to_post.php:50
+msgid "Post ID"
+msgstr "ID post"
+
+#: view/admin/form/edit.php:50
+msgid "Post Processors"
+msgstr "Post Processeurs"
+
+#: view/admin/stat/stat_details.php:25
+msgid "Post-Processor failure"
+msgstr "Echec Post-Processeurs"
+
+#: view/admin/form/edit.php:44
+msgid "Pre Processors"
+msgstr "Pré Processeurs"
+
+#: view/admin/stat/stat_details.php:20
+msgid "Pre-Processor failure"
+msgstr "Echec Pré-Processeur"
+
+#: extensions/result/redisplay_form.php:43
+msgid "Pre-fill form"
+msgstr "Formulaire pré-rempli"
+
+#: models/pager.php:117
+msgid "Previous"
+msgstr "Précédent"
+
+#: view/admin/report/edit.php:9
+msgid "Processing steps"
+msgstr "Etapes du processus"
+
+#: view/admin/form/edit.php:15
+msgid "Quick view"
+msgstr "Vue rapide"
+
+#: extensions/result/redirect_to_url.php:42
+msgid "Redirect to URL"
+msgstr "Rediriger vers URL"
+
+#: extensions/result/redirect_to_post.php:43
+msgid "Redirect to post"
+msgstr "Redirige vers le post"
+
+#: extensions/filters/is_equal_to.php:86
+msgid "Regex"
+msgstr "Regex"
+
+#: extensions/post/wp_registration.php:23
+msgid "Registration is disabled"
+msgstr "L'inscription est désactivée"
+
+#: extensions/filters/is_greater.php:55
+#: extensions/filters/is_less.php:56
+msgid "Remember that you can use other fields (i.e. this field is less than $otherfield$)"
+msgstr "Souvenez-vous que vous pouvez utiliser d'autres champs (ie : ce champs est inférieur à $otherfield$)"
+
+#: extensions/filters/is_equal_to.php:93
+msgid "Remember that you can use other fields (i.e. this field is less than <code>$otherfield$</code>)"
+msgstr "A noter que vous pouvez utiliser d'autres champs (ie: ce champs est inférieur à <code>$otherfield$</code>)"
+
+#: view/admin/options.php:65
+#: view/admin/options.php:69
+msgid "Remove Filled In"
+msgstr "Supprimer Filled In"
+
+#: view/admin/report/report.php:76
+#: view/admin/submenu.php:6
+msgid "Reports"
+msgstr "Rapports"
+
+#: view/admin/form/edit.php:53
+msgid "Result Processor"
+msgstr "Résultat Processeur"
+
+#: view/admin/pager_top.php:1
+msgid "Results per page"
+msgstr "Résultats par page"
+
+#: view/admin/report/report.php:65
+msgid "Run"
+msgstr "Lancer"
+
+#: view/admin/report/report.php:3
+msgid "Run a report"
+msgstr "Lancer un rapport"
+
+#: view/admin/report/report.php:9
+msgid "Run form"
+msgstr "Lancer un formulaire"
+
+#: view/admin/options.php:41
+msgid "SMTP host"
+msgstr "hôte SMTP"
+
+#: extensions/post/save_upload.php:47
+msgid "Save Uploaded File"
+msgstr "Sauver le fichier uploadé"
+
+#: extensions/post/save_to_csv.php:93
+msgid "Save to CSV file"
+msgstr "Sauver en tant que fichier CSV"
+
+#: extensions/post/save_to_xml.php:71
+msgid "Save to XML file"
+msgstr "Sauver en tant que fichier XML"
+
+#: view/admin/options.php:31
+msgid "Saved upload directory"
+msgstr "Sauver le répertoire d'upload"
+
+#: extensions/post/email.php:267
+msgid "Send as email"
+msgstr "Envoyer en tant qu'email"
+
+#: extensions/filters/file_upload.php:105
+msgid "Separate file types with a comma.  No period is required"
+msgstr "Séparer les types de fichier avec une virgule. Pas de point nécessaire"
+
+#: extensions/filters/string_length.php:62
+msgid "Shortest"
+msgstr "Plus court"
+
+#: extensions/filters/checkbox.php:77
+#: extensions/filters/is_required.php:60
+#: extensions/filters/word_count.php:60
+msgid "Smallest"
+msgstr "Plus petit"
+
+#: extensions/post/intellicontact/intellicontact.php:117
+msgid "Special ID"
+msgstr "ID spéciale"
+
+#: view/admin/form/edit.php:21
+msgid "Special Options"
+msgstr "Options spéciales"
+
+#: view/admin/report/report.php:31
+msgid "Start date"
+msgstr "Date de départ"
+
+#: view/admin/report/report.php:32
+msgid "Start date for data"
+msgstr "Date de départ pour les données"
+
+#: view/admin/options.php:15
+msgid "Store these cookies in collected data<br/>Each cookie on a separate line"
+msgstr "Stocker les cookies dans les données collectée<br />Chaque cookie sur une ligne séparée"
+
+#: extensions/filters/string_length.php:47
+msgid "String Length"
+msgstr "Longueur de la chaine de caractères"
+
+#: view/admin/email/edit_template.php:12
+msgid "Subject"
+msgstr "Sujet"
+
+#: view/admin/form/list.php:10
+msgid "Succeeded"
+msgstr "Réussi"
+
+#: controller/admin.php:400
+msgid "Successful results"
+msgstr "Résultats validés"
+
+#: extensions/post/email.php:280
+msgid "Template"
+msgstr "Template"
+
+#: view/admin/email/templates.php:20
+msgid "Template name"
+msgstr "Nom du template"
+
+#: view/admin/email/edit_template.php:26
+msgid "Text content"
+msgstr "Contenu textuel"
+
+#: controller/front.php:166
+msgid "Thank you for your submission.  Unfortunately your data was not accepted for the following reasons:"
+msgstr "Merci pour votre soumission. Malheureusement les données n'ont pas été acceptées pour les raisons suivantes :"
+
+#: controller/admin.php:285
+msgid "That template already exists"
+msgstr "Ce template existe déjà"
+
+#: extensions/post/wp_registration.php:47
+msgid "The email address isn&#8217;t correct."
+msgstr "L'adresse email n'est pas correcte."
+
+#: view/admin/stat/statistics.php:49
+msgid "There are no entries for this form"
+msgstr "Il n'y a pas d'enregistrements pour ce formulaire"
+
+#: extensions/post/wp_registration.php:64
+msgid "This email address is already registered, please supply another."
+msgstr "Cette adresse email est déjà enregistrée, merci d'en saisir une autre."
+
+#: extensions/post/wp_registration.php:58
+msgid "This username is already registered, please choose another one."
+msgstr "Ce nom d'utilisateur est déjà utilisé, merci d'en choisir un autre."
+
+#: extensions/post/wp_registration.php:53
+msgid "This username is invalid.  Please enter a valid username."
+msgstr "Ce nom d'utilisateur n'est pas valide. Merci de saisir un nom d'utilisateur valide."
+
+#: view/admin/options.php:66
+msgid "This will remove all Filled In configuration and database tables.  Doing this will destroy <strong>all</strong> your Filled In data and does not have an undo - please be sure this is what you want to do!"
+msgstr "Ceci va supprimer la configuration et la base de données du plug-in Filled In. Vous allez perdre <strong>toutes</strong> les données relatives à Filled In, et vous ne pourrez pas annuler votre action - soyez certain de ce que vous faites !"
+
+#: view/admin/stat/stat_details.php:14
+msgid "Time"
+msgstr "Heure"
+
+#: extensions/post/email.php:276
+msgid "To"
+msgstr "A"
+
+#: extensions/filters/captcha.php:62
+msgid "Too many attempts, consider glasses"
+msgstr "Trop de tentatives, pensez à mettre des lunettes"
+
+#: view/admin/options.php:15
+msgid "Track cookies"
+msgstr "Tracker les cookies"
+
+#: extensions/result/redirect_to_url.php:49
+msgid "URL"
+msgstr "URL"
+
+#: extensions/post/save_to_csv.php:70
+msgid "Unable to save CSV data"
+msgstr "Impossible de sauvegarder les données CSV"
+
+#: extensions/post/save_to_xml.php:66
+msgid "Unable to save XML data"
+msgstr "Impossible de sauvegarder les données XML"
+
+#: view/admin/options.php:47
+msgid "Unencrypted"
+msgstr "Décrypté"
+
+#: view/admin/email/edit_template.php:43
+#: view/admin/form/edit.php:33
+#: view/admin/form/edit.php:92
+#: view/admin/options.php:57
+#: view/admin/report/edit.php:6
+msgid "Update"
+msgstr "Mise à jour"
+
+#: controller/attachment.php:73
+msgid "Upload"
+msgstr "Upload"
+
+#: extensions/filters/is_equal_to.php:78
+msgid "Values"
+msgstr "Valeurs"
+
+#: extensions/filters/captcha.php:92
+msgid "Warning"
+msgstr "Attention"
+
+#: extensions/filters/captcha.php:88
+msgid "What to display when blocked"
+msgstr "Ce qu'il faut affiché quand envoi bloqué"
+
+#: view/admin/options.php:23
+msgid "Where email attachments are saved"
+msgstr "Où les pièces jointes des emails sont sauvegardées"
+
+#: view/admin/options.php:32
+msgid "Where uploads are saved before being moved by processors"
+msgstr "Où les uploads ont été sauvés avant d'être déplacés par les processus"
+
+#: view/admin/report/report.php:4
+msgid "While your original form data will remain untouched, please be aware that replaying data could cause unwanted side effects"
+msgstr "Votre formulaire de données sera conservé intact, cependant le fait de rejouer les données peut provoquer des effets secondaires non souhaités."
+
+#: extensions/filters/word_count.php:44
+msgid "Word Count"
+msgstr "Comptage de mots"
+
+#: extensions/filters/captcha.php:101
+msgid "Word generation"
+msgstr "Génération de mots"
+
+#: extensions/result/display_message.php:47
+msgid "WordPress Filters"
+msgstr "Filtres WordPress"
+
+#: extensions/post/wp_login.php:53
+msgid "WordPress Login"
+msgstr "Login WordPress"
+
+#: extensions/post/wp_registration.php:85
+msgid "WordPress Registration"
+msgstr "Enregistrement WordPress"
+
+#: extensions/post/save_to_xml.php:78
+msgid "XML Filename"
+msgstr "Nom de fichier XML"
+
+#: view/admin/email/edit_template.php:4
+msgid "You can insert form data into the template by entering it as $fieldname$ in any of "
+msgstr "Vous pouvez insérer un formulaire de données dans le template en entrant son $fieldname$"
+
+#: view/admin/form/list.php:33
+msgid "You currently have no forms to display."
+msgstr "Vous ne disposez pas de formulaires à afficher"
+
+#: view/admin/report/report.php:87
+msgid "You have no reports"
+msgstr "Aucun rapport disponible"
+
+#: extensions/pre/logged_in.php:22
+msgid "You must be logged in"
+msgstr "Vous devez être connecté."
+
+#: extensions/pre/logged_out.php:21
+msgid "You must not be logged in"
+msgstr "Vous ne devez pas être connecté"
+
+#: view/default/saved_uploads.php:4
+msgid "Your file has been saved and is awaiting completion of this form"
+msgstr "Votre fichier a été sauvegardé et est en attente de finalisation du formulaire"
+
+#: view/default/saved_uploads.php:6
+msgid "Your files have been saved and are awaiting completion of this form"
+msgstr "Vos fichiers ont été sauvés et sont en attente de finalisation du formulaire"
+
+#: view/default/error_filters.php:6
+#, php-format
+msgid "Your form contains %s.  Please correct the highlighted fields and send again"
+msgstr "Votre formulaire contient %s. Merci de corriger les champs surlignés et de procéder à une nouvelle soumission"
+
+#: controller/admin.php:331
+msgid "Your form has been created"
+msgstr "Votre formulaire a été créé."
+
+#: controller/admin.php:230
+msgid "Your report has been created"
+msgstr "Votre rapport a été créé"
+
+#: controller/admin.php:216
+msgid "Your report has been updated"
+msgstr "Votre rapport a été mis à jour"
+
+#: controller/admin.php:266
+#, php-format
+msgid "Your report has finished.  %d entries were processed, %d failed"
+msgstr "Votre rapport est terminé. %d entrées ont été traitées,%d n'ont pas été traitées."
+
+#: extensions/filters/is_required.php:40
+msgid "a value is required"
+msgstr "une valeur est requise"
+
+#: extensions/filters/string_length.php:79
+#, php-format
+msgid "at least %d characters long"
+msgstr "au moins %d caractères de long"
+
+#: extensions/filters/checkbox.php:38
+#, php-format
+msgid "at least %d item(s) are required"
+msgstr "au moins %d objet(s) sont requis"
+
+#: extensions/filters/is_required.php:30
+#, php-format
+msgid "at least %d items are required"
+msgstr "au moins % objets sont requis"
+
+#: extensions/filters/word_count.php:77
+#, php-format
+msgid "at least %d words long"
+msgstr "au moins %d mots en longueur"
+
+#: extensions/filters/string_length.php:77
+#, php-format
+msgid "between %d and %d characters long"
+msgstr "entre %d et %d de longueur de caractères"
+
+#: extensions/filters/checkbox.php:30
+#: extensions/filters/is_required.php:24
+#, php-format
+msgid "between %d and %d items are required"
+msgstr "entre %d et %d d'objets sont requis"
+
+#: extensions/filters/word_count.php:75
+#, php-format
+msgid "between %d and %d words long"
+msgstr "entre %d et %d mots en longueur"
+
+#: extensions/filters/string_length.php:67
+msgid "characters, leave empty for no longest"
+msgstr "caractères, laisser vide si pas plus long"
+
+#: extensions/filters/string_length.php:63
+msgid "characters, leave empty for no shortest"
+msgstr "caractères, laisser vide si pas plus court"
+
+#: view/admin/form/list_entry.php:29
+#: view/admin/report/item.php:3
+msgid "delete"
+msgstr "effacer"
+
+#: view/admin/stat/stat_details.php:59
+msgid "deleted"
+msgstr "effacé"
+
+#: view/admin/form/edit.php:47
+msgid "ensure the data is correct"
+msgstr "s'assurer que la donnée est correcte"
+
+#: extensions/filters/file_upload.php:122
+#: extensions/filters/file_upload.php:124
+msgid "file"
+msgstr "fichier"
+
+#: extensions/filters/file_upload.php:122
+#: extensions/filters/file_upload.php:124
+msgid "files"
+msgstr "fichiers"
+
+#: view/admin/pager_top.php:17
+msgid "go"
+msgstr "valider"
+
+#: extensions/filters/is_email.php:22
+msgid "invalid email address"
+msgstr "adresse email invalide"
+
+#: extensions/filters/is_equal_to.php:104
+msgid "is <strong>Equal To</strong>: "
+msgstr "est <strong>Egal à </strong>: "
+
+#: extensions/filters/is_greater.php:65
+msgid "is <strong>Greater Than Or Equal To</strong> "
+msgstr "est <strong>supérieur ou égal à</strong> "
+
+#: extensions/filters/is_greater.php:67
+msgid "is <strong>Greater Than</strong> "
+msgstr "est <strong>supérieur à</strong> "
+
+#: extensions/filters/is_less.php:66
+msgid "is <strong>Less Than Or Equal To</strong> "
+msgstr "est <strong>inférieur ou égal à</strong> "
+
+#: extensions/filters/is_less.php:68
+msgid "is <strong>Less Than</strong> "
+msgstr "est <strong>inférieur à</strong> "
+
+#: extensions/filters/is_equal_to.php:102
+msgid "is <strong>Not Equal To</strong>: "
+msgstr "est <strong>Différent de </strong>: "
+
+#: extensions/filters/is_numeric.php:69
+msgid "is <strong>Numeric</strong>"
+msgstr "est <strong>numérique</strong>"
+
+#: extensions/filters/is_required.php:73
+msgid "is <strong>Required</strong>"
+msgstr "est <strong>requis</strong>"
+
+#: extensions/filters/captcha.php:141
+msgid "is a <strong>CAPTCHA</strong>"
+msgstr "est <strong>CAPTCHA</strong>"
+
+#: extensions/filters/checkbox.php:90
+msgid "is a <strong>Checkbox</strong>"
+msgstr "est une <strong>case à cocher</strong>"
+
+#: extensions/filters/is_email.php:33
+msgid "is an <strong>Email Address</strong>"
+msgstr "est une <strong>adresse email</strong>"
+
+#: extensions/filters/checkbox.php:78
+#: extensions/filters/checkbox.php:82
+#: extensions/filters/is_required.php:61
+#: extensions/filters/is_required.php:65
+msgid "items required, leave empty for no smallest"
+msgstr "objets requis, laisser vide pour pas de plus petit"
+
+#: extensions/filters/string_length.php:81
+#, php-format
+msgid "less than %d characters long"
+msgstr "doit être inférieur à %d caractères"
+
+#: extensions/filters/word_count.php:79
+#, php-format
+msgid "less than %d words long"
+msgstr "doit être inférieur à %d mots"
+
+#: extensions/filters/file_upload.php:118
+#, php-format
+msgid "maximum filesize of %dKB"
+msgstr "taille maximale du fichier de %dKB"
+
+#: extensions/filters/file_upload.php:124
+#, php-format
+msgid "maximum of %d %s"
+msgstr "maximum de %d %s"
+
+#: extensions/filters/file_upload.php:122
+#, php-format
+msgid "minimum of %d %s"
+msgstr "minimum de %d %s"
+
+#: extensions/filters/is_numeric.php:34
+msgid "must be a number"
+msgstr "doit être un nombre"
+
+#: extensions/filters/is_equal_to.php:48
+#, php-format
+msgid "must equal '%s'"
+msgstr "doit être égal à '%s'"
+
+#: extensions/filters/is_equal_to.php:50
+#, php-format
+msgid "must equal one of: %s"
+msgstr "doit être égal à un de : %s"
+
+#: extensions/filters/is_equal_to.php:44
+#, php-format
+msgid "must not equal '%s'"
+msgstr "doit être égal à '%s'"
+
+#: extensions/filters/checkbox.php:51
+#: extensions/filters/checkbox.php:56
+msgid "no"
+msgstr "non"
+
+#: extensions/filters/checkbox.php:47
+#, php-format
+msgid "no more than %d item(s) are required"
+msgstr "pas plus de %d objet(s) sont requis"
+
+#: extensions/filters/is_required.php:36
+#, php-format
+msgid "no more than %d items are required"
+msgstr "pas plus de %d objets sont requis"
+
+#: extensions/filters/is_greater.php:53
+#: extensions/filters/is_less.php:54
+msgid "or equal:"
+msgstr "ou égal :"
+
+#: extensions/post/pommo.php:93
+msgid "poMMo could not be found"
+msgstr "poMMo n'a pas été trouvé"
+
+#: extensions/post/pommo.php:105
+msgid "poMMo directory"
+msgstr "poMMo répertoire"
+
+#: extensions/post/pommo.php:79
+msgid "poMMo failed to register"
+msgstr "poMMo n'a pas réussi l'enregistrement"
+
+#: extensions/post/pommo.php:85
+msgid "poMMo failed to send confirmation message"
+msgstr "poMMo a échoué dans l'envoi d'un message de confirmation"
+
+#: extensions/post/pommo.php:74
+msgid "poMMo is incorrectly configured (bad data)"
+msgstr "poMMo n'est pas correctement configuré (mauvaises données)"
+
+#: extensions/post/pommo.php:70
+msgid "poMMo is incorrectly configured (no email)"
+msgstr "poMMo n'est pas correctement configuré (pas d'email)"
+
+#: extensions/filters/file_upload.php:120
+#, php-format
+msgid "restrict to files of type: %s"
+msgstr "restrindre aux fichiers de type : %s"
+
+#: extensions/pre/exclude_fields.php:47
+#: extensions/pre/include_fields.php:49
+msgid "separate fields with comma"
+msgstr "séparer les champs avec une virgule"
+
+#: view/admin/form/edit.php:18
+msgid "separate with comma"
+msgstr "séparer avec une virgule"
+
+#: extensions/filters/file_upload.php:51
+msgid "the file is of an invalid type"
+msgstr "le type de fichier est invalide"
+
+#: extensions/filters/file_upload.php:28
+#, php-format
+msgid "the maximum number of uploads is %d"
+msgstr "le nombre maximum d'uploads est %d"
+
+#: extensions/filters/file_upload.php:40
+#, php-format
+msgid "the uploaded file is %dKB, which is larger than the maximum allowed of %dKB"
+msgstr "la taille du fichier envoyé est %dKB, ce qui est supérieur au maximum autorisé de %dKB"
+
+#: view/admin/report/report.php:20
+msgid "through report"
+msgstr "suite au rapport"
+
+#: extensions/filters/string_length.php:33
+#, php-format
+msgid "value must be %d characters long"
+msgstr "valeur doit être de %d caractères"
+
+#: extensions/filters/word_count.php:30
+#, php-format
+msgid "value must be %d words long"
+msgstr "valeur doit être de %d mots"
+
+#: extensions/filters/string_length.php:27
+#, php-format
+msgid "value must be between %d and %d characters long"
+msgstr "valeur doit être comprise entre %d et %d caractères"
+
+#: extensions/filters/word_count.php:24
+#, php-format
+msgid "value must be between %d and %d words long"
+msgstr "valeur doit être comprise entre %d et %d mots"
+
+#: extensions/filters/is_greater.php:26
+#, php-format
+msgid "value must be greater or equal to %d"
+msgstr "valeur doit être supérieure ou égale à %d"
+
+#: extensions/filters/is_greater.php:28
+#, php-format
+msgid "value must be greater than %d"
+msgstr "valeur doit être supérieure à %d"
+
+#: extensions/filters/is_less.php:29
+#, php-format
+msgid "value must be less than %d"
+msgstr "valeur doit être inférieure à %d"
+
+#: extensions/filters/string_length.php:39
+#, php-format
+msgid "value must be less than %d characters long"
+msgstr "valeur doit être inférieure à %d caractères"
+
+#: extensions/filters/word_count.php:36
+#, php-format
+msgid "value must be less than %d words long"
+msgstr "valeur doit être inférieure à %d mots"
+
+#: extensions/filters/is_less.php:27
+#, php-format
+msgid "value must be less than or equal to %d"
+msgstr "valeur doit être inférieure ou égale à %d"
+
+#: view/admin/form/edit.php:50
+msgid "what to do with the data when accepted"
+msgstr "ce que nous faisons avec les données acceptées"
+
+#: view/admin/form/edit.php:53
+msgid "what to show the user after correct submission"
+msgstr "ce que l'on monter à l'utilisateur une fois le formulaire envoyé"
+
+#: view/admin/form/edit.php:44
+msgid "what we do before we begin"
+msgstr "ce que l'on doit faire avant de commencer"
+
+#: extensions/filters/file_upload.php:115
+msgid "with <strong>File Upload</strong> "
+msgstr "avec <strong>File Upload</strong> "
+
+#: extensions/filters/string_length.php:75
+msgid "with <strong>String Length</strong> "
+msgstr "avec <strong>String Length</strong> "
+
+#: extensions/filters/word_count.php:73
+msgid "with <strong>Word Count</strong> "
+msgstr "avec <strong>Word Count</strong> "
+
+#: extensions/filters/word_count.php:65
+msgid "words, leave empty for no longest"
+msgstr "mots, laisser s'ils n'y en a pas de plus longs"
+
+#: extensions/filters/word_count.php:61
+msgid "words, leave empty for no shortest"
+msgstr "mots, laisser s'ils n'y en a pas de plus courts"
+
+#: extensions/filters/checkbox.php:54
+msgid "yes"
+msgstr "oui"
+
+#: extensions/filters/file_upload.php:25
+#, php-format
+msgid "you need to upload at least %d file(s)"
+msgstr "vous devez uploader au moins %d fichier(s)"
+
