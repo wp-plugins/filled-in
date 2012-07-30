@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: johnny5, FolioVision
-Donate link: http://urbangiraffe.com/about/
+Donate link: http://foliovision.com/donate/
 Tags: form, contact, validate
 Requires at least: 2.7
 Tested up to: 3.3.2
