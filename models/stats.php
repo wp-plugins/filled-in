@@ -54,12 +54,7 @@ class FI_FormStats
 	function total_results ($formid)
 	{
 		global $wpdb;
-		
-		/// Modification  1.7.6 - faster SQL
-		/*$sql = "SELECT (SELECT COUNT(`id`) FROM `{$wpdb->prefix}filled_in_data` WHERE `form_id`=$formid)-COUNT(d.`id`) as `count` 
-					FROM `{$wpdb->prefix}filled_in_data` d JOIN `{$wpdb->prefix}filled_in_errors` e ON d.`id`=e.`data_id` WHERE d.`form_id`=$formid";*/
-    $sql = "SELECT count(`form_id`) - (SELECT count(`form_id`) FROM `wp_filled_in_errors` WHERE `form_id`=$formid) FROM `wp_filled_in_data` WHERE `form_id`=$formid";
-    /// End modification
+    $sql = "SELECT count(`form_id`) - (SELECT count(`form_id`) FROM `{$wpdb->prefix}filled_in_errors` WHERE `form_id`=$formid) FROM `{$wpdb->prefix}filled_in_data` WHERE `form_id`=$formid";
 		
 		return $wpdb->get_var ($sql);
 	}

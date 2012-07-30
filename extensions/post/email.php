@@ -274,7 +274,7 @@ class Post_Email extends FI_Post
 	
 	function name ()
 	{
-		return __ ("Send as email", 'filled-in');
+		return __ ("Send as email (deprecated)", 'filled-in');
 	}
 	
 	function edit ()

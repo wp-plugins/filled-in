@@ -1,9 +1,9 @@
 === Plugin Name ===
-Contributors: johnny5
+Contributors: johnny5, FolioVision
 Donate link: http://urbangiraffe.com/about/
 Tags: form, contact, validate
 Requires at least: 2.7
-Tested up to: 3.2.1
+Tested up to: 3.3.2
 Stable tag: trunk 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
@@ -135,3 +135,7 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 
 = 1.7.7 =
 * Added indexing of filled_in_errors (`data_id`) which improves speed of the plugin when the database tables are big
+
+= 1.8 =
+* Any custom extensions now can be put into wp-content/plugins/filled-in-extensions to survive plugin upgrades
+* New e-mail extension is using wp_mail

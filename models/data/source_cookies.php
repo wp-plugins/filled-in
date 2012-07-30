@@ -20,6 +20,13 @@ class FI_Data_COOKIES extends FI_Data_Source
 			$this->data = unserialize ($data->cookie);
 		}
 	}
+	
+	/// Addition  2011/01/25,  1.7.7
+	static function protect_attributes( $matches ) {
+	  $matches[0] = str_replace( '%', '&#37;', $matches[0] );
+	  return $matches[0];
+	}
+	/// End of addition  2011/01/25
 
 	function replace ($text, $encode = false)
 	{
@@ -33,7 +40,12 @@ class FI_Data_COOKIES extends FI_Data_Source
 		}
 
 		// Remove non-existant cookies
+		/// Modification  2011/01/25, 1.7.7
+    //return preg_replace ('/%(.*?)%/', '-', $text);
+    $text = preg_replace_callback( '/(src|href)=\'.*?\'/', 'FI_Data_COOKIES::protect_attributes', $text );
+    $text = preg_replace_callback( '/(src|href)=".*?"/', 'FI_Data_COOKIES::protect_attributes', $text );
     return preg_replace ('/%(.*?)%/', '-', $text);
+    /// End of modification
 	}
 
 	function save ($dataid, $filters)

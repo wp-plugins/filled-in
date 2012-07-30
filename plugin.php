@@ -446,11 +446,12 @@ class Filled_In_Plugin extends Filled_In_Foliopress_Plugin {
 		$url = substr( $this->plugin_base, strlen( $this->realpath( $root ) ) );
 		if ( DIRECTORY_SEPARATOR != '/' )
 			$url = str_replace( DIRECTORY_SEPARATOR, '/', $url );
-
-		if ( defined( 'WP_PLUGIN_URL' ) )
+		
+		$url = plugins_url().'/'.ltrim( $url, '/' );
+		/*if ( defined( 'WP_PLUGIN_URL' ) )
 			$url = WP_PLUGIN_URL.'/'.ltrim( $url, '/' );
 		else
-			$url = get_bloginfo( 'wpurl' ).'/'.ltrim( $url, '/' );
+			$url = get_bloginfo( 'wpurl' ).'/'.ltrim( $url, '/' );*/
 
 		// Do an SSL check - only works on Apache
 		global $is_IIS;

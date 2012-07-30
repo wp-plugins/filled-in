@@ -4,7 +4,7 @@ Plugin Name: Filled In
 Plugin URI: http://urbangiraffe.com/plugins/filled-in/
 Description: Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
 Author: John Godley
-Version: 1.7.7
+Version: 1.8
 Author URI: http://urbangiraffe.com/
 */
 

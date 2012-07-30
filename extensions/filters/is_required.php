@@ -29,7 +29,7 @@ class Filter_Is_Required extends FI_Filter
 	
 	function name ()
 	{
-		return __ ("Is Required", 'filled-in');
+		return __ ("Is Required (deprecated)", 'filled-in');
 	}
 	
 	function save ($config)
