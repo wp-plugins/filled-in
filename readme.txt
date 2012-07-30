@@ -21,6 +21,7 @@ Features include:
 * Built-in CAPTCHA support
 * Built-in poMMo mailing list support
 * Built-in file upload support
+* Easy to build custom extensions
 
 Filled In is available in:
 
@@ -39,6 +40,7 @@ The plugin is simple to install:
 1. Upload `redirection` directory to your `/wp-content/plugins` directory
 1. Go to the plugin management page and enable the plugin
 1. Configure the options from the `Manage/Filled In` page
+1. Put your custom made extensions in to wp-content/plugins/filled-in-extensions/pre (and also post, result, filters)
 
 You can find full details of installing a plugin on the [plugin installation page](http://urbangiraffe.com/articles/how-to-install-a-wordpress-plugin/).
 
