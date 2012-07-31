@@ -17,7 +17,7 @@ class FI_Extension_Factory
   
   function include_extensions ($extension_dir, $external = false) {
     $groups = glob ($extension_dir, GLOB_ONLYDIR);
-		if (count ($groups) > 0)
+		if ( is_array($groups) && count ($groups) > 0)
 		{
 			foreach ($groups AS $group)
 			{

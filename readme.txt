@@ -141,3 +141,11 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 = 1.8 =
 * Any custom extensions now can be put into wp-content/plugins/filled-in-extensions to survive plugin upgrades
 * New e-mail extension is using wp_mail
+
+== Upgrade Notice ==
+
+= 1.9 =
+
+Move your custom extensions to wp-content/plugins/filled-in-extensions before upgrading!
+
+The old e-mail extension is now deprecated. The new extension is available and it uses wp_mail. Use plugin like 'WP Mail SMTP' to configure SMTP for your wp_mail.

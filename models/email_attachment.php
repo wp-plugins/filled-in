@@ -65,7 +65,7 @@ class EmailAttachment extends Filled_In_Plugin
 	{
 		$files = array ();
 		$list  = glob (rtrim ($this->base, '/')."/{$this->template}/*");
-		if (count ($list) > 0)
+		if ( is_array($list) && count ($list) > 0)
 		{
 			foreach ($list AS $file)
 				$files[] = new FI_Upload (array ('name' => basename ($file), 'tmp_name' => $file));

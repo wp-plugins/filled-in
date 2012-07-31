@@ -245,7 +245,8 @@ class Post_Email_WP extends FI_Post
 	  ?>
    <tr>
      <th width="50"><?php _e ('To', 'filled-in'); ?>:</th>
-     <td><input style="width: 95%" type="text" name="address" value="<?php echo htmlspecialchars (isset($this->config['address']) ? $this->config['address'] : '') ?>"/></td>
+     <td><input style="width: 95%" type="text" name="address" value="<?php echo htmlspecialchars (isset($this->config['address']) ? $this->config['address'] : '') ?>"/><br />
+     <small>(use </small>;<small> to separate multiple addresses)</small></td>
    </tr>
 	<tr>
 		<th><?php _e ('Template', 'filled-in'); ?>:</th>

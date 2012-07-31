@@ -293,7 +293,7 @@ class Post_Email extends FI_Post
 			  <option value="default"><?php _e ('Default', 'filled-in'); ?></option>
 			<?php if (count ($templates) > 0) : ?>
 			  <?php foreach ($templates AS $temp) : ?>
-			  <option value="<?php echo $temp->name ?>" <?php if ($temp->name == isset($this->config['template']) ? $this->config['template'] : '') echo ' selected="selected"' ?>><?php echo $temp->name ?></option>
+			  <option value="<?php echo $temp->name ?>" <?php if ($temp->name == $this->config['template'] ? $this->config['template'] : '') echo ' selected="selected"' ?>><?php echo $temp->name ?></option>
 			  <?php endforeach; ?>
 			<?php endif; ?>
 			</select>
