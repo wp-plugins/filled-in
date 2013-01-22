@@ -586,4 +586,4 @@ class Filled_In_Admin extends Filled_In_Plugin
 }
 
 // The admin plugin!
-$obj = new Filled_In_Admin ();
+$admin_filled_in = new Filled_In_Admin ();
