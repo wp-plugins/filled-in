@@ -25,6 +25,7 @@
 			</p>
 
 			<div class="tablenav">
+                            <?php if (current_user_can ('administrator')): ?>
 				<div class="alignleft actions">
 					<select name="action2" id="action2_select">
 						<option value="-1" selected="selected"><?php _e('Bulk Actions'); ?></option>
@@ -39,7 +40,7 @@
 
 					<br class="clear" />
 				</div>
-
+                            <?php endif; ?>
 				<div class="tablenav-pages">
 					<?php echo $pager->page_links (); ?>
 				</div>
@@ -56,9 +57,9 @@
 		<tbody>
 		<?php $alt = 0; foreach ($stats AS $statistic) : ?>
 		<tr <?php if ($alt++ % 2 == 1) echo ' class="alt"' ?> id="s_<?php echo $statistic->id ?>">
-			<td width="16" class="item center">
+			<?php if (current_user_can ('administrator')): ?><td width="16" class="item center">
 				<input type="checkbox" class="check" name="checkall[]" value="<?php echo $statistic->id ?>"/>
-			</td>
+			</td><?php endif; ?>
 			<td class="date">
 				<a href="<?php echo $this->url () ?>/controller/admin_ajax.php?cmd=show_stat&amp;id=<?php echo $statistic->id ?>" class="filledin-show-stat"><?php echo date ('d M y', $statistic->created) ?></a>
 			</td>
@@ -84,14 +85,14 @@
 	<?php endif; ?>
 </div>
 
-<div class="wrap">
+<?php if (current_user_can ('administrator')) : ?><div class="wrap">
 	<h2><?php _e ('Delete all entries', 'filled-in'); ?></h2>
 	<p><?php _e ('Once deleted, your data will be permanently gone.  Please be sure this is what you really want to do.', 'filled-in'); ?></p>
 	
 	<form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="post" accept-charset="utf-8">
 		<input class="button-primary" type="submit" name="delete" value="<?php _e ('Delete all entries', 'filled-in') ?>" id="delete" onclick="if (confirm (wp_confirm_data)) return true; return false;"/>
 	</form>
-</div>
+</div><?php endif; ?>
 
 <script type="text/javascript" charset="utf-8">
 	jQuery(document).ready(function()

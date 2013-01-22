@@ -2,14 +2,14 @@
 
 include ('../../../../wp-config.php');
 
-if (!current_user_can ('edit_plugins') || !isset ($_GET['id']))
+if (!current_user_can ('publish_pages') || !isset ($_GET['id']))
 	die ('<p style="color: red">You are not allowed access to this resource</p>');
 
 $id = basename ($_GET['id']);
 $id = preg_replace ('/[\*\?\^%\/\\~]/', '', $id);
 $uploaded = false;
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && current_user_can ('activate_plugins'))
 {
   if (is_uploaded_file ($_FILES['attachment']['tmp_name']))
   {
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		$uploaded = $attachment->upload ($_FILES['attachment']['tmp_name'], $name);
 	}
 }
-else if (isset ($_GET['file']))
+else if (isset ($_GET['file']) && current_user_can ('publish_pages'))
 {
 	$file = basename ($_GET['file']);
 	$file = preg_replace ('/[\*\?\^%\/\\~]/', '', $file);
@@ -29,6 +29,8 @@ else if (isset ($_GET['file']))
 	$attachment = new EmailAttachment ($id);
 	$attachment->download ($file);
 	return;
+} elseif (!isset ($_GET['file']) && current_user_can ('publish_pages') && !current_user_can ('activate_plugins')) {
+    die ('<p style="color: red">You are not allowed access to this resource</p>');
 }
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -7,11 +7,13 @@
 	<?php $this->submenu (true); ?>
 	
 	<?php if (count ($forms) > 0) : ?>
+        
 	<form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>">	
 		<input type="hidden" name="page" value="filled_in.php"/>
 		<input type="hidden" name="curpage" value="<?php echo $pager->current_page () ?>"/>
 	
 		<div id="pager" class="tablenav">
+                    <?php if (current_user_can ('administrator')) : ?>
 			<div class="alignleft actions">
 				<select name="action2" id="action2_select">
 					<option value="-1" selected="selected"><?php _e('Bulk Actions'); ?></option>
@@ -26,19 +28,20 @@
 
 				<br class="clear" />
 			</div>
-	
+                    <?php endif; ?>
 			<div class="tablenav-pages">
 				<?php echo $pager->page_links (); ?>
 			</div>
 		</div>
 	</form>
+        
 
 	<table cellspacing="3" class="widefat post fixed">
 	   <thead>
 			<tr valign="top">
-				<th width="16" class="check-column">
+				<?php if (current_user_can ('administrator')) : ?><th width="16" class="check-column">
 					<input type="checkbox" name="select_all" class="select-all"/>
-				</th>
+				</th><?php endif; ?>
 				<th><?php echo $pager->sortable ('name', __ ('Form name', 'filled-in')); ?></th>
 				<th class="center"><a href=""><?php echo $pager->sortable ('_success', __ ('Succeeded', 'filled-in')); ?></th>
 				<th class="center"><a href=""><?php echo $pager->sortable ('_failed', __ ('Failed', 'filled-in')); ?></th>

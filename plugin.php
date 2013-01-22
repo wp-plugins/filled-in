@@ -431,7 +431,7 @@ class Filled_In_Plugin extends Filled_In_Foliopress_Plugin {
 	/**
 	 * Get a URL to the plugin.  Useful for specifying JS and CSS files
 	 *
-	 * For example, <img src="<?php echo $this->url() ?>/myimage.png"/>
+	 * For example, <img src="<?php echo $this->url() ? >/myimage.png"/>
 	 *
 	 * @return string URL
 	 **/

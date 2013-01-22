@@ -2,7 +2,7 @@
 
 include ('../../../../wp-config.php');
 
-if (!current_user_can ('edit_plugins'))
+if (!current_user_can ('activate_plugins'))
 	die ('<p style="color: red">You are not allowed access to this resource</p>');
 
 $id   = intval ($_GET['id']);

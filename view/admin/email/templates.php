@@ -6,9 +6,9 @@
   <h2><?php _e ('Email templates', 'filled-in') ?></h2>
 	<?php $this->submenu (true); ?>
   <p style="clear: both"><?php _e ('Filled In can email the contents of a form to you when it is successfully completed.  You can edit that email here.', 'filled-in'); ?></p>
-  
+
   <?php if (is_array ($templates) && count ($templates) > 0) : ?>
-		
+		<?php if (current_user_can ('administrator')) : ?>
 		<form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>">	
 			<div class="tablenav">
 				<div class="alignleft actions">
@@ -22,14 +22,14 @@
 				</div>
 			</div>
 		</form>
-	
+                <?php endif; ?>
 	
   <table class="widefat post fixed">
 		<thead>
 			<tr>
-				<th width="16" class="check-column">
+				<?php if (current_user_can ('administrator')) : ?><th width="16" class="check-column">
 					<input type="checkbox" name="select_all" class="select-all"/>
-				</th>
+				</th><?php endif; ?>
 				<th><?php _e ('Name', 'filled-in')?></th>
 				<th><?php _e ('From', 'filled-in')?></th>
 				<th><?php _e ('To', 'filled-in')?></th>
@@ -49,12 +49,12 @@
   </div>
   
 	<br/>
-  <form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>" class="form-table">
+  <?php if (current_user_can ('administrator')) : ?><form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>" class="form-table">
 		<?php wp_nonce_field ('filledin-add_template'); ?>
    	<input type="text" name="name" class="regular-text" size="20"/>
 		<input class="button-primary" type="submit" name="create" value="<?php _e ('Create Template', 'filled-in') ?>"/>
   </form>
-	<br/>
+	<br/><?php endif; ?>
 </div>
 
 <script type="text/javascript" charset="utf-8">

@@ -1,4 +1,5 @@
-<?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?><td class="nol"/>
+<?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?>
+    <?php if (current_user_can ('administrator')) : ?><td class="nol"/><?php endif; ?>
 <td colspan="<?php echo $columns + 1 ?>" class="detail nol">
 
 <table class="widefat post fixed" style="width: 95%">

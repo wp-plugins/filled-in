@@ -13,6 +13,13 @@
 	
   <table class="filled_in form-table">
     <tr>
+  	<th width="180" ><?php _e ('Disable notice on FV Antispam', 'filled-in') ?>:</th>
+  	<td>
+      <input type="checkbox" name="notice"<?php if (get_option ('filled_in_notice') == 'true' ) echo ' checked="checked"' ?>/>
+  	</td>
+    </tr>
+    
+    <tr>
   	<th width="180" ><?php _e ('Default error CSS', 'filled-in') ?>:</th>
   	<td>
       <input type="checkbox" name="css"<?php if (get_option ('filled_in_css') == 'true') echo ' checked="checked"' ?>/>

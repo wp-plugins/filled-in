@@ -136,7 +136,8 @@ class Filled_In_Admin extends Filled_In_Plugin
 	
 	function admin_menu ()
 	{
-		add_management_page (__("Filled In", 'filled-in'), __("Filled In", 'filled-in'), "administrator", 'filled_in.php', array ($this, "display_admin_screen"));
+		//add_management_page (__("Filled In", 'filled-in'), __("Filled In", 'filled-in'), "administrator", 'filled_in.php', array ($this, "display_admin_screen"));
+		add_management_page (__("Filled In", 'filled-in'), __("Filled In", 'filled-in'), "publish_pages", 'filled_in.php', array ($this, "display_admin_screen"));
 	}
 	
 	function upgrade_tables ()
@@ -307,9 +308,9 @@ class Filled_In_Admin extends Filled_In_Plugin
 		if (isset($_GET['sub'])) {
 	    if ($_GET['sub'] == 'templates')
 	      return $this->display_email_screen ();
-	    else if ($_GET['sub'] == 'options' && current_user_can ('edit_plugins'))
+	    else if ($_GET['sub'] == 'options' && current_user_can ('activate_plugins'))
 	      return $this->display_options ();
-	    else if ($_GET['sub'] == 'reports' && current_user_can ('edit_plugins'))
+	    else if ($_GET['sub'] == 'reports' && current_user_can ('activate_plugins'))
 			{
 				if (isset ($_GET['edit']))
 					return $this->edit_report (intval ($_GET['edit']));
@@ -320,7 +321,7 @@ class Filled_In_Admin extends Filled_In_Plugin
 		else
 		{
 			// What we display depends on the GET arguments
-			if (isset ($_GET['edit']) && current_user_can ('edit_plugins'))
+			if (isset ($_GET['edit']) && current_user_can ('activate_plugins'))
 				$this->display_edit_page ($_GET['edit']);
 			else if (isset ($_GET['total']))
 				$this->display_stats ($_GET['total']);
@@ -453,7 +454,8 @@ class Filled_In_Admin extends Filled_In_Plugin
 		{
 		  if (isset ($_POST['save']) && check_admin_referer ('filledin-save_options'))
 		  {
-		    update_option ('filled_in_css',         isset ($_POST['css']) ? 'true' : 'false');
+		    update_option ('filled_in_notice',      isset ($_POST['notice']) ? 'true' : 'false');
+        update_option ('filled_in_css',         isset ($_POST['css']) ? 'true' : 'false');
 				update_option ('filled_in_smtp_host',   $_POST['smtp_host']);
 				update_option ('filled_in_smtp_port',   intval ($_POST['smtp_port']));
 				update_option ('filled_in_smtp_ssl',    $_POST['smtp_ssl']);
@@ -493,7 +495,7 @@ class Filled_In_Admin extends Filled_In_Plugin
 	
 		$pager = new FI_Pager ($_GET, $_SERVER['REQUEST_URI'], 'name', 'ASC');
 		$base  = $url;
-		$admin = current_user_can ('edit_plugins');
+		$admin = current_user_can ('activate_plugins');
 		
 		$stats = new FI_FormStats (FI_Form::load_all ($pager), $pager);
 		$this->render_admin ('form/list', array ('forms' => $stats->forms, 'base' => $base, 'admin' => $admin, 'pager' => $pager));
@@ -555,7 +557,8 @@ class Filled_In_Admin extends Filled_In_Plugin
 				$columns = explode (',', $form->quickview);
 			else if (count ($stats) > 0)
 				$columns = array_slice (array_keys ($stats[0]->sources['post']->data), 0, 4);
-	
+                        
+                         
 			$title = $type == 'errors' ? __ ('Failed results', 'filled-in') : __ ('Successful results', 'filled-in');
 			$this->render_admin ('stat/statistics', array ('title' => $title, 'form' => $form, 'stats' => $stats, 'columns' => $columns, 'pager' => $pager));
 		}
@@ -573,7 +576,7 @@ class Filled_In_Admin extends Filled_In_Plugin
 		$wpdb->query ("DROP TABLE {$wpdb->prefix}filled_in_forms");
 		$wpdb->query ("DROP TABLE {$wpdb->prefix}filled_in_useragents");
 		
-		$options = array ('filled_in', 'filled_in_attachments', 'filled_in_cookies', 'filled_in_css', 'filled_in_from', 'filled_in_smtp_host', 'filled_in_smtp_port', 'filled_in_smtp_ssl', 'filled_in_templates', 'filled_in_uploads');
+		$options = array ('filled_in', 'filled_in_attachments', 'filled_in_cookies', 'filled_in_css', 'filled_in_from', 'filled_in_smtp_host', 'filled_in_smtp_port', 'filled_in_smtp_ssl', 'filled_in_templates', 'filled_in_uploads', 'filled_in_notice');
 		array_walk ($options, 'delete_option');
 		
 		$current = get_option('active_plugins');

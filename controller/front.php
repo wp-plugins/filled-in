@@ -31,6 +31,7 @@ class Filled_In extends Filled_In_Plugin
 		$this->add_action ('template_redirect', 'pre_load', 2);      // Determines if this page has any forms so we know if we need CSS
 		$this->add_filter ('the_content');                           // Munges any forms in post content
 		$this->add_filter ('the_excerpt', 'the_content');            // Munges any forms in excerpt
+      $this->add_filter ('widget_text', 'the_content');
 		$this->add_filter ('the_filled_in_form');
 		$this->add_filter ('the_content', 'form_clean', 15);
 		$this->add_filter ('the_excerpt', 'form_clean', 15);
@@ -58,7 +59,7 @@ class Filled_In extends Filled_In_Plugin
 		// }
 		
 		// Preload the forms so we know if any CSS/AJAX is needed
-		if (count ($posts) > 0)
+		if ( is_array( $posts ) && 0 < count ($posts) )
 		{
 			foreach ($posts AS $pos => $item)
 			{
@@ -116,7 +117,7 @@ class Filled_In extends Filled_In_Plugin
 		global $posts;
 
 		// Go through all posts and find the one with our form
-		if (count ($posts) > 0)
+		if( is_array( $posts ) && 0 < count ($posts) )
 		{
 			$regex = str_replace ('id="(.*?)"', 'id="('.$this->grab->name.')"', $this->regex);
 			
@@ -187,6 +188,7 @@ class Filled_In extends Filled_In_Plugin
 		{
 			// GET request - display the form
 			global $post;
+			$idPost = (isset( $post ) && isset( $post->ID )) ? $post->ID : 0;
 		
 			if (!isset ($this->forms[$form_id]))
 			{
@@ -198,7 +200,7 @@ class Filled_In extends Filled_In_Plugin
 			if (isset ($this->forms[$form_id]))
 			{
 				$name = $form_id;
-				$data = $this->munge ($this->forms[$form_id], $form_text, $_SERVER['REQUEST_URI'], $post->ID, $this->is_ajax);
+				$data = $this->munge ($this->forms[$form_id], $form_text, $_SERVER['REQUEST_URI'], $idPost, $this->is_ajax);
 			}
 			else
 				return $form_text;
@@ -213,13 +215,15 @@ class Filled_In extends Filled_In_Plugin
 	function form_results ($form, $text, $isajax)
 	{
 		global $post;
+		$idPost = (isset( $post ) && isset( $post->ID )) ? $post->ID : 0;
+
 		if ($form->errors->have_errors ())
 		{
 			// Display errors
 			// if ($form->errors->what_type () == 'filter')
 			// {
 				$text   = $form->sources->refill_data ($text, $form->errors);
-				$text   = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $post->ID, $isajax);
+				$text   = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $idPost, $isajax);
 				if ($form->errors->what_type () == 'filter')
 					$errors = $this->capture ('error_filters', array ('error_message' => $form->errors->to_string (), 'errors' => $form->errors));
 				else
@@ -235,7 +239,7 @@ class Filled_In extends Filled_In_Plugin
 		}
 		else if (count ($form->extensions['result']))
 		{
-			$this->original_text = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $post->ID, $isajax);
+			$this->original_text = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $idPost, $isajax);
 
 			// Display results
 			foreach ($form->extensions['result'] AS $key => $result)
@@ -263,7 +267,6 @@ class Filled_In extends Filled_In_Plugin
 	{
 		assert (is_a ($form, 'FI_Form'));
 		assert (is_string ($text));
-		assert ('intval ($post) > 0');
 		assert ('$url != ""');
 
 		if (preg_match ('@<form(.*?)>(.*?)</form>@s', $text, $matches) > 0)
