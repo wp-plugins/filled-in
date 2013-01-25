@@ -103,7 +103,7 @@ class Filled_In extends Filled_In_Plugin
 	function the_content ($text)
 	{
 		$text = preg_replace_callback ($this->regex, array (&$this, 'replace_form'), $text);
-		if (isset($this->replace_entire_post))
+		if( isset( $this->replace_entire_post ) && preg_match( $this->regex, $text ) )
 			return $this->replace_entire_post;
 		return $text;
 	}

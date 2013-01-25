@@ -7,6 +7,8 @@ class Result_Display_Message extends FI_Results
 		global $filled_in;
 		
 		$text = $this->config['message'];
+		$text = $this->fill_in_details( $source, $text );
+
 		if ($this->config['autop'] == 'true')
 			$text = wpautop ($text);
 			
@@ -59,9 +61,28 @@ class Result_Display_Message extends FI_Results
 		return array ('message' => $arr['message'], 'autop' => isset ($arr['autop']) ? 'true' : 'false', 'entire' => isset ($arr['entire']) ? 'true' : 'false');
   }
 
+   function fill_in_details ($source, $text, $encode = false)
+   {
+      assert (is_a ($source, 'FI_Data'));
+
+      $server = $source->get_source ('server');
+      $post   = $source->get_source ('post');
+      $cookie = $source->get_source ('cookies');
+      $upload = $source->get_source ('files');
+
+      // Replace server details
+      $text = str_replace ('$remote$', $server->remote_host, $text);
+      $text = str_replace ('$agent$',  $server->user_agent, $text);
+
+      // Replace fields
+      $text = $post->replace ($text, $encode);
+      $text = $cookie->replace ($text, $encode);
+
+      return $text;
+   }
+
 	function is_editable () { return true;}
 }
 
 
 $this->register ('Result_Display_Message');
-?>

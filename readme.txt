@@ -50,7 +50,10 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 
 == Changelog ==
 
-= 1.8.5 = 
+= 1.8.6 =
+* Fixed replace whole post content so it will not interfere with widgets and other posts loaded in sidebars, etc.
+
+= 1.8.5 =
 * Added small notice on FV Antispam
 
 = 1.8.4 =
