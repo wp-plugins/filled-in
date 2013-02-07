@@ -50,6 +50,9 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 
 == Changelog ==
 
+= 1.8.8 =
+* Really fixed email filter and it's parsing regex
+
 = 1.8.7 =
 * Fixed email filter and it's parsing regex
 
