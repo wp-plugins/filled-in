@@ -6,7 +6,7 @@
 		<?php printf (__ ('Your form contains %s.  Please correct the highlighted fields and send again', 'filled-in'), $error_message) ?>
 	</p>
 <?php if ($errors->have_errors ()) : ?>
-	<ul>
+	<ul class="err_lst">
 		<?php foreach ($errors->message AS $field => $error) : ?>
 			<?php foreach ($error AS $err) :?>
 			<li><?php echo htmlspecialchars (ucfirst ($err)); ?></li>
