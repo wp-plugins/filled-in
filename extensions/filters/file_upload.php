@@ -81,11 +81,11 @@ class Filter_File_Upload extends FI_Filter
 	</tr>
 	<tr>
 		<th><?php _e ('Min files', 'filled-in'); ?>:</th>
-		<td><input type="text" name="file_min" value="<?php echo $this->config['file_min'] ?>"/> (<?php _e ('0 for no minimum', 'filled-in'); ?>)</td>
+		<td><input type="text" name="file_min" value="<?php echo $this->config['file_min'] ?>"/> <?php _e( 'including', 'filled-in' ); ?> (<?php _e ('0 for no minimum', 'filled-in'); ?>)</td>
 	</tr>
 	<tr>
 		<th><?php _e ('Max files', 'filled-in'); ?>:</th>
-		<td><input type="text" name="file_max" value="<?php echo $this->config['file_max'] ?>"/> (<?php _e ('0 for no maximum', 'filled-in'); ?>)</td>
+		<td><input type="text" name="file_max" value="<?php echo $this->config['file_max'] ?>"/> <?php _e( 'including', 'filled-in' ); ?> (<?php _e ('0 for no maximum', 'filled-in'); ?>)</td>
 	</tr>
 	<tr>
 		<th valign="top"><?php _e ('File types', 'filled-in'); ?>:</th>

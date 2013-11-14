@@ -137,6 +137,47 @@ class FI_Data_FILES extends FI_Data_Source
 		return $text;
 	}
 
+   function replace( $text, $encode = false ){
+      if( !is_array( $this->data ) )
+         return $text;
+
+      foreach( $this->data as $strKey => $aData ){
+         if( false === stripos( $text, '$'.$strKey.'$' ) )
+            continue;
+
+         $aLinks = array();
+         foreach( $aData as $objFile ){
+            $aLink = str_replace(
+               $_SERVER['DOCUMENT_ROOT'],
+               'http://' . $_SERVER['SERVER_NAME'],
+               $objFile->stored_location
+            );
+            $aLink = explode( '/', $aLink );
+
+            $strName = end( $aLink );
+            $strUrlName = rawurlencode( $strName );
+
+            $aLink = array_slice( $aLink, 0, count( $aLink ) - 1 );
+            $aLinks[] = array(
+               'link' => implode( '/', $aLink ) . '/' . $strUrlName,
+               'name' => $strName
+            );
+         }
+
+         $strReplace = '';
+         foreach( $aLinks as $aLink ){
+            if( $encode )
+               $strReplace .= '<a href="' . $aLink['link'] .'">' . $aLink['name'] . '</a><br />'."\n";
+            else
+               $strReplace .= $aLink['link'] . "\n";
+         }
+
+         $text = str_replace( '$'.$strKey.'$', $strReplace, $text );
+      }
+
+      return $text;
+   }
+
 	function what_group () { return 'files'; }
 }
 

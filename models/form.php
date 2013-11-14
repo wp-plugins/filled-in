@@ -28,7 +28,7 @@ class FI_Form
       $this->extensions = FI_Extension::load_by_form ($this->id);
       $this->errors     = new FI_Errors;
    }
-   
+
    function load_all (&$pager, $type = 'form')
    {
       assert (is_a ($pager, 'FI_Pager'));
@@ -63,7 +63,7 @@ class FI_Form
 
       return false;
    }
-   
+
    function load_by_name ($name, $type='form')
    {
       global $wpdb;
@@ -102,7 +102,7 @@ class FI_Form
       else
          return __ ("Invalid report name", 'filled-in');
    }
-   
+
    function delete ()
    {
       global $wpdb;
@@ -111,28 +111,28 @@ class FI_Form
          return true;
       return __ ("Failed to delete form", 'filled-in');
    }
-   
-   function update_options ($customsubmit, $top_of_page)
-   {
+
+   function update_options( $customsubmit, $strSubmitAnchor ){
       global $wpdb;
-      
-     $this->options['custom_submit'] = $customsubmit;
-      $this->options['top_of_page']   = $top_of_page;
-      
-      $custom = $wpdb->escape (serialize ($this->options));
-      $wpdb->query ("UPDATE {$wpdb->prefix}filled_in_forms SET options='$custom' WHERE id='{$this->id}'");
+
+      $this->options['custom_submit'] = $customsubmit;
+      $this->options['submit-anchor'] = $strSubmitAnchor;
+
+      $custom = $wpdb->escape( serialize( $this->options ) );
+      $wpdb->query( "UPDATE {$wpdb->prefix}filled_in_forms SET options='$custom' WHERE id='{$this->id}'" );
+
       return true;
    }
-   
+
    function update_details ($newname, $quick, $special)
    {
       assert (is_string ($newname));
       assert (is_string ($quick));
-      
+
       global $wpdb;
-      
+
       $type = $this->type;
-      
+
       $name = FI_Form::sanitize_name ($newname);
       if (strlen ($name) > 0)
       {
@@ -153,10 +153,10 @@ class FI_Form
 
             return sprintf (__ ("Failed to update %s %s", 'filled-in'), $type, $this->name);
          }
-         
+
          return sprintf (__ ("A %s of that name already exists", 'filled-in'), $type);
       }
-      
+
       return sprintf (__ ("Invalid %s name", 'filled-in'), $type);
    }
 
@@ -182,20 +182,20 @@ class FI_Form
       {
          // Run pre
          $first = $this->run_stage (isset($this->extensions['pre']) ? $this->extensions['pre'] : array(), 'pre');
-         
+
          // Pre filter
          $save = $this->sources->save ($this->extensions['filter']);
-         
+
          // Filter and post
          if ($first && $this->run_stage ($this->extensions['filter'], 'filter'))
-             $this->run_stage ($this->extensions['post'], 'post');
-         
+            $this->run_stage ($this->extensions['post'], 'post');
+
          return $save;
       }
-      
+
       return false;
    }
-   
+
    function run_stage ($extensions, $group)
    {
       if (count ($extensions) > 0)
@@ -205,12 +205,25 @@ class FI_Form
          {
             if (($result = $extensions[$pos]->run ($this->sources)) !== true)
             {
+               if( 'post' == $group ){
+                  $aData = array();
+                  $aData['date'] = date( 'Y-m-d H:i:s' );
+                  $aData['result'] = $result;
+                  $aData['form'] = $extension->form_id;
+                  $aData['type'] = $extension->type;
+                  $aData['config'] = $extension->config;
+
+                  update_option( 'filled_in_recent_error_data', $aData );
+                  update_option( 'filled_in_recent_error', 'yes' );
+                  continue;
+               }
+
                $errors = true;
                if ($group != 'filter')
                   break;           // We stop on first non-filter error
             }
          }
-   
+
          if ($errors)
          {
             $this->errors->gather ($extensions);

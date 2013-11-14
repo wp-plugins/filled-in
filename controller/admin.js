@@ -27,6 +27,18 @@ function delete_form (form){
   }
 }
 
+function DismissPostError( evt ){
+   jQuery( "#loading" ).show();
+   jQuery.post( wp_base + "?id=0&cmd=DismissPostError", {}, function(){
+      jQuery( "#loading" ).hide();
+      jQuery( "#post-error" ).hide();
+   });
+}
+
+jQuery( document ).ready( function(){
+   jQuery( "#post-error-dismiss" ).click( DismissPostError );
+});
+
 // ===========
 // Email templates
 // ===========

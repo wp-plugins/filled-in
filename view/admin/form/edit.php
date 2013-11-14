@@ -60,9 +60,9 @@
 	<form method="post" action="<?php echo str_replace ('&', '&amp;', $_SERVER['REQUEST_URI']) ?>">
 	<table class="form-table">
 		<tr>
-			<th width="180" valign="top"><?php _e ('Submit to top of page', 'filled-in'); ?>:<br/><span class="sub"><?php _e ('When a form is submitted the user is taken to the top of the page, not the top of the form', 'filled-in'); ?></span></th>
+			<th width="180" valign="top"><?php _e( 'Submit anchor', 'filled-in' ); ?>:<br/><span class="sub"><?php _e ('When a form is submitted the user will be taken to specified anchor. Leave empty to submit to top of page', 'filled-in'); ?></span></th>
 			<td valign="top">
-				<input type="checkbox" name="top_of_page" <?php if (isset($form->options['top_of_page']) && $form->options['top_of_page']) echo ' checked="checked"' ?>/>
+				<input type="text" name="submit-anchor" value="<?php echo $form->options['submit-anchor']; ?>" />
 			</td>
 		</tr>
 		<tr>

@@ -36,7 +36,13 @@ class Filled_In_Admin_AJAX extends Filled_In_Plugin
 			}
 		}
 	}
-	
+
+   function DismissPostError( $id ){
+      update_option( 'filled_in_recent_error', 'no' );
+      exit( 0 );
+   }
+
+
 	function edit_template ($id)
 	{
 	  $items = get_option ('filled_in_templates');

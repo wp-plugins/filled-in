@@ -5,13 +5,38 @@
 
 	<h2><?php _e ('Form List', 'filled-in') ?></h2>
 	<?php $this->submenu (true); ?>
-	
+
 	<?php if (count ($forms) > 0) : ?>
-        
+
+      <?php if( $bDisplayPostError ) : ?>
+
+         <div id="post-error" style="clear: both;">
+            <h3>Last error on post extension:</h3>
+            <table cellspacing="3" class="widefat post fixed">
+               <?php foreach( $aPostErrorData as $strKey => $mixData ) : ?>
+                  <tr>
+                     <td><?php echo $strKey; ?></td>
+                     <td>
+                        <?php if( is_array( $mixData ) || is_object( $mixData ) ) : ?>
+                           <?php echo str_replace( "\n", '<br />', print_r( $mixData, true ) ); ?>
+                        <?php else : ?>
+                           <?php echo $mixData; ?>
+                        <?php endif; ?>
+                     </td>
+                  </tr>
+               <?php endforeach; ?>
+            </table>
+            <div>
+               <input type="button" name="dismiss" value="Dismiss" id="post-error-dismiss" />
+            </div>
+         </div>
+
+      <?php endif; ?>
+
 	<form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>">	
 		<input type="hidden" name="page" value="filled_in.php"/>
 		<input type="hidden" name="curpage" value="<?php echo $pager->current_page () ?>"/>
-	
+
 		<div id="pager" class="tablenav">
                     <?php if (current_user_can ('administrator')) : ?>
 			<div class="alignleft actions">
@@ -19,7 +44,7 @@
 					<option value="-1" selected="selected"><?php _e('Bulk Actions'); ?></option>
 					<option value="delete"><?php _e('Delete'); ?></option>
 				</select>
-			
+
 				<input type="submit" value="<?php _e('Apply'); ?>" name="doaction2" id="doaction2" class="button-secondary action" />
 
 				<?php $pager->per_page ('filled-in'); ?>

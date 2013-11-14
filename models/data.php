@@ -6,7 +6,8 @@ include (dirname (__FILE__).'/pager.php');
 class FI_Data_Source
 {
 	var $data = null;
-	
+	var $aSpecialFormat = array();
+
 	function FI_Data_Source ($data, $config = '')
 	{
 	}

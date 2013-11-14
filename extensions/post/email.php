@@ -32,7 +32,7 @@ class Post_Email extends FI_Post
       $this->html = str_replace ('$contents$', $this->html_content ($source), $this->html);
 
       $this->from     = $this->fill_in_details ($source, $this->from);
-      $this->subject  = $this->fill_in_details ($source, $this->subject);      
+      $this->subject  = $this->fill_in_details ($source, $this->subject);
 
       // Split the 'to' addresses into an array
       $addresses = explode (';', $to);
@@ -49,15 +49,15 @@ class Post_Email extends FI_Post
    function send( $from, $to, $subject, $template ){
       //assert ('strlen ($template) > 0');
       require_once( dirname (__FILE__).'/../../lib/phpmailer/class.phpmailer.php' );
-      
+
       $objMail = new PHPMailer();
-      
+
       $aFrom = $this->GetEmailAddressAndName( $from );
       $objMail->From = $aFrom['address'];
       if( isset( $aFrom['name'] ) ) $objMail->FromName = $aFrom['name'];
       foreach( $to as $strAddress ) $objMail->AddAddress( $strAddress );
       $objMail->Subject = $subject;
-      
+
       $attach = new EmailAttachment( $template );
       $attachments = $attach->get();
       $attachments = array_merge( $attachments, $this->attachments );
@@ -65,7 +65,7 @@ class Post_Email extends FI_Post
       if( count( $attachments ) > 0 ){
          foreach( $attachments AS $upload ){
             $info = getimagesize( $upload->stored_location );
-            
+
             if( $info[2] != 0 && preg_match( '/"(.*?)'.$upload->name.'"/', $this->html ) > 0 ){
                $this->html = preg_replace( '/"(.*?)'.$upload->name.'"/', '', $this->html );
                $objMail->AddAttachment( $upload->stored_location, $upload->name );
@@ -73,7 +73,7 @@ class Post_Email extends FI_Post
                $objMail->AddAttachment( $upload->stored_location, $upload->name );
          }
       }
-      
+
       if( trim( $this->html ) ){
          $objMail->Body = wpautop( $this->html );
          $objMail->IsHTML( true );
@@ -140,21 +140,7 @@ class Post_Email extends FI_Post
        $this->html = '$contents$';
      }
    }
-   
-   function add_text_row ($field, $value, $biggest)
-   {
-      return $field.str_repeat (' ', max (1, $biggest - strlen ($field))).': '.$value."\r\n";
-   }
-   
-   function add_html_row ($field, $value)
-   {
-      // We add a <br/> because of the OS X Eudora client
-      /// Change      pBaran      07/07/2008      Foliovision
-      //return '<tr><th align="right" style="padding: 0 3px">'.$field.':</th><td>'.htmlspecialchars ($value)."<br/></td></tr>\r\n";
-      if( !$value ) $value = '&nbsp;';
-      return '<tr style="border: 1px solid #ebebeb; border-bottom: none;"><th align="left" style="padding: 5px 10px; vertical-align: top; border: 1px solid #ebebeb;  border-bottom: none;">'.$field.':</th><td style="padding: 5px 10px; border: 1px solid #ebebeb; border-bottom: none; border-left: none;">'.$value."</td></tr>\r\n";
-      /// End of change      pBaran      07/07/2008
-   }
+
 
    function fill_in_details ($source, $text, $encode = false)
    {
@@ -190,7 +176,7 @@ class Post_Email extends FI_Post
       
       return $text;
    }
-   
+
    function html_content ($source)
    {
       assert (is_a ($source, 'FI_Data'));
@@ -198,9 +184,8 @@ class Post_Email extends FI_Post
       $post   = $source->get_source ('post');
       $server = $source->get_source ('server');
       $cookie = $source->get_source ('cookies');
-      
+
       $body = '<table cellpadding="5" cellspacing="0" style="margin: 10px; border-bottom: 1px solid #ebebeb">'."\r\n";
-      $body .= '<colgroup span="1" style="background-color: #f7f7f7; padding: 5px 10px;"/>'."\r\n";
       /// Change      pBaran      07/07/2008      Foliovision
       //$body .= $this->add_html_row ('Remote host', $server->remote_host );
       //$body .= $this->add_html_row ('Browser',     $server->user_agent );
@@ -212,18 +197,18 @@ class Post_Email extends FI_Post
          foreach ($post->data AS $key => $field) $body .= $this->add_html_row( $key, $post->display ($key, false) );
          //foreach ($post->data AS $key => $field) $body .= $this->add_html_row( $key, $post->display_html( $key, false ) );
       }
-      
+
       if (count ($cookie->data) > 0 && is_array ($cookie->data))
       {
          //foreach ($cookie->data AS $key => $field) $body .= $this->add_html_row ($key, $field);
          foreach ($cookie->data AS $key => $field) $body .= $this->add_html_row( htmlspecialchars( $key ), htmlspecialchars( $field ) );
       }
       /// End of change      pBaran      07/07/2008
-      
+
       $body .= "</table>";
       return preg_replace ('/(?:\r|\n|mime-version:|content-type:|cc:|to:)/is', '', $body);
    }
-   
+
    function text_content ($source)
    {
       assert (is_a ($source, 'FI_Data'));

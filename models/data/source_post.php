@@ -104,44 +104,79 @@ class FI_Data_POST extends FI_Data_Source
 		return $text;
 	}
 
-	function replace ($text, $encode = false)
-	{
-		assert (is_string ($text));
-		assert (is_bool ($encode));
-		
-		foreach ($this->data AS $key => $value)
-		{
-			if (is_array ($value))
-				$value = implode (', ', $value);
+   function LinkUrl( $strText, $strField ){
 
-			$text = str_replace ("\$$key\$", $encode == true ? htmlspecialchars ($value) : $value, $text);
-		}
-		return $text;
-	}
-	
-	function display ($field, $echo = true)
-	{
-		if (isset ($this->data[$field]))
-		{
-			if (is_array ($this->data[$field]))
-			{
-				$data = array ();
-				foreach ($this->data[$field] AS $pos => $value)
-				{
-					if ($value != '')
-						$data[] = $value;
-				}
-				$str = implode (', ', $data);
-			}
-			else
-				$str = $this->data[$field];
-		}
-		
-		if (!$echo)
-			return $str;
-		echo $str;
-	}
-	
+      if( isset( $this->aSpecialFormat[$strField] ) )
+         $strText = preg_replace( '~(http(?:s)?://[\S]*)~i', '<a href="$1">$1</a>', $strText );
+
+      return $strText;
+   }
+
+   function replace( $text, $encode = false, $bWpAutop = false ){
+      assert (is_string ($text));
+      assert (is_bool ($encode));
+
+      foreach( $this->data as $key => $value ){
+
+         if( !$encode ){
+            if( is_array( $value ) )
+               $value = implode( " ,\n", $value );
+
+            $text = str_replace( "\$$key\$", $value, $text );
+         }else{
+            if( !is_array( $value ) )
+               $text = str_replace( "\$$key\$", $this->LinkUrl( htmlspecialchars( $value ), $key ), $text );
+            else{
+               foreach( $value as &$val )
+                  $val = $this->LinkUrl( htmlspecialchars( $val ) );
+               $value = implode( " ,<br />\n", $value );
+
+               $text = str_replace( "\$$key\$", $value, $text );
+            }
+
+            if( $bWpAutop )
+               $text = wpautop( $text );
+         }
+      }
+
+      return $text;
+   }
+
+   function display( $field, $echo = true, $bEncode = false ){
+
+      if( isset( $this->data[$field] ) ){
+
+         if( !is_array( $this->data[$field] ) ){
+            if( $bEncode )
+               $str = $this->LinkUrl( htmlspecialchars( $this->data[$field] ), $field );
+            else
+               $str = $this->data[$field];
+
+         }else{
+            $aData = array();
+
+            foreach( $this->data[$field] as $pos => $value ){
+               if( '' == $value )
+                  continue;
+
+               if( $bEncode )
+                  $aData[] = $this->LinkUrl( htmlspecialchars( $value ), $field );
+               else
+                  $aData[] = $value;
+            }
+
+            if( $bEncode )
+               $str = implode( " ,<br />", $aData );
+            else
+               $str = implode( " ,\n", $aData );
+         }
+      }
+
+      if (!$echo)
+         return $str;
+      echo $str;
+   }
+
 	function what_group () { return 'post'; }
 }
 

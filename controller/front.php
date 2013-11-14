@@ -6,6 +6,7 @@ class Filled_In extends Filled_In_Plugin
 	var $grab          = null;
 	var $regex         = '@(?:<p>\s*)?<form([^>]*)id="(.*?)"(.*?)>(.*?)</form>(?:\s*</p>)?@s';
 	var $regexp        = '@(?:<p>\s*)?<form([^>]*)id="(.*?)"(.*?)>(.*?)<!--formout-->(?:\s*</p>)?@s';
+	var $regexid       = '@<form([^>]*)id="%id%"@s';
 	var $have_ajax     = false;
 	var $is_ajax       = false;
 	var $original_text = null;
@@ -29,7 +30,7 @@ class Filled_In extends Filled_In_Plugin
 		
 		// Standard filters & actions
 		$this->add_action ('template_redirect', 'pre_load', 2);      // Determines if this page has any forms so we know if we need CSS
-		$this->add_filter ('the_content');                           // Munges any forms in post content
+		$this->add_filter ( 'the_content', 'the_content' );      // Munges any forms in post content
 		$this->add_filter ('the_excerpt', 'the_content');            // Munges any forms in excerpt
       $this->add_filter ('widget_text', 'the_content');
 		$this->add_filter ('the_filled_in_form');
@@ -100,13 +101,22 @@ class Filled_In extends Filled_In_Plugin
 		return $this->forms[$matches[1]];
 	}
 	
-	function the_content ($text)
-	{
-		$text = preg_replace_callback ($this->regex, array (&$this, 'replace_form'), $text);
-		if( isset( $this->replace_entire_post ) && preg_match( $this->regex, $text ) )
-			return $this->replace_entire_post;
-		return $text;
-	}
+   function the_content ($text)
+   {
+      $bForm = false;
+      if( $this->grab ){
+         $strRegex = str_replace( '%id%', preg_quote( $this->grab->name ), $this->regexid );
+         if( preg_match( $strRegex, $text ) )
+            $bForm = true;
+      }
+
+      $text = preg_replace_callback ($this->regex, array (&$this, 'replace_form'), $text);
+
+      if( isset( $this->replace_entire_post ) && $bForm )
+         return trim( $this->replace_entire_post );
+
+      return $text;
+   }
 	
 	function handle_ajax ()
 	{
@@ -200,7 +210,7 @@ class Filled_In extends Filled_In_Plugin
 			if (isset ($this->forms[$form_id]))
 			{
 				$name = $form_id;
-				$data = $this->munge ($this->forms[$form_id], $form_text, $_SERVER['REQUEST_URI'], $idPost, $this->is_ajax);
+				$data = $this->munge ($this->forms[$form_id], $form_text, '', $idPost, $this->is_ajax);
 			}
 			else
 				return $form_text;
@@ -223,7 +233,7 @@ class Filled_In extends Filled_In_Plugin
 			// if ($form->errors->what_type () == 'filter')
 			// {
 				$text   = $form->sources->refill_data ($text, $form->errors);
-				$text   = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $idPost, $isajax);
+				$text   = $this->munge ($form, $text, '', $idPost, $isajax);
 				if ($form->errors->what_type () == 'filter')
 					$errors = $this->capture ('error_filters', array ('error_message' => $form->errors->to_string (), 'errors' => $form->errors));
 				else
@@ -239,7 +249,7 @@ class Filled_In extends Filled_In_Plugin
 		}
 		else if (count ($form->extensions['result']))
 		{
-			$this->original_text = $this->munge ($form, $text, $_SERVER['REQUEST_URI'], $idPost, $isajax);
+			$this->original_text = $this->munge ($form, $text, '', $idPost, $isajax);
 
 			// Display results
 			foreach ($form->extensions['result'] AS $key => $result)
@@ -261,61 +271,70 @@ class Filled_In extends Filled_In_Plugin
 			$this->replace_entire_post = $text;
 		return $text;
 	}
-	
-	/// This is the magic form processing code.
-	function munge ($form, $text, $url, $post, $isajax, $time = '')
-	{
-		assert (is_a ($form, 'FI_Form'));
-		assert (is_string ($text));
-		assert ('$url != ""');
 
-		if (preg_match ('@<form(.*?)>(.*?)</form>@s', $text, $matches) > 0)
-		{
-			// Remove form parameters that we'll replace ourselves
-			$matches[1] = preg_replace ('/action="(.*?)"/', '', $matches[1]);
-			$matches[1] = preg_replace ('/method="(.*?)"/', '', $matches[1]);
-			$matches[1] = preg_replace ('@enctype="multipart/form-data"@', '', $matches[1]);
-			$matches[1] = preg_replace ('@\s{1,}@', ' ', $matches[1]);
+   /// This is the magic form processing code.
+   function munge ($form, $text, $url, $post, $isajax, $time = '')
+   {
+      assert (is_a ($form, 'FI_Form'));
+      assert (is_string ($text));
+      //assert ('$url != ""');
 
-			// Run it through any form modifiers
-			if (isset($form->extensions['filter']) && count ($form->extensions['filter']) > 0)
-			{
-				foreach ($form->extensions['filter'] AS $key => $filter)
-				{
-					if ($form->extensions['filter'][$key]->is_enabled ())
-						$matches[2] = $form->extensions['filter'][$key]->modify ($matches[2]);
-				}
-			}
+      if (preg_match ('@<form(.*?)>(.*?)</form>@s', $text, $matches) > 0)
+      {
+         // Remove form parameters that we'll replace ourselves
+         if( $url )
+            $strUrl = $url;
+         else if( preg_match( '~action="([^"]+)"~', $matches[1], $aMatch ) )
+            $strUrl = $aMatch[1];
+         else
+            $strUrl = $_SERVER['REQUEST_URI'];
 
-			$arr = array
-			(
-				'params'  => trim ($matches[1]),
-				'inside'  => trim ($matches[2]),
-				'formid'  => $form->id,
-				'name'    => $form->name,
-				'pageid'  => $post,
-				'action'  => $url,
-				'upload'  => $form->options['upload'] == 'true' ? ' enctype="multipart/form-data"' : '',
-				'time'    => $time == '' ? time () : $time,
-				'base'    => $url,
-				'waiting' => isset($form->options['custom_submit']) ? $form->options['custom_submit'] : '',
-				'top'     => isset($form->options['top_of_page']) && $form->options['top_of_page'] == true ? '' : '#'.$form->name,
-			);
+         $matches[1] = preg_replace ('/action="(.*?)"/', '', $matches[1]);
+         $matches[1] = preg_replace ('/method="(.*?)"/', '', $matches[1]);
+         $matches[1] = preg_replace ('@enctype="multipart/form-data"@', '', $matches[1]);
+         $matches[1] = preg_replace ('@\s{1,}@', ' ', $matches[1]);
 
-			if ($form->options['ajax'] == 'true')
-				$arr['ajax'] = $this->capture_admin ('form/form_observe', $arr);
-		
-			// Then mix together for 5 minutes
-			if ($isajax == true || $form->options['ajax'] != 'true')
-				$text = $this->capture_admin ('form/form_replace', $arr);
-			else
-				$text = $this->capture_admin ('form/form_replace_ajax', $arr);
-			
-			$text .= '<!--formout-->';
-		}
-		
-		return $text;
-	}
+         // Run it through any form modifiers
+         if (isset($form->extensions['filter']) && count ($form->extensions['filter']) > 0)
+         {
+            foreach ($form->extensions['filter'] AS $key => $filter)
+            {
+               if ($form->extensions['filter'][$key]->is_enabled ())
+                  $matches[2] = $form->extensions['filter'][$key]->modify ($matches[2]);
+            }
+         }
+
+         $arr = array
+         (
+            'params'  => trim ($matches[1]),
+            'inside'  => trim ($matches[2]),
+            'formid'  => $form->id,
+            'name'    => $form->name,
+            'pageid'  => $post,
+            'action'  => $strUrl,
+            'upload'  => $form->options['upload'] == 'true' ? ' enctype="multipart/form-data"' : '',
+            'time'    => $time == '' ? time () : $time,
+            'base'    => $strUrl,
+            'waiting' => isset($form->options['custom_submit']) ? $form->options['custom_submit'] : '',
+            'top'     => (isset( $form->options['submit-anchor'] ) && $form->options['submit-anchor'])
+               ? '#' . $form->options['submit-anchor']
+               : ''
+         );
+
+         if ($form->options['ajax'] == 'true')
+            $arr['ajax'] = $this->capture_admin ('form/form_observe', $arr);
+
+         // Then mix together for 5 minutes
+         if ($isajax == true || $form->options['ajax'] != 'true')
+            $text = $this->capture_admin ('form/form_replace', $arr);
+         else
+            $text = $this->capture_admin ('form/form_replace_ajax', $arr);
+
+         $text .= '<!--formout-->';
+      }
+
+      return $text;
+   }
 }
 
 // The main control process...

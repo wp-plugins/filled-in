@@ -299,39 +299,39 @@ class Filled_In_Admin extends Filled_In_Plugin
 			
 		return $sub;
 	}
-	
-	function display_admin_screen ()
-	{
-		// Decide what to do
-		$sub = $this->submenu ();
-    
-		if (isset($_GET['sub'])) {
-	    if ($_GET['sub'] == 'templates')
-	      return $this->display_email_screen ();
-	    else if ($_GET['sub'] == 'options' && current_user_can ('activate_plugins'))
-	      return $this->display_options ();
-	    else if ($_GET['sub'] == 'reports' && current_user_can ('activate_plugins'))
-			{
-				if (isset ($_GET['edit']))
-					return $this->edit_report (intval ($_GET['edit']));
-				else
-	      	return $this->display_report ();
-			}
-		}
-		else
-		{
-			// What we display depends on the GET arguments
-			if (isset ($_GET['edit']) && current_user_can ('activate_plugins'))
-				$this->display_edit_page ($_GET['edit']);
-			else if (isset ($_GET['total']))
-				$this->display_stats ($_GET['total']);
-			else if (isset ($_GET['errors']))
-				$this->display_stats ($_GET['errors'], 'errors');
-			else
-				$this->display_form_list ();
-		}
-	}
-	
+
+   function display_admin_screen ()
+   {
+      // Decide what to do
+      $sub = $this->submenu ();
+
+      if (isset($_GET['sub'])) {
+         if ($_GET['sub'] == 'templates')
+            return $this->display_email_screen ();
+         else if ($_GET['sub'] == 'options' && current_user_can ('activate_plugins'))
+            return $this->display_options ();
+         else if ($_GET['sub'] == 'reports' && current_user_can ('activate_plugins'))
+         {
+            if (isset ($_GET['edit']))
+               return $this->edit_report (intval ($_GET['edit']));
+            else
+               return $this->display_report ();
+         }
+      }
+      else
+      {
+         // What we display depends on the GET arguments
+         if (isset ($_GET['edit']) && current_user_can ('activate_plugins'))
+            $this->display_edit_page ($_GET['edit']);
+         else if (isset ($_GET['total']))
+            $this->display_stats ($_GET['total']);
+         else if (isset ($_GET['errors']))
+            $this->display_stats ($_GET['errors'], 'errors');
+         else
+            $this->display_form_list ();
+      }
+   }
+
 	function edit_report ($report)
 	{
 		$form = FI_Form::load_by_id ($report);
@@ -447,60 +447,71 @@ class Filled_In_Admin extends Filled_In_Plugin
 	  $templates = get_option ('filled_in_templates');  
 		$this->render_admin ('email/templates', array ('templates' => $templates));
 	}
-	
-	function display_options ()
-	{
-		if (current_user_can ('administrator'))
-		{
-		  if (isset ($_POST['save']) && check_admin_referer ('filledin-save_options'))
-		  {
-		    update_option ('filled_in_notice',      isset ($_POST['notice']) ? 'true' : 'false');
-        update_option ('filled_in_css',         isset ($_POST['css']) ? 'true' : 'false');
-				update_option ('filled_in_smtp_host',   $_POST['smtp_host']);
-				update_option ('filled_in_smtp_port',   intval ($_POST['smtp_port']));
-				update_option ('filled_in_smtp_ssl',    $_POST['smtp_ssl']);
-				update_option ('filled_in_smtp_username',    $_POST['smtp_username']);
-				update_option ('filled_in_smtp_password',    $_POST['smtp_password']);
-				update_option ('filled_in_attachments', rtrim ($_POST['attachments'], '/'));
-				update_option ('filled_in_uploads',     rtrim ($_POST['uploads'], '/'));
-				update_option ('filled_in_cookies',     trim ($_POST['cookies']));
-			
-				$this->render_message (__('Options updated', 'filled-in'));
-		  }
-			else if (isset ($_POST['destroy']) && check_admin_referer ('filledin-remove_plugin'))
-			{
-				$this->remove_everything ();
-				$this->render_message (__ ('All Filled In data has been removed and the plugin de-activated'));
-				return;
-			}
-	
-			$this->render_admin ('options');
-		}
+
+   function display_options ()
+   {
+      if (current_user_can ('administrator'))
+      {
+         if (isset ($_POST['save']) && check_admin_referer ('filledin-save_options'))
+         {
+            update_option ('filled_in_notice',      isset ($_POST['notice']) ? 'true' : 'false');
+            update_option ('filled_in_css',         isset ($_POST['css']) ? 'true' : 'false');
+            update_option ('filled_in_smtp_host',   $_POST['smtp_host']);
+            update_option ('filled_in_smtp_port',   intval ($_POST['smtp_port']));
+            update_option ('filled_in_smtp_ssl',    $_POST['smtp_ssl']);
+            update_option ('filled_in_smtp_username',    $_POST['smtp_username']);
+            update_option ('filled_in_smtp_password',    $_POST['smtp_password']);
+            update_option ('filled_in_attachments', rtrim ($_POST['attachments'], '/'));
+            update_option ('filled_in_uploads',     rtrim ($_POST['uploads'], '/'));
+            update_option ('filled_in_cookies',     trim ($_POST['cookies']));
+
+            $this->render_message (__('Options updated', 'filled-in'));
+         }
+         else if (isset ($_POST['destroy']) && check_admin_referer ('filledin-remove_plugin'))
+         {
+            $this->remove_everything ();
+            $this->render_message (__ ('All Filled In data has been removed and the plugin de-activated'));
+            return;
+         }
+
+         $this->render_admin ('options');
+      }
   }
 
-	function display_form_list ()
-	{
-		if (isset ($_POST['create']) && check_admin_referer ('filledin-create_form'))
-		{
-			$result = FI_Form::create ($_POST['form_name']);
-			if ($result === true)
-				$this->render_message (__("Your form has been created", 'filled-in'));
-			else
-				$this->render_error ($result);
-		}
+   function display_form_list ()
+   {
+      if (isset ($_POST['create']) && check_admin_referer ('filledin-create_form'))
+      {
+         $result = FI_Form::create ($_POST['form_name']);
+         if ($result === true)
+            $this->render_message (__("Your form has been created", 'filled-in'));
+         else
+            $this->render_error ($result);
+      }
 
-		$sub = isset ($_GET['sub']) ? $_GET['sub'] : '';
-	  $url = explode ('&', $_SERVER['REQUEST_URI']);
-	  $url = $url[0];
-	
-		$pager = new FI_Pager ($_GET, $_SERVER['REQUEST_URI'], 'name', 'ASC');
-		$base  = $url;
-		$admin = current_user_can ('activate_plugins');
-		
-		$stats = new FI_FormStats (FI_Form::load_all ($pager), $pager);
-		$this->render_admin ('form/list', array ('forms' => $stats->forms, 'base' => $base, 'admin' => $admin, 'pager' => $pager));
-	}
-	
+      $sub = isset ($_GET['sub']) ? $_GET['sub'] : '';
+      $url = explode ('&', $_SERVER['REQUEST_URI']);
+      $url = $url[0];
+
+      $pager = new FI_Pager ($_GET, $_SERVER['REQUEST_URI'], 'name', 'ASC');
+      $base  = $url;
+      $admin = current_user_can ('activate_plugins');
+
+      $bDisplayPostError = ($admin && 'yes' == get_option( 'filled_in_recent_error' )) ? true : false;
+      if( $bDisplayPostError )
+         $aPostErrorData = get_option( 'filled_in_recent_error_data' );
+
+      $stats = new FI_FormStats (FI_Form::load_all ($pager), $pager);
+      $this->render_admin ('form/list', array(
+         'forms' => $stats->forms,
+         'base' => $base,
+         'admin' => $admin,
+         'pager' => $pager,
+         'bDisplayPostError' => $bDisplayPostError,
+         'aPostErrorData' => $aPostErrorData
+      ));
+   }
+
 	function display_edit_page ($id)
 	{
 		if (($form = FI_Form::load_by_id ($id)))
@@ -515,7 +526,7 @@ class Filled_In_Admin extends Filled_In_Plugin
 			else if (isset ($_POST['update_options']))
 			{
 				$msg = __ ("Form details updated successfully", 'filled-in');
-				$result = $form->update_options ($_POST['custom_submit'], isset ($_POST['top_of_page']) ? true : false);
+				$result = $form->update_options ($_POST['custom_submit'], trim( $_POST['submit-anchor'] ) );
 			}
 
 			if ($result === true && $msg != '')

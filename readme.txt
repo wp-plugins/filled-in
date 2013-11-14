@@ -3,7 +3,7 @@ Contributors: johnny5, FolioVision
 Donate link: http://foliovision.com/donate/
 Tags: form, contact, validate
 Requires at least: 2.7
-Tested up to: 3.4.1
+Tested up to: 3.5.1
 Stable tag: trunk 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
@@ -37,7 +37,7 @@ The plugin is simple to install:
 
 1. Download `filled-in.zip`
 1. Unzip
-1. Upload `redirection` directory to your `/wp-content/plugins` directory
+1. Upload `filled-in` directory to your `/wp-content/plugins` directory
 1. Go to the plugin management page and enable the plugin
 1. Configure the options from the `Manage/Filled In` page
 1. Put your custom made extensions in to wp-content/plugins/filled-in-extensions/pre (and also post, result, filters)
@@ -49,6 +49,26 @@ You can find full details of installing a plugin on the [plugin installation pag
 Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugins/filled-in/) page.
 
 == Changelog ==
+= 1.8.13 =
+* Removed assert which caused PHP warnings
+
+= 1.8.12 =
+* Added "Reply to" option to default email extension
+* Added possibility to setup an anchor to which to move after submission
+* Added parsing of action parameter on forms
+* Fixed logic of post extensions failure (it's not a failed submission anymore)
+* Added a note when a post exension fails (only the most recent one)
+* Added parsing of files in emails
+
+= 1.8.11 =
+* Changed the default email template (better for mobile devices)
+* The default email template is built into main extension class
+
+= 1.8.10 =
+* Added possibility for extensions to send special data marks between them
+
+= 1.8.9 =
+* Replace entire post was still replacing text in some posts with different Filled in form
 
 = 1.8.8 =
 * Really fixed email filter and it's parsing regex

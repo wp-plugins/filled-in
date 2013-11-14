@@ -152,7 +152,23 @@ class FI_Extension
 		return true;
 	}
 
-	
+
+   function add_html_row( $strField, $mixValue ){
+      $strReturn = '<tr style="background-color: #DFE3E4"><td><strong>'.$strField.'</strong></td></tr>'."\n";
+      if( is_array( $mixValue ) )
+         $strReturn .= '<tr><td>'.implode( ",<br />\n", $mixValue ).'</td></tr>'."\n";
+      else
+         $strReturn .= '<tr><td>'.$mixValue.'</td></tr>'."\n";
+
+      return $strReturn;
+   }
+
+   function add_text_row ($field, $value, $biggest)
+   {
+      return $field.str_repeat (' ', max (1, $biggest - strlen ($field))).': '.$value."\r\n";
+   }
+
+
 	function replace_fields ($all_data, $text)
 	{
 		if (is_array ($all_data))

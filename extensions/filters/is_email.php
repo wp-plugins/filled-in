@@ -4,7 +4,7 @@ class Filter_Email extends FI_Filter
 {
 	function filter (&$value, $all_data)
 	{
-		if (preg_match ('/^([a-zA-Z0-9])+([a-zA-Z0-9\.\+=_-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/', $value))
+		if (preg_match ('/^([a-zA-Z0-9])+([a-zA-Z0-9\.\+=_-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/', trim($value) ))
 			return true;
 		return __ ("invalid email address", 'filled-in');
 	}
