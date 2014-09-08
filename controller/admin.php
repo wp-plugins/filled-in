@@ -526,7 +526,7 @@ class Filled_In_Admin extends Filled_In_Plugin
 			else if (isset ($_POST['update_options']))
 			{
 				$msg = __ ("Form details updated successfully", 'filled-in');
-				$result = $form->update_options ($_POST['custom_submit'], trim( $_POST['submit-anchor'] ) );
+				$result = $form->update_options ($_POST['custom_submit'], $_POST['custom_id'], trim( $_POST['submit-anchor'] ) );
 			}
 
 			if ($result === true && $msg != '')

@@ -87,7 +87,7 @@ class FI_Data_POST extends FI_Data_Source
 		return stripslashes ($data);
 	}
 	
-	function refill_data ($text, $errors)
+	function refill_data ($text, $errors, $id = false)
 	{
 		// Insert data back into form
 		foreach ($this->data AS $field => $value)
@@ -96,7 +96,7 @@ class FI_Data_POST extends FI_Data_Source
 			$replacer = new Form_Replacer ($field, $value, $errors->in_error ($field));
 	
 			// Replace any input, select, or textarea fields
-			$text = preg_replace_callback( '/<input([^>]+?)name="'.$field.'(\[\])?"(.*?)\/>/', array( $replacer, 'replace_input' ), $text );
+			$text = preg_replace_callback( '/<input([^>]+?)name="'.$field.'(\[\])?"(.*?)(?:\/)?>/', array( $replacer, 'replace_input' ), $text );
 			$text = preg_replace_callback( '/<select([^>]+?)name="'.$field.'(\[\])?"(.*?)>(.*?)<\/select>/s', array( $replacer, 'replace_select' ), $text );
 			$text = preg_replace_callback( '/<textarea([^>]+?)name="'.$field.'"(.*?)>(.*?)<\/textarea>/s', array( $replacer, 'replace_textarea' ), $text );
 		}

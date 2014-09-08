@@ -112,10 +112,11 @@ class FI_Form
       return __ ("Failed to delete form", 'filled-in');
    }
 
-   function update_options( $customsubmit, $strSubmitAnchor ){
+   function update_options( $customsubmit, $customid, $strSubmitAnchor ){
       global $wpdb;
 
       $this->options['custom_submit'] = $customsubmit;
+      $this->options['custom_id'] = $customid;
       $this->options['submit-anchor'] = $strSubmitAnchor;
 
       $custom = $wpdb->escape( serialize( $this->options ) );

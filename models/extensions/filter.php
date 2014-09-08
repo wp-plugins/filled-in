@@ -18,10 +18,12 @@ class FI_Filter extends FI_Extension
 		return $name;
 	}
 	
-  function update ($config)
+  function update ($config, $name = '', $extraconfig = null)
   {
+    $name = ( $name ) ? $name : $this->sanitize_fieldname ($config->data['field_name']);
+    $extraconfig = ( $extraconfig ) ? $extraconfig : array ('error' => $config->data['error']);
 		assert (is_a ($config, 'FI_Data_POST'));
-		return parent::update ($config, $this->sanitize_fieldname ($config->data['field_name']), array ('error' => $config->data['error']));
+		return parent::update ($config, $name, $extraconfig);
   }
 
 	function run (&$data)
@@ -42,7 +44,7 @@ class FI_Filter extends FI_Extension
 			{
 				if (isset ($this->config['error']) && strlen ($this->config['error']) > 0)
 					$this->errors = array ($this->name, $this->config['error']);
-				else
+				if (!empty($result) && !empty($value))
 					$this->errors = array ($this->name, $this->name.' - '.$result);
 			}
 			

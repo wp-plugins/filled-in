@@ -8,7 +8,7 @@
 <?php endif; ?>
 </div>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
 jQuery(document).ready(function()
 {
 	jQuery('#<?php echo $name ?>').submit (function (item)

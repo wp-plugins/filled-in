@@ -15,7 +15,7 @@ class FI_Data_Source
 	function sync ($created) { }
 	function save ($dataid, $filters) { return array (); }
 	function what_group () { return 'error'; }
-	function refill_data ($text, $errors) { return $text; }
+	function refill_data ($text, $errors, $id = false) { return $text; }
 	function display ($field) { }
 	function delete () { }
 }

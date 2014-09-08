@@ -3,7 +3,7 @@ Contributors: johnny5, FolioVision
 Donate link: http://foliovision.com/donate/
 Tags: form, contact, validate
 Requires at least: 2.7
-Tested up to: 3.5.1
+Tested up to: 4.0
 Stable tag: trunk 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
@@ -49,6 +49,9 @@ You can find full details of installing a plugin on the [plugin installation pag
 Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugins/filled-in/) page.
 
 == Changelog ==
+= 1.8.14 =
+* Added option to form settings about predecessor/successor form
+
 = 1.8.13 =
 * Removed assert which caused PHP warnings
 

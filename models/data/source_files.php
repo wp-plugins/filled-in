@@ -86,7 +86,7 @@ class FI_Data_FILES extends FI_Data_Source
 		return array ();
 	}
 	
-	function refill_data ($text, $errors, $id)
+	function refill_data ($text, $errors, $id = false)
 	{
 		assert (is_string ($text));
 		assert (is_a ($errors, 'FI_Errors'));

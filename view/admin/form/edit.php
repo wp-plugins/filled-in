@@ -65,6 +65,12 @@
 				<input type="text" name="submit-anchor" value="<?php echo $form->options['submit-anchor']; ?>" />
 			</td>
 		</tr>
+    <tr>
+      <th width="180" valign="top"><?php _e ('Predecessor\'s form allowed ID', 'filled-in'); ?>:<br/><span class="sub"><?php _e ('Define allowed predecessor\'s form ID which has been submitted before this form has shown', 'filled-in'); ?></span></th>
+      <td>
+        <input type="text" name="custom_id" value="<?php echo $form->options['custom_id']; ?>" />
+      </td>
+    </tr>
 		<tr>
 			<th width="180" valign="top"><?php _e ('Custom submit code', 'filled-in'); ?>:<br/><span class="sub"><?php _e ('Override the default AJAX loading notice', 'filled-in'); ?></span></th>
 			<td>
