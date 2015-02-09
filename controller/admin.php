@@ -8,6 +8,8 @@ class Filled_In_Admin extends Filled_In_Plugin
 {
 	function Filled_In_Admin ()
 	{
+    parent::__construct();
+    
 		if (file_exists (ABSPATH.'wp-includes/pluggable-functions.php'))
 			include (ABSPATH.'wp-includes/pluggable-functions.php');
 		else
@@ -31,6 +33,11 @@ class Filled_In_Admin extends Filled_In_Plugin
 			$this->add_action( 'admin_footer' );
 			$this->add_filter( 'contextual_help', 'contextual_help', 10, 2 );
 		}
+    
+    //after upgrade
+    if( current_user_can('manage_options') && is_admin() ){
+      $this->add_action('admin_init','check_after_update');
+    }
 
 		$this->register_plugin_settings( 'filled-in/filled_in.php' );
 
@@ -456,6 +463,7 @@ class Filled_In_Admin extends Filled_In_Plugin
          {
             update_option ('filled_in_notice',      isset ($_POST['notice']) ? 'true' : 'false');
             update_option ('filled_in_css',         isset ($_POST['css']) ? 'true' : 'false');
+            update_option ('filled_in_cron_delete_failed',  isset ($_POST['cron_delete_failed']) ? 'true' : 'false');
             update_option ('filled_in_smtp_host',   $_POST['smtp_host']);
             update_option ('filled_in_smtp_port',   intval ($_POST['smtp_port']));
             update_option ('filled_in_smtp_ssl',    $_POST['smtp_ssl']);
@@ -500,6 +508,8 @@ class Filled_In_Admin extends Filled_In_Plugin
       $bDisplayPostError = ($admin && 'yes' == get_option( 'filled_in_recent_error' )) ? true : false;
       if( $bDisplayPostError )
          $aPostErrorData = get_option( 'filled_in_recent_error_data' );
+      else
+        $aPostErrorData = false;
 
       $stats = new FI_FormStats (FI_Form::load_all ($pager), $pager);
       $this->render_admin ('form/list', array(
@@ -594,6 +604,59 @@ class Filled_In_Admin extends Filled_In_Plugin
 		array_splice($current, array_search('filled-in/filled_in.php', $current), 1 ); // Array-fu!
 		update_option('active_plugins', $current);
 	}
+  
+  //notification after upgrade
+  function util__pointers_ajax() {
+    $pointers = array( 'filled_in_cron_delete_failed_notice' );
+  
+    foreach( $pointers as $pointer ){
+      if( isset($_POST['key']) && $_POST['key'] == $pointer && isset($_POST['value']) ) {
+        check_ajax_referer($pointer);
+        $notification_opt = get_option('filled_in_notifications');
+  
+        if( $notification_opt && $_POST['value'] == 'true' ) {
+          $notification_opt[$pointer] = false;
+          update_option( 'filled_in_notifications', $notification_opt );
+        }
+        die();
+      }
+    }
+    
+  }
+  
+  function check_after_update(){
+    $version_db = get_option('filled_in_version');
+    $plugin_data = get_plugin_data( dirname( dirname(__FILE__)).'/filled_in.php', false, false );
+    
+    $notification_opt = get_option('filled_in_notifications');
+    $notifications = ( $notification_opt === false ) ? array() : $notification_opt;
+    
+    if( ($version_db === false) || version_compare( $version_db, '1.8.15', '<') ){
+      $notifications['filled_in_cron_delete_failed_notice'] = true;
+      update_option('filled_in_cron_delete_failed', 'true');        //cron is on by default
+      update_option('filled_in_notifications',$notifications);    //set notification
+    }
+    
+    if( ($version_db === false) || version_compare( $version_db, $plugin_data['Version'], '<') ){
+      update_option('filled_in_version',$plugin_data['Version']); //version in database update
+    }
+    
+    $this->pointer_boxes = array();
+    
+    if( isset($notifications['filled_in_cron_delete_failed_notice']) && $notifications['filled_in_cron_delete_failed_notice'] ) {
+        $this->pointer_boxes['filled_in_cron_delete_failed_notice'] = array(
+          'id' => '#wpadminbar',
+          'heading' => __('Filled In: Failed submissions', 'filled_in'),
+          'content' => __('From now on failed submissions older than 30 days are automatically deleted from database.<br/><br />If you want to turn this off, go to <a href="http://localhost/site/wp-admin/tools.php?page=filled_in.php&sub=options">Filled In Options</a> and check "Delete failed submission" off. However then you should be checking if your database is not too big.<br />', 'filled_in'),
+          'position' => array( 'edge' => 'top', 'align' => 'right' ),
+          'button1' => __('I understand', 'filled_in'),
+          'button2' => __('I\'ll check this later', 'filled_in')
+        );
+    }
+
+    add_action( 'wp_ajax_fv_foliopress_ajax_pointers', array( $this, 'util__pointers_ajax' ) );
+  }
+  
 }
 
 // The admin plugin!

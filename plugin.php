@@ -126,6 +126,10 @@ class Filled_In_Plugin extends Filled_In_Foliopress_Plugin {
 	 **/
 	var $version_url;
 
+  function __construct(){
+    parent::__construct();
+  }
+  
 	/**
 	 * Register your plugin with a name and base directory.  This <strong>must</strong> be called once.
 	 *

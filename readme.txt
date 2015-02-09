@@ -3,7 +3,7 @@ Contributors: johnny5, FolioVision
 Donate link: http://foliovision.com/donate/
 Tags: form, contact, validate
 Requires at least: 2.7
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk 
 
 Generic form processor allowing forms to be painlessly processed and aggregated, with numerous options to validate data and perform custom commands
@@ -47,6 +47,10 @@ You can find full details of installing a plugin on the [plugin installation pag
 == Documentation ==
 
 Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugins/filled-in/) page.
+
+== Changelog ==
+= 1.8.15 =
+* Added daily executed cron, deleting failed sumbitions older than 30 days
 
 == Changelog ==
 = 1.8.14 =

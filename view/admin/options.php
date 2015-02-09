@@ -25,6 +25,19 @@
       <input type="checkbox" name="css"<?php if (get_option ('filled_in_css') == 'true') echo ' checked="checked"' ?>/>
   	</td>
     </tr>
+    
+    <tr>
+  	<th width="180" ><?php _e ('Delete failed submission', 'filled-in') ?>:<br/><span class="sub"><?php _e ('Run cron once per day. Delete failed submission older than 30 days', 'filled-in'); ?></span></th>
+  	<td>
+      <input type="checkbox" name="cron_delete_failed"<?php if (get_option ('filled_in_cron_delete_failed') == 'true') echo ' checked="checked"' ?>/>
+      <?php
+        $failed_cron_last_run = get_option ('filled_in_cron_delete_failed_last_run');
+        if ( $failed_cron_last_run != false ){
+          echo ' <strong>Last run:</strong> '. date( 'r', $failed_cron_last_run );
+        }
+      ?>
+    </td>
+    </tr>
 
     <tr>
   	<th valign="top" width="180" ><?php _e ('Track cookies', 'filled-in') ?>:<br/><span class="sub"><?php _e ('Store these cookies in collected data<br/>Each cookie on a separate line', 'filled-in'); ?></span></th>
