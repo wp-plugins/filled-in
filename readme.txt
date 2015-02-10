@@ -52,7 +52,6 @@ Full documentation can be found on the [Filled In](http://urbangiraffe.com/plugi
 = 1.8.15 =
 * Added daily executed cron, deleting failed sumbitions older than 30 days
 
-== Changelog ==
 = 1.8.14 =
 * Added option to form settings about predecessor/successor form
 
